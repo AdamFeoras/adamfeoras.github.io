@@ -1,0 +1,32 @@
+<!-- add this block of code to the head of your html file. 
+	obviously you'll want to adjust the index numbers, file paths, and file names accordingly -->
+<SCRIPT LANGUAGE="JAVASCRIPT">
+	var bgNum = Math.floor(Math.random() * 6)
+	bgSel = new Array(6);
+	bgSel[0] = "Backgrounds/John_William_Waterhouse's_Hylas_and_the_Nymphs.jpg";
+	bgSel[1] = "Backgrounds/Charles_Murray_Padday's_A_Mermaid.jpg";
+	bgSel[2] = "Backgrounds/Herbert_James_Draper's_Ulysses_and_the_Sirens.jpg";
+	bgSel[3] = "Backgrounds/California_McWay_Falls.jpg";
+	bgSel[4] = "Backgrounds/California_Walton_Lighthouse.jpg";
+	bgSel[5] = "Backgrounds/California_Point_Lobos.jpg";
+	var base = bgSel[bgNum];
+</SCRIPT>
+
+<!-- style your background like so -->
+<style>
+	body {background-repeat: no-repeat;
+	background-position: center; 
+	background-attachment: fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;}
+</style>
+
+<!-- and run this script after the head but before the body -->
+<script language="JAVASCRIPT">
+	document.write('<body background="' + base + '">')
+</script>
+
+<!-- and voila. 
+	let me know if you have any trouble -->

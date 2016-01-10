@@ -1,7 +1,158 @@
-<!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<title>Matt Boddy</title>
+		<link rel="shortcut icon" href="shell_2.ico" type="image/x-icon" />
+		
+		<SCRIPT LANGUAGE="JAVASCRIPT">
+		var bgNum = Math.floor(Math.random() * 6)
+		bgSel = new Array(6);
+		bgSel[0] = "Backgrounds/John_William_Waterhouse's_Hylas_and_the_Nymphs.jpg";
+		bgSel[1] = "Backgrounds/Charles_Murray_Padday's_A_Mermaid.jpg";
+		bgSel[2] = "Backgrounds/Herbert_James_Draper's_Ulysses_and_the_Sirens.jpg";
+		bgSel[3] = "Backgrounds/California_McWay_Falls.jpg";
+		bgSel[4] = "Backgrounds/California_Walton_Lighthouse.jpg";
+		bgSel[5] = "Backgrounds/California_Point_Lobos.jpg";
+		var base = bgSel[bgNum];
+		</SCRIPT>
+		
+		
+		<script type="text/javascript">
+		<!--
+			function toggle_visibility(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+			}
+		//-->
+		</script>
+
+		<style>
+			body {background-color:black; color:dimgray; font-family:arial; 
+			text-align:left; margin:5%; margin-left:10%;
+			background-repeat: no-repeat;
+			background-position: center; 
+			background-attachment: fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;}
+			h3 {clear:left;}
+			h4 {padding-left:5%; padding-right:5%;}
+			p {padding-left:5%; padding-right:5%;}
+			a {color:dimgray; text-decoration:none;}
+			a:hover {color:red;}
+		</style>
+	</head>
+	
+	<script language="JAVASCRIPT">
+	document.write('<body background="' + base + '">')
+	</script>
+
+	<body>
+
+		<h1>Matthew Boddy</h1>
+		<h2>The Outdoorsy Nerd Goes To California</h2>
+		
+		<h3><a href="#" onclick="toggle_visibility('about_me');">About Me</a></h3>
+			<div id="about_me" style="display:none;">
+				<img src="pics/matt01bw.png" onmouseover="this.src='pics/matt01.png'" onmouseout="this.src='pics/matt01bw.png'" style="width:25%; float:right; clear:both; border:3px solid dimgray; padding:3px; margin-left:2%; margin-bottom:1%; margin-right:5%;"></img>
+				<p>Welcome, thank you for the visit. I've recently moved from the land of beer and pines to the land of wine and redwoods seeking employment and a forever home, and have christened that move with a new website.</p>
+				<p>I love the creative outlet that web development and design affords me, though it wasn't what I first set out to do. I got my master's in middle school education in 2010 and spent a couple of years student teaching and subbing. It was an interesting experience, seeing the classroom from the other side, but I decided to pursue a career in computers instead.</p>
+				<p>When I design a web page, I try to cultivate an aesthetic that is strong and unique, but doesn't overwhelm the user or impede functionality. I don't use a CMS; I prefer to do things by hand, that way I know every single line of markup and code and where it is. It takes longer but I'm always happy with the results.</p>
+				<p>Sometimes I work hard on coding all day as a project takes on a life of its own. Sometimes I drink wine and walk on the beach. Sometimes I pick my dog's poop off the ground. I'm versatile.</p>
+				<p>I want to become a web design rockstar. I look forward to an exciting future, though I've got plenty on my plate right now, improving my skill set. But eventually I'd like to settle down, build a house, and publish a book.</p>
+				<p>In addition to being a web designer/developer, I'm also a reader, a writer, a hiker, a hunter, a beachcomber, a cook, an insomniac, a dog person, and a straight ally.
+				<p>I always like to meet new people. I like to get commissions, too. So don't hesitate to contact me.</p>
+				<p>Take a look at my CV. E-mail me, too.</p>
+			</div>
+		
+		<h3><a href="#" onclick="toggle_visibility('portfolio');">Portfolio</a></h3>
+			<div id="portfolio" style="display:none;">
+				<!--
+				<div style="clear:both;">
+					<img src="pics/encyclofreedia01bw.png" onmouseover="this.src='pics/encyclofreedia01.png'" onmouseout="this.src='pics/encyclofreedia01bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
+					<h4>Encyclofreedia.com</h4>
+					<p>This was <span style="text-decoration:line-through;">our group's</span> my senior capstone project. It's deceptively simple, just a searchable database of educational resources. Just a demonstration that I know how to tie html, javascript, php, and MySql together in a big pretty bow. <a href="http://www.encyclofreedia.com" target="blank">You can take a look at it here.</a></p>
+				</div>
+				-->
+				<div style="clear:both;">
+					<img src="pics/effenmont02bw.png" onmouseover="this.src='pics/effenmont02.png'" onmouseout="this.src='pics/effenmont02bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
+					<h4>Effenmont</h4>
+					<p>I did a mock-up of a website for the Sims neighbourhood I'm building as though it were a travel destination. I significantly elaborated on the design from my senior project and threw in some photo edits as well, but the inner workings are very different. This website is focused more on web design and artistry. I'm going to add a searchable database for the purpose of demonstrating MySql some time in the near future [read:before summer].</p>
+				</div>
+			</div>
+		
+		<h3><a href="#" onclick="toggle_visibility('current_projects');">Current Projects</a></h3>
+			<div id="current_projects" style="display:none;">
+				<div style="clear:both;">
+					<img src="pics/capricorn01bw.png" onmouseover="this.src='pics/capricorn01.png'" onmouseout="this.src='pics/capricorn01bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
+					<h4>Capricorn</h4>
+					<p>I'm coding one of those old-school text-based adventure games that were all the rage when I was a kid. But THIS one is special; I'm including variables that make the experience wildly unpredictable. These variables will make the circumstances, available tools, antagonists, and potential outcomes different every time you play through the game.</p>
+					<p>Domenico is a former merchant who has stepped out of retirement following the death of his wife and is dabbling in illicit maritime activities. The late fifteenth century Amalfi Coast is beautiful, but capricious.</p>
+					<p>I'll have a playable beta ready for a willing batch of playtesters shortly.</p>
+				</div>
+				<div style="clear:both;">
+					<img src="pics/effenmont01bw.png" onmouseover="this.src='pics/effenmont01.png'" onmouseout="this.src='pics/effenmont01bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
+					<h4>Effenmont</h4>
+					<p>I'm in the middle of building a neighbourhood for the Sims 3; I've been meaning to do this for years. It's not that I never got around to it, it's just that I've started over several times. Those simmers that have gotten around to playing The Sims Medieval will recognize Effenmont as one of the nations you can send envoys to, trade with, and possibly lock horns with.</p>
+					<p>I chose to model my neighbourhood on Effenmont for a number of reasons. I like the Sims Medieval. The place is often mentioned and 
+					interacted with, but never directly seen. And the fact that it's an island makes landscaping infinitely more straightforward.</p>
+					<p>At any rate, if you enjoy playing the Sims, you should download it when I'm done. I've put a lot into it and I've learned a lot. You'll 
+					need the major expansions (obviously) plus the Dragon Valley Gold, but that's it.</p>
+				</div>
+			</div>
+			
+		<h3><a href="#" onclick="toggle_visibility('coding_freebies');">Coding Freebies</a></h3>
+			<div id="coding_freebies" style="display:none;">
+				<p>I'm pretty much willing to help with anything, so if you need help, just ask. You can reach me at boddym@yahoo.com; just mention in the subject line that you're looking for tech support, and not trying to sell me voodoo pills to give me a dick the size of my arm.</p>
+				<h4>Background Randomiser</h4>
+				<p>You might have noticed that the background is randomly determined every time you visit. <a href="freebies/background_randomizer.txt" download="freebies/background_randomizer.txt">Click here to download the javascript I used to accomplish this.</a></p>
+			</div>
+		
+		<!--
+		<h3><a href="#" onclick="toggle_visibility('writing_samples');">Writing Samples</a></h3>
+			<div id="writing_samples" style="display:none;">
+				<p>I'll be back with something in the future. I want to choose my writing samples very carefully.</p>
+				<h4></h4>
+				<p></p>
+		-->
+			</div>
+		
+		<h3><a href="#" onclick="toggle_visibility('favourite_recipes');">Favourite Recipes</a></h3>
+			<div id="favourite_recipes" style="display:none;">
+				<p>Cooking is one of my absolute very favourite things to do, but as I was setting up this section, I realized that I wing most of my recipes. Nothing's written down anywhere, so the next time I make something, I promise that I'll write it down here, so check back.</p>
+		<!--
+				<h4>Bouillabaise</h4>
+				<p>My recipe for bouillabaise is more concerned with how you cook and season the dish and less with what specifically goes in it, although I personally am very fond of monkfish; it's perch between whitefish and lobster is *perfect* for this dish.</p>
+				<h4>Crab Cakes</h4>
+				<p></p>
+				<h4>Fisherman's Pie</h4>
+				<p></p>
+		-->
+			</div>
+		
+		<i><p id="demo" style="width:40%; margin-left:50%; padding-top:10%;"></p></i> 
+		
+		<script>
+			var qNum = Math.floor(Math.random() * 5)
+			var quotes = 
+			["If you want to build a ship, don't drum up people to collect wood and don't assign them tasks and work, but rather teach them to long for the endless immensity of the sea. - Antoine de Saint-Exupery",
+			"The sea does not reward those who are too anxious, too greedy, or too impatient. One should lie empty, open, choiceless as a beach - waiting for a gift from the sea. - Anne Morrow Lindbergh", 
+			"You can’t believe how bleeding scary the sea is! There’s, like, whales and storms and shit! They don’t bloody tell you that! - Libba Bray",
+			"Darwin may have been quite correct in his theory that man descended from the apes of the forest, but surely woman rose from the frothy sea, as resplendent as Aphrodite on her scalloped chariot. - Margot Datz",
+			"There comes a time in a man's life when he hears the call of the sea. If the man has a brain in his head, he will hang up the phone immediately. - Dave Barry"];
+			document.getElementById("demo").innerHTML = quotes[qNum];
+		</script>
+		<!-- She loves the serene brutality of the ocean, loves the electric power she felt with each breath of wet, briny air. - Holly Black -->
+		<!-- Those who live by the sea can hardly form a single thought of which the sea would not be part. - Hermann Broch -->
+		<!-- The cure for anything is salt water: sweat, tears or the sea. - Isak Dinesen -->
+		<!-- She watched the gap between ship and shore grow to a huge gulf. Perhaps this was a little like dying, the departed no longer visible to the others, yet both still existed, only in different worlds. Susan Wiggs -->
+		<!-- Her fingers moved among barnacles and mussels, blue-black, sharp-edged. Neon red starfish were limp Dalis on the rocks, surrounded by bouquets of stinging anemones and purple bursts of spiny sea urchins. ? Janet Fitch -->
+		<!-- How do men act on a sinking ship? Do they hold each other? Do they pass around the whisky? Do they cry? ? Sebastian Junger -->
+		<!-- And when the pain came, it was as sweet as silver, as green as still water at dark fathoms. - Stephen King -->
+
+
+	</body>
 </html>
