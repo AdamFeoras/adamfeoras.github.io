@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+	    <title>Cards</title>
+		<link rel="icon" type="image/jpg" href="hamsa.ico"/>
+		<script type="text/javascript">
+		<!--
+			function toggle_visibility(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+			}
+		//-->
+		</script>
+	    <style type="text/css">
+			body {color:#9664E6; margin:5%; 
+			background-image: url("custom_cards.jpg"); 
+			background-repeat: no-repeat;
+			background-position: center; 
+			background-attachment: fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;}
+
+			a {color:#9664E6; text-decoration:none;}
+			a:hover {color:#DCC8FF;}
+	    </style>
+	</head>
+	<body>
+		<h2><a href="#" onclick="toggle_visibility('bosses');">Bosses</a></h2>
+		<ul id="bosses" style="display:none;">
+			<li>Warrior</li>
+			<li>Warrior</li>
+			<li>Thief</li>
+			<li>Thief</li>
+			<li>Mage</li>
+			<li>Mage</li>
+			<li>Cleric</li>
+			<li>Cleric</li>
+			<li>Warrior/Thief</li>
+			<li>Warrior/Mage</li>
+			<li>Warrior/Cleric</li>
+			<li>Thief/Mage</li>
+			<li>Thief/Cleric</li>
+			<li><a href="#" onclick="toggle_visibility('tTM');">The Tall Man</a></li>
+			<ul id="tTM" style="display:none;">
+				<li>Title: </li>
+				<li>Type: Mage/Cleric</li>
+				<li>XP: </li>
+				<li>Lore: </li>
+			</ul>
+			<!--
+			<li>Queen Hydra</li>
+			<li>The Archivist - Lets you take multiple items</li>
+			<li>The Archmage - Lets you take multiple spells</li>
+			-->
+		</ul>
+		<h2><a href="#" onclick="toggle_visibility('rooms');">Rooms</a></h2>
+		<ul id="rooms" style="display:none;">
+			<h3><a href="#" onclick="toggle_visibility('NMR');">Normal Monster Rooms</a></h3>
+			<ul id="NMR" style="display:none;">
+				<li>Warrior</li>
+				<li>Warrior x2</li>
+				<li>Thief</li>
+				<li>Thief x2</li>
+				<li>Mage</li>
+				<li>Mage x2</li>
+				<li>Cleric</li>
+				<li>Cleric x2</li>
+				<li>Warrior/Thief</li>
+				<li>Warrior/Mage</li>
+				<li>Warrior/Cleric</li>
+				<li>Thief/Mage</li>
+				<li>Thief/Cleric</li>
+				<li>Mage/Cleric</li>
+			</ul>
+			<h3><a href="#" onclick="toggle_visibility('AMR');">Advanced Monster Rooms</a></h3>
+			<ul id="AMR" style="display:none;">
+				<li>Warrior</li>
+				<li>Warrior x2</li>
+				<li>Thief</li>
+				<li>Thief x2</li>
+				<li>Mage</li>
+				<li>Mage x2</li>
+				<li>Cleric</li>
+				<li>Cleric x2</li>
+				<li>Warrior/Thief</li>
+				<li>Warrior/Mage</li>
+				<li>Warrior/Cleric</li>
+				<li>Thief/Mage</li>
+				<li>Thief/Cleric</li>
+				<li>Mage/Cleric</li>
+			</ul>
+			<h3><a href="#" onclick="toggle_visibility('NTR');">Normal Trap Rooms</a></h3>
+			<ul id="NTR" style="display:none;">
+				<li>Warrior</li>
+				<li>Warrior x2</li>
+				<li>Thief</li>
+				<li>Thief x2</li>
+				<li>Mage</li>
+				<li>Mage x2</li>
+				<li>Cleric</li>
+				<li>Cleric x2</li>
+				<li>Warrior/Thief</li>
+				<li>Warrior/Mage</li>
+				<li>Warrior/Cleric</li>
+				<li>Thief/Mage</li>
+				<li>Thief/Cleric</li>
+				<li>Mage/Cleric</li>
+			</ul>
+			<h3><a href="#" onclick="toggle_visibility('ATR');">Advanced Trap Rooms</a></h3>
+			<ul id="ATR" style="display:none;">
+				<li>Warrior</li>
+				<li>Warrior x2</li>
+				<li>Thief</li>
+				<li>Thief x2</li>
+				<li>Mage</li>
+				<li>Mage x2</li>
+				<li>Cleric</li>
+				<li>Cleric x2</li>
+				<li>Warrior/Thief</li>
+				<li>Warrior/Mage</li>
+				<li>Warrior/Cleric</li>
+				<li>Thief/Mage</li>
+				<li>Thief/Cleric</li>
+				<li><a href="#" onclick="toggle_visibility('TWN');">The Waking Nightmare</li>
+				<ul id="TWN" style="display:none;">
+					<li>Treasure: Mage/Cleric</li>
+				</ul>
+				<!--
+				<li>The Elder Thing</li>
+				<li>Eldritch Mist</li>
+				<li>Illusory X</li>
+				<li>Mausoleum - Thief/Cleric</li>
+				-->
+			</ul>
+		</ul>
+		<h2><a href="#" onclick="toggle_visibility('heroes');">Heroes</a></h2>
+		<ul id="heroes" style="display:none;">
+			<h3><a href="#" onclick="toggle_visibility('NH');">Normal Heroes</a></h3>
+			<ul id="NH" style="display:none;">
+				<li>Special</li>
+				<li>Special</li>
+				<li>Special</li>
+				<li>Warrior</li>
+				<li>Warrior</li>
+				<li>Warrior</li>
+				<li>Thief</li>
+				<li>Thief</li>
+				<li>Thief</li>
+				<li>Mage</li>
+				<li>Mage</li>
+				<li>Mage</li>
+				<li>Cleric</li>
+				<li>Cleric</li>
+				<li>Cleric</li>
+			</ul>
+			<h3><a href="#" onclick="toggle_visibility('EH');">Epic Heroes</a></h3>
+			<ul id="EH" style="display:none;">
+				<li><a href="#" onclick="toggle_visibility('MtRM');">Mark the Rage Monster</a></li>
+				<ul id="MtRM" style="display:none;">
+					<li>Type: Special, lured to the boss with the least wounds</li>
+					<li>HP: 18</li>
+					<li>Ability: Takes -1 damage from normal trap rooms, destroys any advanced trap room he survives.</li>
+					<li>Lore: You won't like him when he's angry. Which is unfortunate, because he's pretty much always angry.</li>
+				</ul>
+				<li>Special</li>
+				<li>Special</li>
+				<li><a href="#" onclick="toggle_visibility('MtDS');">Matt the Dragon Slayer</a></li>
+				<ul id="MtDS" style="display:none;">
+					<li>Type: Warrior</li>
+					<li>HP: 15</li>
+					<li>Ability: Takes -1 damage from normal monster rooms, destroys any advanced monster room he survives.</li>
+					<li>Lore: Matt is of the plain quiet folk, and has no use for adventures. Nasty, disturbing, and uncomfortable things. Unless there's a damsel involved. Then all bets are off.</li>
+				</ul>
+				<li><a href="#" onclick="toggle_visibility('C');">Christine the Problem Solver</a></li>
+				<ul id="C" style="display:none;">
+					<li>Type: Thief</li>
+					<li>HP: 15</li>
+					<li>Ability: </li>
+					<li>Lore: Christine has a very particular set of skills, skills she has acquired over a very long career, skills that make her a nightmare for monsters like you.</li>
+				</ul>
+				<li><a href="#" onclick="toggle_visibility('KtSW');">Kelly the Sea Witch</a></li>
+				<ul id="KtSW" style="display:none;">
+					<li>Type: Mage</li>
+					<li>HP: 15</li>
+					<li>Ability: Takes no damage from aquatic rooms, takes -1 damage from rooms with mage treasure.</li>
+					<li>Lore: She is the ruler of all the ocean. Well, parts of it. The waves obey her every whim. Usually. The sea and all its spoils bow to her power. Sometimes.</li>
+				</ul>
+				<li><a href="#" onclick="toggle_visibility('MtDH');">Mary the Demon Hunter</a></li>
+				<ul id="MtDH" style="display:none;">
+					<li>Type: Cleric</li>
+					<li>HP: 15</li>
+					<li>Ability: Destroys every room with cleric treasure that she survives.</li>
+					<li>Lore: She is unfailingly kind, merciful, generous, and forgiving. Except to bad guys. Bad guys are in trouble.</li>
+				</ul>
+				<li>Tyler - Warrior/Thief</li>
+				<li>Warrior/Mage</li>
+				<li>Angela - Warrior/Cleric</li>
+				<li>Colin - Thief/Mage</li>
+				<li>Ryan - Thief/Cleric</li>
+				<li>Matthew - Mage/Cleric</li>
+			</ul>
+			<h3><a href="#" onclick="toggle_visibility('DH');">Dark Heroes</a></h3>
+			<ul id="DH" style="display:none;">
+				<li>Warrior</li>
+				<li>Thief</li>
+				<li>Mage</li>
+				<li>Cleric</li>
+				<li>Warrior/Thief (Pirate/Assassin)</li>
+				<li>Warrior/Mage</li>
+				<li>Warrior/Cleric</li>
+				<li>Thief/Mage</li>
+				<li>Thief/Cleric</li>
+				<li>Mage/Cleric</li>
+			</ul>
+		</ul>
+	</body>
+
+<!--  
+scylla
+seymour/pirahna plants
+spiders
+haunted house
+
+cleric/warrior - paladin
+thief/warrior - swashbuckler/explorer/adventurer
+-->
+
+<!--
+html,body	{margin:0; padding:0; height:100%; overflow-y:hidden;	
+background-image: url('Backgrounds/background16.jpg');
+background-repeat: no-repeat;
+background-position: center; 
+background-attachment: fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;}
+body	{color:white;}
+img		{border:3px white solid;}
+p		{text-align:justify;}
+a:link, a:visited	{color:white;}
+a:hover, a:active	{color:orange;}
+.center	{text-align:center; display:block;}
+-->
+
+</html>
