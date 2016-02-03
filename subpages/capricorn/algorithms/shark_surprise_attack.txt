@@ -1,0 +1,6 @@
+//this is for when the player gets caught off guard
+
+player.hit_points = player.hit_points - 4
+if (player.hit_points < 1){
+	player.hit_points = 1
+}

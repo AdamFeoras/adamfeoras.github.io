@@ -1,0 +1,150 @@
+if ((larder.fish = 0) and (larder.lobsters = 0) and (larder.crabs = 0) and (larder.mussels = 0) and (larder.oysters = 0)) {
+  msg ("Your larder is empty. You should resolve that as soon as possible.")
+}
+else {
+  inv_count = 0
+  if (larder.fish > 0) {
+    inv_count = inv_count + 1
+  }
+  if (larder.lobsters > 0) {
+    inv_count = inv_count + 1
+  }
+  if (larder.crabs > 0) {
+    inv_count = inv_count + 1
+  }
+  if (larder.mussels > 0) {
+    inv_count = inv_count + 1
+  }
+  if (larder.oysters > 0) {
+    inv_count = inv_count + 1
+  }
+  OutputTextNoBr ("You have ")
+  if (larder.fish > 0) {
+    if (larder.fish = 1) {
+      OutputTextNoBr ("1 fish filet")
+      if ((larder.lobsters = 0) and (larder.crabs = 0) and (larder.mussels = 0) and (larder.oysters = 0)) {
+        msg (" chilling in your larder.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      OutputTextNoBr (larder.fish + " fish filets")
+      if ((larder.lobsters = 0) and (larder.crabs = 0) and (larder.mussels = 0) and (larder.oysters = 0)) {
+        msg (" chilling in your larder.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (larder.lobsters > 0) {
+    if (larder.lobsters = 1) {
+      if ((larder.fish > 0) and ((larder.crabs = 0) and (larder.mussels = 0) and (larder.oysters = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 lobster")
+      if ((larder.crabs = 0) and (larder.mussels = 0) and (larder.oysters = 0)) {
+        msg (" chilling in your larder.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if ((larder.fish > 0) and ((larder.crabs = 0) and (larder.mussels = 0) and (larder.oysters = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (larder.lobsters + " lobsters")
+      if ((larder.crabs = 0) and (larder.mussels = 0) and (larder.oysters = 0)) {
+        msg (" chilling in your larder.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (larder.crabs > 0) {
+    if (larder.crabs = 1) {
+      if (((larder.fish > 0) or (larder.lobsters > 0)) and ((larder.mussels = 0) and (larder.oysters = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 crab")
+      if ((larder.mussels = 0) and (larder.oysters = 0)) {
+        msg (" chilling in your larder.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if (((larder.fish > 0) or (larder.lobsters > 0)) and ((larder.mussels = 0) and (larder.oysters = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (larder.crabs + " crabs")
+      if ((larder.mussels = 0) and (larder.oysters = 0)) {
+        msg (" chilling in your larder.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (larder.mussels > 0) {
+    if (larder.mussels = 1) {
+      if (((larder.fish > 0) or (larder.lobsters > 0) or (larder.crabs > 0)) and (larder.oysters = 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 mussel")
+      if (larder.oysters = 0) {
+        msg (" chilling in your larder.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if (((larder.fish > 0) or (larder.lobsters > 0) or (larder.crabs > 0)) and (larder.oysters = 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (larder.mussels + " mussels")
+      if (larder.oysters = 0) {
+        msg (" chilling in your larder.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (larder.oysters > 0) {
+    if (larder.oysters = 1) {
+      if ((larder.fish > 0) or (larder.lobsters > 0) or (larder.crabs > 0) or (larder.mussels > 0)) {
+        OutputTextNoBr (" and ")
+      }
+      msg ("1 oyster chilling in your larder.")
+    }
+    else {
+      if ((larder.fish > 0) or (larder.lobsters > 0) or (larder.crabs > 0) or (larder.mussels > 0)) {
+        OutputTextNoBr (" and ")
+      }
+      msg (larder.oysters + " oysters chilling in your larder.")
+    }
+  }
+}

@@ -1,0 +1,315 @@
+if ((cache.spices = 0) and (cache.sugar = 0) and (cache.wine = 0) and (cache.tobacco = 0) and (cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+  msg ("Your cache is empty. Which means you're either a very good pirate or a very bad pirate.")
+}
+else {
+  inv_count = 0
+  if (cache.spices > 0) {
+    inv_count = inv_count + 1
+  }
+  if (cache.sugar > 0) {
+    inv_count = inv_count + 1
+  }
+  if (cache.wine > 0) {
+    inv_count = inv_count + 1
+  }
+  if (cache.tobacco > 0) {
+    inv_count = inv_count + 1
+  }
+  if (cache.oil > 0) {
+    inv_count = inv_count + 1
+  }
+  if (cache.honey > 0) {
+    inv_count = inv_count + 1
+  }
+  if (cache.dye > 0) {
+    inv_count = inv_count + 1
+  }
+  if (cache.silk > 0) {
+    inv_count = inv_count + 1
+  }
+  if (cache.coffee > 0) {
+    inv_count = inv_count + 1
+  }
+  if (cache.cocoa > 0) {
+    inv_count = inv_count + 1
+  }
+  OutputTextNoBr ("You have ")
+  if (cache.spices > 0) {
+    if (cache.spices = 1) {
+      OutputTextNoBr ("1 bag of spices")
+      if ((cache.sugar = 0) and (cache.wine = 0) and (cache.tobacco = 0) and (cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      OutputTextNoBr (cache.spices + " bags of spices")
+      if ((cache.sugar = 0) and (cache.wine = 0) and (cache.tobacco = 0) and (cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (cache.sugar > 0) {
+    if (cache.sugar = 1) {
+      if ((cache.spices > 0) and ((cache.wine = 0) and (cache.tobacco = 0) and (cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 large bag of sugar")
+      if ((cache.wine = 0) and (cache.tobacco = 0) and (cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if ((cache.spices > 0) and ((cache.wine = 0) and (cache.tobacco = 0) and (cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (cache.sugar + " large bags of sugar")
+      if ((cache.wine = 0) and (cache.tobacco = 0) and (cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (cache.wine > 0) {
+    if (cache.wine = 1) {
+      if (((cache.spices > 0) or (cache.sugar > 0)) and ((cache.tobacco = 0) and (cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 large cask of wine")
+      if ((cache.tobacco = 0) and (cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if (((cache.spices > 0) or (cache.sugar > 0)) and ((cache.tobacco = 0) and (cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (cache.wine + " large casks of wine")
+      if ((cache.tobacco = 0) and (cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (cache.tobacco > 0) {
+    if (cache.tobacco = 1) {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.wine > 0)) and ((cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 small barrel of tobacco")
+      if ((cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.wine > 0)) and ((cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (cache.tobacco + " small barrels of tobacco")
+      if ((cache.oil = 0) and (cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (cache.oil > 0) {
+    if (cache.oil = 1) {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0)) and ((cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 sealed jar of olive oil")
+      if ((cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0)) and ((cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (cache.oil + " sealed jars of olive oil")
+      if ((cache.honey = 0) and (cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (cache.honey > 0) {
+    if (cache.honey = 1) {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0) or (cache.oil > 0)) and ((cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 sealed jar of honey")
+      if ((cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0) or (cache.oil > 0)) and ((cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (cache.honey + " sealed jars of honey")
+      if ((cache.dye = 0) and (cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (cache.dye > 0) {
+    if (cache.dye = 1) {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0) or (cache.oil > 0) or (cache.honey > 0)) and ((cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 case of assorted dyes")
+      if ((cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0) or (cache.oil > 0) or (cache.honey > 0)) and ((cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (cache.dye + " cases of assorted dyes")
+      if ((cache.silk = 0) and (cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (cache.silk > 0) {
+    if (cache.silk = 1) {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0) or (cache.oil > 0) or (cache.honey > 0) or (cache.dye > 0)) and ((cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 bolt of silk")
+      if ((cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0) or (cache.oil > 0) or (cache.honey > 0) or (cache.dye > 0)) and ((cache.coffee = 0) and (cache.cocoa = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (cache.silk + " bolts of silk")
+      if ((cache.coffee = 0) and (cache.cocoa = 0)) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (cache.coffee > 0) {
+    if (cache.coffee = 1) {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0) or (cache.oil > 0) or (cache.honey > 0) or (cache.dye > 0) or (cache.silk > 0)) and (cache.cocoa = 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 large bag of coffee beans")
+      if (cache.cocoa = 0) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0) or (cache.oil > 0) or (cache.honey > 0) or (cache.dye > 0) or (cache.silk > 0)) and (cache.cocoa = 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (cache.coffee + " large bags of coffee beans")
+      if (cache.cocoa = 0) {
+        msg (" hoarded in your cache.")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (cache.cocoa > 0) {
+    if (cache.cocoa = 1) {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0) or (cache.oil > 0) or (cache.honey > 0) or (cache.dye > 0) or (cache.silk > 0)) and (cache.coffee = 0)) {
+        OutputTextNoBr (" and ")
+      }
+      msg ("1 large bag of cocoa beans hoarded in your cache.")
+    }
+    else {
+      if (((cache.spices > 0) or (cache.sugar > 0) or (cache.tobacco > 0) or (cache.wine > 0) or (cache.oil > 0) or (cache.honey > 0) or (cache.dye > 0) or (cache.silk > 0)) and (cache.coffee = 0)) {
+        OutputTextNoBr (" and ")
+      }
+      msg (cache.cocoa + " large bags of cocoa beans hoarded in your cache.")
+    }
+  }
+}

@@ -1,0 +1,1381 @@
+if ((collection.murex = 0) and (collection.trocus = 0) and (collection.turban = 0) and (collection.abalone = 0) and (collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0) and (collection.variable_stromb = 0) and (collection.persian_conch = 0) and (collection.rams_horn = 0) and (collection.paper_nautilus = 0) and (collection.sand_dollar = 0) and (collection.shark_tooth = 0) and (collection.sea_glass_white = 0) and (collection.sea_glass_blue = 0) and (collection.sea_glass_green = 0) and (collection.pearl = 0) and (collection.megalodon_tooth = 0) and (collection.merfolk_comb = 0) and (collection.merfolk_dagger = 0) and (collection.merfolk_necklace = 0) and (collection.driftwood = 0) and (collection.coral = 0) and (collection.mermaid_purse = 0) and (collection.feather = 0)) {
+  OutputTextNoBr ("Your sea collection is empty. What kind of beach bum are you?")
+}
+else {
+  inv_count = 0
+  if (collection.murex > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.trocus > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.turban > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.abalone > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.ark > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.bittersweet > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.bonnet > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.bubble > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.cerith > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.cockle > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.cone > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.keyhole_limpet > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.limpet > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.margin > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.nassa > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.nautica > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.periwinkle > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.scallop > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.tellin > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.triton > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.turritella > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.wentletrap > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.whelk > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.cowrie > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.mitre > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.spindle > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.thorny_oyster > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.tonna > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.bursa > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.volute > 0) {
+    inv_count = inv_count + 1
+  }
+  if (inv_count > 0) {
+    OutputTextNoBr ("You have ")
+    // murex shell
+    if (collection.murex > 0) {
+      if (collection.murex = 1) {
+        OutputTextNoBr ("1 murex shell")
+        if ((collection.trocus = 0) and (collection.turban = 0) and (collection.abalone = 0) and (collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        OutputTextNoBr (collection.murex + " murex shells")
+        if ((collection.trocus = 0) and (collection.turban = 0) and (collection.abalone = 0) and (collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // trocus shell
+    if (collection.trocus > 0) {
+      if (collection.trocus = 1) {
+        if ((collection.murex > 0) and ((collection.turban = 0) and (collection.abalone = 0) and (collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 trocus shell")
+        if ((collection.turban = 0) and (collection.abalone = 0) and (collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if ((collection.murex > 0) and ((collection.turban = 0) and (collection.abalone = 0) and (collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.trocus + " trocus shells")
+        if ((collection.turban = 0) and (collection.abalone = 0) and (collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // turban shell
+    if (collection.turban > 0) {
+      if (collection.turban = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0)) and ((collection.abalone = 0) and (collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 turban shell")
+        if ((collection.abalone = 0) and (collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0)) and ((collection.abalone = 0) and (collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.turban + " turban shells")
+        if ((collection.abalone = 0) and (collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // abalone shell
+    if (collection.abalone > 0) {
+      if (collection.abalone = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0)) and ((collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 abalone shell")
+        if ((collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0)) and ((collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.abalone + " abalone shells")
+        if ((collection.ark = 0) and (collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // ark shell
+    if (collection.ark > 0) {
+      if (collection.ark = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0)) and ((collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 ark shell")
+        if ((collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0)) and ((collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.ark + " ark shells")
+        if ((collection.bittersweet = 0) and (collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // bittersweet shell
+    if (collection.bittersweet > 0) {
+      if (collection.bittersweet = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0)) and ((collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 bittersweet shell")
+        if ((collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0)) and ((collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.bittersweet + " bittersweet shells")
+        if ((collection.bonnet = 0) and (collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // bonnet shell
+    if (collection.bonnet > 0) {
+      if (collection.bonnet = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0)) and ((collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 bonnet shell")
+        if ((collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0)) and ((collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.bonnet + " bonnet shells")
+        if ((collection.bubble = 0) and (collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // bubble shell
+    if (collection.bubble > 0) {
+      if (collection.bubble = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0)) and ((collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 bubble shell")
+        if ((collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0)) and ((collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.bubble + " bubble shells")
+        if ((collection.cerith = 0) and (collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // cerith shell
+    if (collection.cerith > 0) {
+      if (collection.cerith = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0)) and ((collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 cerith shell")
+        if ((collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0)) and ((collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.cerith + " cerith shells")
+        if ((collection.cockle = 0) and (collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // cockle shell
+    if (collection.cockle > 0) {
+      if (collection.cockle = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0)) and ((collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 cockle shell")
+        if ((collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0)) and ((collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.cockle + " cockle shells")
+        if ((collection.cone = 0) and (collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // cone shell
+    if (collection.cone > 0) {
+      if (collection.cone = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0)) and ((collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 cone shell")
+        if ((collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0)) and ((collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.cone + " cone shells")
+        if ((collection.keyhole_limpet = 0) and (collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // keyhole limpet shell
+    if (collection.keyhole_limpet > 0) {
+      if (collection.keyhole_limpet = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0)) and ((collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 keyhole limpet shell")
+        if ((collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0)) and ((collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.keyhole_limpet + " keyhole limpet shells")
+        if ((collection.limpet = 0) and (collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // limpet shell
+    if (collection.limpet > 0) {
+      if (collection.limpet = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0)) and ((collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 limpet shell")
+        if ((collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0)) and ((collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.limpet + " limpet shells")
+        if ((collection.margin = 0) and (collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // margin shell
+    if (collection.margin > 0) {
+      if (collection.margin = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0)) and ((collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 margin shell")
+        if ((collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0)) and ((collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.margin + " margin shells")
+        if ((collection.nassa = 0) and (collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // nassa shell
+    if (collection.nassa > 0) {
+      if (collection.nassa = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0)) and ((collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 nassa shell")
+        if ((collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0)) and ((collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.nassa + " nassa shells")
+        if ((collection.nautica = 0) and (collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // nautica shell
+    if (collection.nautica > 0) {
+      if (collection.nautica = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0)) and ((collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 nautica shell")
+        if ((collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0)) and ((collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.nautica + " nautica shells")
+        if ((collection.periwinkle = 0) and (collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // periwinkle shell
+    if (collection.periwinkle > 0) {
+      if (collection.periwinkle = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0)) and ((collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 periwinkle shell")
+        if ((collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0)) and ((collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.periwinkle + " periwinkle shells")
+        if ((collection.scallop = 0) and (collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // scallop shell
+    if (collection.scallop > 0) {
+      if (collection.scallop = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0)) and ((collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 scallop shell")
+        if ((collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0)) and ((collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.scallop + " scallop shells")
+        if ((collection.tellin = 0) and (collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // tellin shell
+    if (collection.tellin > 0) {
+      if (collection.tellin = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0)) and ((collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 tellin shell")
+        if ((collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0)) and ((collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.tellin + " tellin shells")
+        if ((collection.triton = 0) and (collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // triton shell
+    if (collection.triton > 0) {
+      if (collection.triton = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0)) and ((collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 triton shell")
+        if ((collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0)) and ((collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.triton + " triton shells")
+        if ((collection.turritella = 0) and (collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // turritella shells
+    if (collection.turritella > 0) {
+      if (collection.turritella = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0)) and ((collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 turritella shell")
+        if ((collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0)) and ((collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.turritella + " turritella shells")
+        if ((collection.wentletrap = 0) and (collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // wentletrap shell
+    if (collection.wentletrap > 0) {
+      if (collection.wentletrap = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0)) and ((collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 wentletrap shell")
+        if ((collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0)) and ((collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.wentletrap + " wentletrap shells")
+        if ((collection.whelk = 0) and (collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // whelk shell
+    if (collection.whelk > 0) {
+      if (collection.whelk = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0)) and ((collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 whelk shell")
+        if ((collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0)) and ((collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.whelk + " whelk shells")
+        if ((collection.cowrie = 0) and (collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // cowrie shell
+    if (collection.cowrie > 0) {
+      if (collection.cowrie = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0)) and ((collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 cowrie shell")
+        if ((collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0)) and ((collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.cowrie + " cowrie shells")
+        if ((collection.mitre = 0) and (collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // mitre shell
+    if (collection.mitre > 0) {
+      if (collection.mitre = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0)) and ((collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 mitre shell")
+        if ((collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0)) and ((collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.mitre + " mitre shells")
+        if ((collection.spindle = 0) and (collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // spindle shell
+    if (collection.spindle > 0) {
+      if (collection.spindle = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0) or (collection.mitre > 0)) and ((collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 spindle shell")
+        if ((collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0) or (collection.mitre > 0)) and ((collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.spindle + " spindle shells")
+        if ((collection.thorny_oyster = 0) and (collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // thorny oyster shell
+    if (collection.thorny_oyster > 0) {
+      if (collection.thorny_oyster = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0) or (collection.mitre > 0) or (collection.spindle > 0)) and ((collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 thorny oyster shell")
+        if ((collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0) or (collection.mitre > 0) or (collection.spindle > 0)) and ((collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.thorny_oyster + " thorny oyster shells")
+        if ((collection.tonna = 0) and (collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // tonna shell
+    if (collection.tonna > 0) {
+      if (collection.tonna = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0) or (collection.mitre > 0) or (collection.spindle > 0) or (collection.thorny_oyster > 0)) and ((collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 tonna shell")
+        if ((collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0) or (collection.mitre > 0) or (collection.spindle > 0) or (collection.thorny_oyster > 0)) and ((collection.bursa = 0) and (collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.tonna + " tonna shells")
+        if ((collection.bursa = 0) and (collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // bursa shell
+    if (collection.bursa > 0) {
+      if (collection.bursa = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0) or (collection.mitre > 0) or (collection.spindle > 0) or (collection.thorny_oyster > 0) or (collection.tonna > 0)) and ((collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 bursa shell")
+        if ((collection.volute = 0)) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0) or (collection.mitre > 0) or (collection.spindle > 0) or (collection.thorny_oyster > 0) or (collection.tonna > 0)) and ((collection.volute = 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.bursa + " bursa shells")
+        if (collection.volute = 0) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // volute shell
+    if (collection.volute > 0) {
+      if (collection.volute = 1) {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0) or (collection.mitre > 0) or (collection.spindle > 0) or (collection.thorny_oyster > 0) or (collection.tonna > 0) or (collection.bursa > 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 volute shell.")
+      }
+      else {
+        if (((collection.murex > 0) or (collection.trocus > 0) or (collection.turban > 0) or (collection.abalone > 0) or (collection.ark > 0) or (collection.bittersweet > 0) or (collection.bonnet > 0) or (collection.bubble > 0) or (collection.cerith > 0) or (collection.cockle > 0) or (collection.cone > 0) or (collection.keyhole_limpet > 0) or (collection.limpet > 0) or (collection.margin > 0) or (collection.nassa > 0) or (collection.nautica > 0) or (collection.periwinkle > 0) or (collection.scallop > 0) or (collection.tellin > 0) or (collection.triton > 0) or (collection.turritella > 0) or (collection.wentletrap > 0) or (collection.whelk > 0) or (collection.cowrie > 0) or (collection.mitre > 0) or (collection.spindle > 0) or (collection.thorny_oyster > 0) or (collection.tonna > 0) or (collection.bursa > 0))) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.bursa + " bursa shells.")
+      }
+    }
+  }
+  inv_count = 0
+  if (collection.variable_stromb > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.persian_conch > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.rams_horn > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.paper_nautilus > 0) {
+    inv_count = inv_count + 1
+  }
+  if (inv_count > 0) {
+    if (inv_count = 1) {
+      OutputTextNoBr ("Holding a place of special distinction in the display case is ")
+    }
+    else {
+      OutputTextNoBr ("Holding places of special distinction in the display case are ")
+    }
+    if (collection.variable_stromb > 0) {
+      OutputTextNoBr ("a wildly colorful, tiger-striped variable stromb")
+      if ((collection.persian_conch = 0) and (collection.rams_horn = 0) and (collection.paper_nautilus = 0)) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    if (collection.persian_conch > 0) {
+      if ((collection.variable_stromb > 0) and ((collection.rams_horn = 0) and (collection.paper_nautilus = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("a lovely, red marbled persian conch")
+      if ((collection.rams_horn = 0) and (collection.paper_nautilus = 0)) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    if (collection.rams_horn > 0) {
+      if (((collection.variable_stromb > 0) or (collection.persian_conch > 0)) and (collection.paper_nautilus = 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("a shock-white ram's horn shell")
+      if (collection.paper_nautilus = 0) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    if (collection.paper_nautilus > 0) {
+      if ((collection.variable_stromb > 0) or (collection.persian_conch > 0) or (collection.rams_horn > 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("a delicate argonaut shell.")
+    }
+  }
+  inv_count = 0
+  if (collection.sand_dollar > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.shark_tooth > 0) {
+    inv_count = inv_count + 1
+  }
+  if (inv_count > 0) {
+    OutputTextNoBr ("You have ")
+    // sand_dollar
+    if (collection.sand_dollar > 0) {
+      if (collection.sand_dollar = 1) {
+        OutputTextNoBr ("1 sand dollar")
+        if (collection.shark_tooth = 0) {
+          OutputTextNoBr (" sitting on your mantelpiece. ")
+        }
+      }
+      else {
+        OutputTextNoBr (collection.sand_dollar + " sand dollars")
+        if (collection.shark_tooth = 0) {
+          OutputTextNoBr (" scattered across your mantelpiece. ")
+        }
+      }
+    }
+    // shark_tooth
+    if (collection.shark_tooth > 0) {
+      if (collection.shark_tooth = 1) {
+        if (collection.sand_dollar > 0) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 shark tooth sitting on your mantelpiece. ")
+      }
+      else {
+        if (collection.sand_dollar > 0) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.shark_tooth + " shark teeth scattered across your mantelpiece. ")
+      }
+    }
+  }
+  inv_count = 0
+  if (collection.sea_glass_white > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.sea_glass_blue > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.sea_glass_green > 0) {
+    inv_count = inv_count + 1
+  }
+  if (inv_count > 0) {
+    OutputTextNoBr ("There's a crystal urn on the mantelpiece filled with ")
+    // white sea glass
+    if (collection.sea_glass_white > 0) {
+      if (collection.sea_glass_white = 1) {
+        OutputTextNoBr ("1 piece of white sea glass")
+        if ((collection.sea_glass_blue = 0) and (collection.sea_glass_green = 0)) {
+          OutputTextNoBr (". ")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        OutputTextNoBr (collection.sea_glass_white + " pieces of white sea glass")
+        if ((collection.sea_glass_blue = 0) and (collection.sea_glass_green = 0)) {
+          OutputTextNoBr (". ")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // blue sea glass
+    if (collection.sea_glass_blue > 0) {
+      if (collection.sea_glass_blue = 1) {
+        if ((collection.sea_glass_white > 0) and (collection.sea_glass_green = 0)) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 piece of blue sea glass")
+        if (collection.sea_glass_green = 0) {
+          OutputTextNoBr (". ")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+      else {
+        if ((collection.sea_glass_white > 0) and (collection.sea_glass_green = 0)) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.sea_glass_blue + " pieces of blue sea glass")
+        if (collection.sea_glass_green = 0) {
+          OutputTextNoBr (". ")
+        }
+        else {
+          if (inv_count <> 2) {
+            OutputTextNoBr (", ")
+          }
+        }
+      }
+    }
+    // green sea glass
+    if (collection.sea_glass_green > 0) {
+      if (collection.sea_glass_green = 1) {
+        if ((collection.sea_glass_white > 0) or (collection.sea_glass_blue > 0)) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 piece of green sea glass. ")
+      }
+      else {
+        if ((collection.sea_glass_white > 0) or (collection.sea_glass_blue > 0)) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.sea_glass_green + " pieces of green sea glass. ")
+      }
+    }
+  }
+  if (collection.pearl > 0) {
+    OutputTextNoBr ("The tiny, gilded oak chest on your mantelpiece contains ")
+    if (collection.pearl = 1) {
+      OutputTextNoBr ("1 pearl. ")
+    }
+    else {
+      OutputTextNoBr (collection.pearl + " pearls. ")
+    }
+  }
+  inv_count = 0
+  if (collection.megalodon_tooth > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.merfolk_comb > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.merfolk_dagger > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.merfolk_necklace > 0) {
+    inv_count = inv_count + 1
+  }
+  if (inv_count > 0) {
+    OutputTextNoBr ("Placed front and center on the mantelpiece with special honor ")
+    if (inv_count = 1) {
+      OutputTextNoBr ("is ")
+    }
+    else {
+      OutputTextNoBr ("are ")
+    }
+    if (collection.megalodon_tooth > 0) {
+      OutputTextNoBr ("an impossibly big shark tooth, as long and wide as your hand")
+      if ((collection.merfolk_comb = 0) and (collection.merfolk_dagger = 0) and (collection.merfolk_necklace = 0)) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    if (collection.merfolk_comb > 0) {
+      if ((collection.megalodon_tooth > 0) and ((collection.merfolk_dagger = 0) and (collection.merfolk_necklace = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("a large, masterfully gilded scallop shell cut with teeth like a comb")
+      if ((collection.merfolk_dagger = 0) and (collection.merfolk_necklace = 0)) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    if (collection.merfolk_dagger > 0) {
+      if (((collection.megalodon_tooth > 0) or (collection.merfolk_comb > 0)) and (collection.merfolk_necklace = 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("a lovely, curved dagger carved from a single piece of whalebone")
+      if (collection.merfolk_necklace = 0) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    if (collection.merfolk_necklace > 0) {
+      if ((collection.megalodon_tooth > 0) or (collection.merfolk_comb > 0) or (collection.merfolk_necklace > 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("a strange necklace of irregular pearls and auger shells.")
+    }
+  }
+  inv_count = 0
+  if (collection.driftwood > 0) {
+    inv_count = inv_count + 1
+  }
+  if (collection.coral > 0) {
+    inv_count = inv_count + 1
+  }
+  if (inv_count > 0) {
+    OutputTextNoBr ("You have ")
+    // driftwood
+    if (collection.driftwood > 0) {
+      if (collection.driftwood = 1) {
+        OutputTextNoBr ("1 piece of driftwood")
+        if (collection.coral = 0) {
+          OutputTextNoBr (" arranged around your fireplace")
+          //
+          if (collection.mermaid_purse = 0) {
+            OutputTextNoBr (".")
+          }
+          else {
+            if (collection.mermaid_purse = 1) {
+              OutputTextNoBr (", along with a copper bucket with 1 mermaid purse inside.")
+            }
+            else {
+              OutputTextNoBr (", along with a copper bucket with " + collection.mermaid_purse + " mermaid purses inside.")
+            }
+          }
+        }
+      }
+      else {
+        OutputTextNoBr (collection.driftwood + " pieces of driftwood")
+        if (collection.coral = 0) {
+          OutputTextNoBr (" arranged around your fireplace")
+          //
+          if (collection.mermaid_purse = 0) {
+            OutputTextNoBr (".")
+          }
+          else {
+            if (collection.mermaid_purse = 1) {
+              OutputTextNoBr (", along with a copper bucket with 1 mermaid purse inside.")
+            }
+            else {
+              OutputTextNoBr (", along with a copper bucket with " + collection.mermaid_purse + " mermaid purses inside.")
+            }
+          }
+        }
+      }
+    }
+    // coral
+    if (collection.coral > 0) {
+      if (collection.coral = 1) {
+        if (collection.driftwood > 0) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr ("1 piece of coral arranged around your fireplace")
+        //
+        if (collection.mermaid_purse = 0) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (collection.mermaid_purse = 1) {
+            OutputTextNoBr (", along with a copper bucket with 1 mermaid purse inside.")
+          }
+          else {
+            OutputTextNoBr (", along with a copper bucket with " + collection.mermaid_purse + " mermaid purses inside.")
+          }
+        }
+      }
+      else {
+        if (collection.driftwood > 0) {
+          OutputTextNoBr (" and ")
+        }
+        OutputTextNoBr (collection.coral + " pieces of coral arranged around your fireplace")
+        //
+        if (collection.mermaid_purse = 0) {
+          OutputTextNoBr (".")
+        }
+        else {
+          if (collection.mermaid_purse = 1) {
+            OutputTextNoBr (", along with a copper bucket with 1 mermaid purse inside.")
+          }
+          else {
+            OutputTextNoBr (", along with a copper bucket with " + collection.mermaid_purse + " mermaid purses inside.")
+          }
+        }
+      }
+    }
+  }
+  if ((collection.mermaid_purse > 0) and (collection.driftwood = 0) and (collection.coral = 0)) {
+    if (collection.mermaid_purse = 1) {
+      OutputTextNoBr (" You have 1 mermaid purse in a copper bucket next to the fireplace.")
+    }
+    else {
+      OutputTextNoBr (" You have " + collection.mermaid_purse + " mermaid purses in a copper bucket next to the fireplace.")
+    }
+  }
+  if (collection.feather > 0) {
+    if (collection.feather = 1) {
+      OutputTextNoBr (" You have 1 feather hanging on the wall at the foot of your bed.")
+    }
+    else if (collection.feather < 10) {
+      OutputTextNoBr (" You have " + collection.feather + " feathers hanging on the wall at the foot of your bed.")
+    }
+    else {
+      OutputTextNoBr (" You have " + collection.feather + " feathers arranged in the shape of birds on the wall at the foot of your bed.")
+    }
+  }
+}
+OutputTextNoBr ("")

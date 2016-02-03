@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Capricorn</title>
+	<link rel="icon" type="image/jpg" href="capricorn.ico"/>
+		<script type="text/javascript">
+		<!--
+			function toggle_visibility(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+					e.style.display = 'none';
+				else
+					e.style.display = 'block';
+			}
+		//-->
+		</script>
+	<style type="text/css">
+	html 
+	{ 
+	background: url(amalfi.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	}  
+	body {color:#3264C8; margin:5%;}
+	h1 {font-family:sakkal majalla;}
+	h2 {font-family:sakkal majalla;}
+	h3 {font-family:sakkal majalla;}
+	a {color:#3264C8; text-decoration:none;}
+	a:hover {color:#C8D2FF;}
+	.urgent {color:red; font-style:italic; font-weight:bold;}
+	.ongoing {color:#00688B; font-style:italic; font-weight:bold;}
+	.absent {color:steelblue; text-decoration:line-through;}
+	</style>
+</head>
+
+<body>
+
+
+
+<h1><a href="#" onclick="toggle_visibility('to_do_list');">To-Do List</a></h1>
+	<div id="to_do_list" style="display:none;">
+	<span class="urgent">
+	still need to implement reading, first aid<br/>
+	still need to implement clothing<br/>
+	still need to implement banking<br/>
+	finish the descriptions around the villa and towns<br/>
+	</span>
+	<br/>
+	disable player input during combat<br/>
+	<br/>
+	still need to implement economy feature<br/>
+	still need to implement solicited missions<br/>
+	<br/>
+	still need to implement bathing<br/>
+	still need to implement followers<br/>
+	still need to check hit point max and armor class every time you sleep<br/>
+	still need to implement perks/feats/blessings<br/>
+	the menu format of character creation is stopgap; I can make something better than that, easily<br/>
+	you should add an option to have your weapons silvered or bronzed<br/>
+	if you turn in early, you might want to read in bed<br/>
+	<br/>
+	<span class="ongoing">
+	add to the sleep verb what's in the sleep command<br/>
+	take what's in the sport_fish command and add it to a verb on the boat<br/>
+	until further notice, I'm shelving weather, larger ships, and yardsmen<br/>
+	still need to eliminate unnecessary verbs<br/>
+	</span>
+	</div>
+
+<h1><a href="#" onclick="toggle_visibility('amalfi');">Amalfi</a></h1>
+	<div id="amalfi" style="display:none;">
+	Piazza Duomo North<br/>
+	Piazza Duomo South<br/>
+	Cattedrale di Sant'Andrea (Ese) – pray, alms (one florin, a few florins, make it rain), confess<br/>
+	The Flower Stand of the Day Market (Fioraio = Florist) (SE)*<br/>
+	The Animal Stand of the Day Market ( = ) (S)*<br/>
+	The Wine Stand of the Day Market (Vinaio = Vintner) (SW)*<br/>
+	The Produce Stand of the Day Market (Agricoltore = Farmer/Gardener) (Wsw)*<br/>
+	The Meat Stand of the Day Market (Macellaio = Butcher) (Wnw)*<br/>
+	Cantuccio del Medico (“physician's nook”, Medico = Physician) (NW)<br/>
+	Paramenti di Liliana (“Liliana's raiments”) (Sarto, Gioielliere) (“Tailor, Jeweler”) (N)<br/>
+	Il Granchio Reale (“The Royal Crab”) – Matteo: bartender, informant (NE)<br/>
+	Il Ramo d'Oro (“The Golden Bough”, Libreria = Bookstore) (Ene)<br/>
+	Docks – your chances of getting business here are higher and more likely to be profitable<br/>
+	<h2>Il medico</h2>
+		Stepping into the doctor's nook, you are overwhelmed by the complex and vaguely pleasant miasma of smells. <br/>
+
+		The doctor wears the otherworldly medico della peste, a carryover from the nightmare of the Black Death, a full-headed mask with a long, curved beak and big, round, soulless glass eyes tinted very dark red. His tone is unsettlingly deadpan, but he has a sympathetic touch and has been known to treat the poor gratuito – a good man.<br/>
+
+		if (player.hit_points = player.max_hit_points){<br/>
+			The doctor sits you down on his exam table. He listens to your heart with his apparatus, he feels your lymph nodes for swelling. He pats your arm. “Si è sani, signore. You have no need of my services.” You reach for your coin purse, but he waves you away as he goes back to his desk.<br/>
+		}<br/><br/>
+		else if (player.bloodied = true){
+			The doctor lights a few candles and places them by mirrors around the exam table. “Try to relax, signore.” Over the next several minutes, the doctor works his suture needle in and out of your wounds. When he ties off your stitches, he washes them thoroughly with warm water. Then he grinds the peels from poppy stalks to a fine powder in a pestel and mixes it with honey, making a bittersweet-smelling plaster that he applies to the red lips of your closed injuries. “There you are,” he says, washing his hands in his copper basin. “Please take care not to stress the wounds. They need to heal.” You gingerly ease off the table and pay him + 40+2d8 + florins.<br/>
+			player.hit_points = player.hit_points + 4+1d3<br/>
+			if (player.hit_points > player.max_hit_points){<br/>
+				player.hit_points = player.max_hit_points<br/>
+			}<br/>
+			player.bloodied = false<br/>
+			player.doctored = true<br/>
+		}<br/>
+		else if ((player.bloodied = false) and (player.doctored = true)){<br/>
+			msg (“I've done as much as I can for now, signore.”)<br/>
+		}<br/>
+		else{<br/>
+			He takes your temperature with the back of his hand. “You have a slight fever. Maybe an infection.” He walks to his glass cabinet and pulls out a vial of thick brown oil. “Drink this. Sooner rather than later.” You break the wax seal and uncork the vial of strong, herbal smelling oil and swallow it down. You thank the doctor and pay him 20+1d8 florins for his help.<br/>
+			player.hit_points = player.hit_points + 4+1d3<br/>
+			if (player.hit_points > player.max_hit_points){<br/>
+				player.hit_points = player.max_hit_points<br/>
+			}<br/>
+			player.doctored = true<br/>
+		}<br/>
+		<h2>Matteo's place</h2>
+			Matteo runs his ship tight as a harp string. His cousins, the brothers Rocco and Carlo, lean up against either side of the door. When the authorities need someone lifted from the Granchio, they don't get them themselves, ever; they go to Matteo, who decides whether or not to tell Rocco and Carlo to toss the offender into the waiting hands of the authorities outside. Don't pick a fight and don't make a mess, and if you break one of his custom-made Venetian glass steins, he'll have you dumped in the harbour. Simply put, this place is exactly as nice to you as you are to it.<br/>
+			“Salute, Matteo.”<br/>
+			He looks up and smiles. “Domenico. Che piacere vederti. What can I get for you?”<br/>
+			“Ho fame. What's on the menu today?”<br/>
+			“Karina made some “ + room.menu_item + “. It's good.”<br/>
+			They've been eating their wheaties, and their network of scars and surly expressions let you know they've been on the naughty list for quite some time. <br/>
+			Captain X scowls. “Merda. Who told you about that?”<br/>
+			“Matteo.”<br/>
+			“Oh.” His face relaxing. “Capisco. Then you can help me.”<br/>
+			if (player.alignment < - 29){<br/>
+			Carlo puts a steady but unmovable hand on your chest. “Mi dispiace, Domenico. I'm sorry. You can't come in here when you're a wanted man. It's bad for business, amico.”<br/>
+			You start to protest, but shut your mouth and turning, ease off the threshhold.<br/>
+			}<br/>
+	</div>
+
+<h1><a href="#" onclick="toggle_visibility('sorrento');">Sorrento</a></h1>
+	<div id="sorrento" style="display:none;">
+	Piazza Tasso West<br/>
+	Piazza Tasso East<br/>
+	Santuario della Madonna del Carmine (NE) – pray, alms (one florin, a few florins, make it rain), confess<br/>
+	Banca di Sorrento (Bank) (E)<br/>
+	Acciaio Costiera (“Coastal Steel”, Armaiolo = Armourer, Ferraio = Bladesmith) (SE)<br/>
+	Appaltatori Atlantico (“Atlantic contractors”, Appaltatore = Contractor/Farmer) (Sse)<br/>
+	Ufficio Navale (“Naval office”) (Ssw)<br/>
+	Carcere (“jail”) (SW)<br/>
+	Il Cavallo Bianco (The White Horse) (W) – Giovanni: bartender, buyer<br/>
+	Locanda del Fico (“Inn of the Fig/Fig Tree”, Brothel) (NW)<br/>
+	Terme Romane (“Roman Baths”) (Nnw)<br/>
+	Bevilacqua e figli (Bevilacqua and sons, Maestro D'ascia = Shipwright) (Nne)<br/>
+	Docks – it's more unusual to do business at the docks in Sorrento than it is in Amalfi<br/>
+	</div>
+
+<h1><a href="#" onclick="toggle_visibility('beachcombing_finds');">Beachcombing Finds</a></h1>
+<div id="beachcombing_finds" style="display:none;">
+<h2>Gastropods: The Spiraled Shells</h2>
+<h3>Flat dish-like</h3>
+&#10004; Abalone shells (Haliotidae) – 5 species confirmed in the mediterranean<br/>
+&#10004; Keyhole Limpet shells (Fissurellidae) – 27 species confirmed in the mediterranean<br/>
+&#10004; True Limpet Shells (Patellidae, Nacellidae) – 7 and 1 species confirmed in the mediterranean<br/>
+<h3>Long and pointy</h3>
+<span class="absent">Auger shells – confirmed not in in the mediterranean</span><br/>
+&#10004; Cerith shells (Cerithiopsidae, Potamididae) – 25 and 1 species confirmed in the mediterranean<br/>
+&#10004;  Shells (Nassariidae) – 28 species confirmed in the mediterranean<br/>
+&#10004;  Turritella Shells (Turritellidae) – 4 species confirmed in the mediterranean<br/>
+&#10004;  Wentletraps (Epitoniidae) – 29 species confirmed in the mediterranean<br/>
+<h3>Soft Conches</h3>
+<span class="absent">Distorsio Shells – confirmed not in the mediterranean</span><br/>
+&#10004;  Frog/Bursa Shells (Bursidae) – 1 species confirmed in the mediterranean<br/>
+<span class="absent">Harp Shells – confirmed not in the mediterranean</span><br/>
+<span class="absent">Melon/Baler Shells – confirmed not in the mediterranean</span><br/>
+&#10004;  Tonna/Tun Shells (Tonnidae) – 3 species confirmed in the mediterranean<br/>
+<h3>Classic conches</h3>
+&#10004;  Conch Shells (Strombidae) – 2 species confirmed in the mediterranean<br/>
+<span class="absent">Fig Shells – confirmed not in the mediterranean</span><br/>
+&#10004;  Murex Shells (Murcidiae) – 36 species confirmed in the mediterranean<br/>
+&#10004;  Tulips/Spindles/Horse Conchs (Fasciolariidae) – 21 species confirmed in the mediterranean<br/>
+<span class="absent">Vase Shells – confirmed not in the mediterranean</span><br/>
+&#10004;  Volute Shells (Volutidae) – 2 species confirmed in the mediterranean<br/>
+&#10004;  Whelk/Babylon Shells (Buccinidae) – 22 species confirmed in the mediterranean<br/>
+<h3>Vaginas with teeth</h3>
+&#10004;  Cowrie Shells (Cypraeidae) – 7 species confirmed in the mediterranean<br/>
+<h3>Spiral-y “nautilus”-looking</h3>
+<span class="absent">Delphinula Shells – confirmed not in the mediterranean</span><br/>
+&#10004;  Moon/Nautica Shells (Naticidae) – 20 species confirmed in the mediterranean<br/>
+<h3>Close-spun swirls</h3>
+&#10004;  Cone Shells (Conidae) – 4 species confirmed in the mediterranean<br/>
+<span class="absent">Olive Shells – confirmed not in the mediterranean</span><br/>
+&#10004;  Bubble Shells (Bullidae) – 2 species confirmed in the mediterranean<br/>
+&#10004;  Margin Shells (Marginellidae) – 10 species confirmed in the mediterranean<br/>
+<h3>Spinning tops</h3>
+&#10004;  Periwinkles Shells (Littorinidae) – 4 species confirmed in the mediterranean<br/>
+&#10004;  Sundial Shells (Architectonicidae) – 11 species confirmed in the mediterranean<br/>
+&#10004;  Trocus/Top Shells (Trochidae) – 65 species confirmed in the mediterranean<br/>
+<span class="absent">Slit Shells – confirmed not in the mediterranean</span><br/>
+<h3>Under debate</h3>
+&#10004;  Helmet/Cameo/Bonnet Shells (Cassidae) – 4 species confirmed in the mediterranean<br/>
+&#10004;  Mitre Shells (Mitridae) – 3 species confirmed in the mediterranean<br/>
+&#10004;  Triton/Trumpet Shells (Ranellidae) – 7 species confirmed in the mediterranean<br/>
+&#10004;  Turbo Shells/Turbans (Turbinidae) – 32 species confirmed in the mediterranean<br/>
+<span class="absent">Slipper Shells – confirmed not in the mediterranean</span><br/>
+<span class="absent">Turrid Shells – confirmed not in the mediterranean</span><br/>
+<h2>Bivalves: The Clam Shells</h2>
+&#10004;  Ark Shells (Arcidae) – 16 species confirmed in the mediterranean<br/>
+&#10004;  Bittersweets (Glycymerididae) – 4 species confirmed in the mediterranean<br/>
+&#10004;  Cockle Shells (Cardiidae) – 26 species confirmed in the mediterranean<br/>
+&#10004;  Scallops (Pectinidae) – 19 species confirmed in the mediterranean<br/>
+&#10004;  Tellins (Tellinidae) – 20 species confirmed in the mediterranean<br/>
+&#10004;  Thorny Oysters (Spondylidae) – 5 species confirmed in the mediterranean<br/>
+<h2>Organic Floatsam</h2>
+Driftwood<br/>
+Sand Dollar<br/>
+Coral<br/>
+Mermaid Purse<br/>
+Bird Feather<br/>
+Shark Tooth<br/>
+<h2>Manmade Floatsam</h2>
+Sea Glass<br/>
+<h2>Legendary finds – can only be found once</h2>
+Merfolk Dagger<br/>
+Merfolk Comb<br/>
+Merfolk Necklace<br/>
+Megalodon tooth<br/>
+The Variable Stromb<br/>
+The Persian Conch<br/>
+The Ram's Horn Shell<br/>
+The Common Paper Nautilus<br/>
+</div>
+
+<h1><a href="#" onclick="toggle_visibility('learning_skills');">Learning Skills</a></h1>
+<div id="learning_skills" style="display:none;">
+create attribute player.first_aid and player.aided
+read first aid book
+make it so that you can't study all day, and make it take up a good bit of time
+if (player.first_aid > 9){
+	msg (“You lay in bed, open the window to let in the sea breeze, and review your medical texts.”)
+	review = DiceRoll(“1d20”) + skill_check(player.intelligence)
+	if (review > 14){
+		player.intelligence = player.intelligence + 1
+	}
+}
+else {
+	comprehension = DiceRoll(“1d20”) + skill_check(player.intelligence)
+	if (comprehension > 19){
+		[display random text from the book]
+		msg (“You close the book for now, content that you have a working understanding of what you've studied.”)
+		player.first_aid = player.first_aid + 1
+	}
+	else {
+		msg (“You apply yourself, but you can tell you're going to need to go over this section again later.”)
+	}
+}
+latin, greek, music, fencing, painting
+</div>
+
+<h1><a href="#" onclick="toggle_visibility('getting_followers');">Getting Followers</a></h1>
+<div id="getting_followers" style="display:none;">
+every time you dive/beachcomb, there's a chance the potential follower will appear
+if (player.dog_status > 4){
+	[the dog just runs around happily]
+}
+else {
+	befriend_attempt = DiceRoll(“1d20”) + skill_check(player.charisma)
+	if (player.dog_status = 0){
+		if (befriend_attempt > 19){
+			You ease down on one knee as he looks on and hold your hand out to him. “Vieni qui. I'm a friend. Bravo cane. Bravo cane,” you say, letting your smile into your voice. He bows his body and wags; you get up to approach him, sending him skittering off. He stops and turns in place slowly, approaches you for a meter or two, then turns back and trots on down the beach.
+			Player.charisma = player.charisma + 1
+			player.dog_status = player.dog_status + 1
+		}
+		else {
+			You drop to one knee and hold out your hand. “Bravo cane. Come here, boy.” The dog watches you with big glassy eyes, not responding. After a couple of minutes of cajoling, you rise and the dog trots down the beach, head turned slightly in your direction, keeping an eye on you.
+		}
+	}
+	if (player.dog_status = 1){
+		if (befriend_attempt > 19){
+		}
+		else {
+		}
+	}
+	if (player.dog_status = 2){
+		if (befriend_attempt > 19){
+			You play with the dog.
+		}
+		else {
+		}
+	}
+	if (player.dog_status = 3){
+		if (befriend_attempt > 19){
+		}
+		else {
+		}
+	}
+	if (player.dog_status = 4){
+		if (befriend_attempt > 19){
+			You sit down at the edge of the surf. Your dog charges up and collapses in your lap, spilling out each side. “Bravo cane!” you laugh, ruffing up his head, flapping his ears around his face. He closes his eyes and gives you a goofy smile, all four legs in the air and tail whipping sand all over your backside.
+		Player.dog_status = player.dog_status + 1
+		msg (“You gained the dog follower!”)
+		[name your dog]
+		}
+		else {
+			You sit down at the edge of the surf. The dog trots up and sits down in the sand a couple of meters away, smiling and pondering the sea with you. You turn to give him attention, but he turns to you, a peculiar look on his face. You sigh and ease back away. The two of you remain still, quiet, distantly enjoying the other's company.
+		}
+	}
+}
+</div>
+
+<h1><a href="#" onclick="toggle_visibility('cooking');">Cooking</a></h1>
+<div id="cooking" style="display:none;">
+Cooking<br/>
+White = 1 hit point<br/>
+<span style="color:#EDDA74;">Yellow = 1 hit point + 1 constitution</span><br/>
+<span style="color:#6EFF70;">Green = 2 hit points + 1 constitution</span><br/>
+<span style="color:#7EB6FF;">Blue = 2 hit points + 2 constitution</span><br/>
+<span style="color:#CC99CC;">Purple = 3 hits point + 2 constitution</span><br/>
+<span style="color:#F75D59;">Red = 3 hits point + 3 constitution</span><br/>
+///<br/>
+<span style="color:#EDDA74;">Vegetable Soup (3 kinds of veggies)</span><br/>
+Tomato Bisque<br/>
+///<br/>
+<span style="color:#6EFF70;">Rosemary Garlic Bread</span><br/>
+<span style="color:#EDDA74;">Rosemary Bread<br/>
+Garlic Bread</span></br>
+Rustic Bread<br/>
+///<br/>
+<span style="color:#6EFF70;">Bouillabaisse (3 kinds of seafood)</span><br/>
+<span style="color:#EDDA74;">Fish Chowder<br/>
+Steamed Lobster<br/>
+Crabcakes<br/>
+Baked Oysters<br/>
+Steamed Mussels</span><br/>
+///<br/>
+<span style="color:#7EB6FF;">Hunter's Stew (2 kinds of meat)</span><br/>
+<span style="color:#6EFF70;">Roast Venison<br/>
+Roast Boar<br/>
+Roast Pheasant<br/>
+Rabbit Stew</span><br/>
+</div>
+
+
+
+
+<h1><a href="#" onclick="toggle_visibility('legends');">Legends and Episodes</a></h1>
+<div id="legends" style="display:none;">
+<p>There's two integer variables that space out episodes. One tracks how many days it's been since an episode, and another tracks how many days minimum between episodes. Every time you complete an episode, the first integer resets to zero and the second integer is determined by (DiceRoll("2d4")+7). Every time you sleep, the integer increments by one. Then a script runs to see if an episode should be started.</p>
+
+
+<h2>Episode Category: Constants</h2>
+<b>The Lord of Thunderstorms<br/>
+<i>Prerequisites:</b> All episode categories cleared</i><br/>
+Zeus has taken an interest in your woman. He's also taken an interest in the discontinued existence of [sea monster], and claims that if you can provide the latter, he'll waive his need of the former.<br/>
+<b><i>Reward:</b> Assuming you live, your reward is to live.</i><br/>
+	<ul>
+		<li>Hermes makes a cameo in this one. He's the one who initiates the action.</li>
+		<li>Zeus will send you after either Scylla, Behemoth, the Kraken, or the Hydra.</li>
+		<li>If you're up to scratch, Medea, Calypso, Circe, or even Echidna may lend assistance.</li>
+		<li>If you're not up to scratch, Charybdis might devour you on the way.</li>
+		
+		<li>If you're successful on your quest, Zeus comes to tie up loose ends. In order to survive this, the final episode, you have to tally a number of points. If you're up to scratch, your allies will stand beside Poseidon as he claims you as his son. If you don't have enough points, Zeus will kill you even if you fulfill his task.</li>
+		<ul>
+			<li>Having an alignment over -55 is one point.</li>
+			<li>Having an alignment over 54 is one point.</li>
+			<li>Being a champion is three points.</li>
+			<li>Being a thrall (light or dark) is two points.</li>
+			<li>Being a student is one point.</li>
+			<li>Being a blessed is one point.</li>
+		</ul>
+	</ul>
+<br/>
+
+<b>The Renowned Artificer<br/>
+<i>Prerequisites:</b> NOT SURE YET</i><br/>
+Hephaestus has personally come to ask for your assistance. He needs adamantine to forge his famed weapons, but he's out of stock. The only readily accessible stockpile is the one being sat on by rogue cyclops. He's made it clear that if you succeed in retrieving that stockpile, the first beneficiary of his craftsmanship will be you.<br/>
+<b><i>Reward:</b> <br/>
+	<ol>
+		<li>Whaleheart - Fálainakardiá - φάλαινακαρδιά - like Excalibur - "I want a blade whose name mortal men will fear to speak for centuries."</li>
+		<li>Seatitan - Thálassatitánas - Θάλασσατιτάνας - like Peleus' sword - "I want a blade to burn the old monsters from the world."</li>
+		<li>Angeltide - Ángelospalírroia - Άγγελοςπαλίρροια - like Joyeuse - "I want a blade to send the best in Satan's army to hell."</li>
+	</ol>
+</i>
+<b><i>Punishment:</b> None</i><br/>
+
+<h2>Episode Category: Romance</h2>
+<i>becomes available when you reach saltiness level 5</i><br/>
+<b>The Acceptor of Many<br/>
+<i>Prerequisites:</b> Saltiness 5, Fates Chose Pipa</i><br/>
+Hades, the ruler of the Underworld, has gotten it into his head that he can use Pipa to draw you into his clutches. Turn the tables and draw your beloved wife out of them.<br/>
+<b><i>Reward:</b> Scourge of the Underworld perk, Pipa lover, mark of the shadow</i><br/>
+<b><i>Punishment:</b> Death</i><br/>
+<br/>
+<b>The Mother Who Gave Birth<br/>
+<i>Prerequisites:</b> Saltiness 5, Fates Chose Cordelia</i><br/>
+Tiamat, the dark she-dragon of the sea who birthed all writhing things of the deep, has returned from the abyss. Send her back where she came from.<br/>
+<b><i>Reward:</b> Paragon of Triton perk, Cordelia lover, mark of the deep</i><br/>
+<b><i>Punishment:</b> Death</i><br/>
+<br/>
+<b>The Eldritch Watcher<br/>
+<i>Prerequisites:</b> Saltiness 5, Fates Chose Seraphina</i><br/>
+Berstuk, the dark predator, has come to conquer the forests of Italia and thrown nature into chaos. Restore the balance by returning him to the east.<br/>
+<b><i>Reward:</b> Paragon of Pan perk, Seraphina lover, mark of the wood</i><br/>
+<b><i>Punishment:</b> Death</i><br/>
+<br/>
+<!--
+<b>NAME<br/>
+<i>Prerequisites:</b> PREREQUISITES</i><br/>
+DESCRIPTION<br/>
+<b><i>Reward:</b> REWARDS</i><br/>
+<b><i>Punishment:</b> PUNISHMENTS</i><br/>
+<br/>
+marks of the shadow: <br/>
+marks of the deep: <br/>
+marks of the wood: enlarged pupils with saturated irises, youthful look, horns, beard, long hair<br/>
+-->
+
+<h2>Episode Category: Olympians</h2>
+<i>becomes available when you reach saltiness level 4.5</i><br/>
+<i>the idea here is that you have to make 10 skill checks; if you fail three times, you're toast</i><br/>
+Ares/Minotaur/straight fight (war: advantage on all strength checks)<br/>
+Artemis/Actaeon/stealthy hunt (hunting: advantage on all dexterity checks)<br/>
+Aphrodite/Medusa (beauty: advantage on all charisma checks)<br/>
+Athena/Arachne/solve a mystery (wisdom: advantage on all wisdom checks)<br/>
+Dionysus/Captain Aethalides (wine: advantage on all constitution checks)<br/>
+Apollo/Python (light: advantage on all intelligence checks)<br/>
+<!-- Champion of [Olympian] -->
+<h2>Episode Category: Dark Gods</h2>
+<i>becomes available when you reach saltiness level 4</i><br/>
+Phobetor (nightmares: random leveling during sleep)<br/>
+Nyx (night: +2 to skill checks after 9pm)<br/>
+Hecate (witchcraft: +2 against supernatural effects)<br/>
+Nemesis (revenge: chance of doubling skill gains in combat)<br/>
+Thanatos (death: killing an enemy restores hp)<br/>
+Deimos (terror: +1 to d20 upon scoring a critical hit)<br/>
+<!-- Thrall of [God] -->
+<h2>Episode Category: Light Gods</h2>
+<i>becomes available when you reach saltiness level 3</i><br/>
+Persephone (springtime: your plants turn over faster)<br/>
+Asclepius (healing: you get +1 hp at the start of every round in combat)<br/>
+Eros (sex: you get +2 to charisma checks with women)<br/>
+Eos (dawn: you get up 1 hour earlier every day)<br/>
+Iris (rainbow: your paintings are worth quite a bit more)<br/>
+Tyche (luck: you have better luck whilst gambling)<br/>
+<!-- Thrall of [God] -->
+<h2>Episode Category: Patrons</h2>
+<i>becomes available when you reach saltiness level 2</i><br/>
+Graces (virtue: all alignment gains are doubled)<br/>
+Muses (art: +5 to intelligence checks with books)<br/>
+Fates (destiny: riposte ability)<br/>
+Furies (vengeance: counter ability)<br/>
+<!-- Student of the [Patrons] -->
+<h2>Episode Category: Household Gods</h2>
+Hera (women: if you go 100 days without visiting the brothel, your bed heals (1 + 1d3 hp instead of just 2) and your lover will want sex more often)<br/>
+Demeter (agriculture: if you harvest 100 vegetables, your plants yield (1 + 1d3 food instead of just 2) and your garden will be prettier)<br/>
+Hestia (hearth: if you make 100 homecooked meals, your meals are all one level of quality higher)<br/>
+<!-- Blessed of [Household God] -->
+
+<h2>Episode Category: Elemental Demon Lords</h2>
+Satan/vesuvius erupting/Uriel assist (fire)<br/>
+Lucifer/Raphael assist (air)<br/>
+Leviathan/message in bottle/sundering of the deep/Gabriel assist (water)<br/>
+Belial/book/witch hunt/Michael assist (earth)<br/>
+<h2>Episode Category: Sinful Demon Lords</h2>
+Lucifer/pride/witches<br/>
+Leviathan/envy/deep ones<br/>
+Satan/wrath/wraiths<br/>
+Abaddon/gluttony/werewolves<br/>
+Mammon/greed/vampires<br/>
+Belphegor/sloth/revenants<br/>
+Asmodeus/lust/succubi<br/>
+Troll/Goblin/Ogre/Hobgoblin/Bugbear, Golem, Banshee/Fairies/Unseelie, Pesta/returning plague<br/>
+<h2>Episode Category: The Sons of Rahab</h2>
+St. John of God (Rinaldo the Bookseller) vs Cheres (lion god of war)<br/>
+St. Luke (Physician) vs Apep (serpent of malevolent chaos)<br/>
+St. Nicholas (Matteo the Brewer) vs Akhekh (mystical serpent of evil)<br/>
+St. Dorothy (Florist) vs Kek (god of darkness)<br/>
+St. Nicholas von Flue (Liliana the Tailor) vs Ba-Pef (malevolent underworld)<br/>
+St. Francis of Assisi (Rancher) vs Sobek (fertility, military, crocodiles)<br/>
+St. Amand (Vintner) vs Shezmu (bloodthirsty vintner)<br/>
+St. Anthony the Abbot (Butcher) vs Kherty (underworld ram)<br/>
+
+<h2>Episode Category: Tests of Character</h2>
+Fishermen repairing their boat, Shipwreck survivor<br/>
+Lost child, Wild hunt<br/>
+<h2>Episode Category: Repeatable Pirate Episodes</h2>
+<h2>Episode Category: Repeatable Navy Episodes</h2>
+
+<h2>Greco-Roman</h2>
+Mermaids: Hippocampus<br/>
+Nymphs: Centaurs, Satyrs, Dryads<br/>
+<h2>Biblical</h2>
+Legendary Sites and Guardians<br/>
+The Labyrinth<br/>
+Giardino<br/>
+The Headwaters<br/>
+Villa<br/>
+The Catacombs of <br/>
+
+The Wreck of Il Condottiero<br/>
+The Blue Grotto<br/>
+Strait of Messina<br/>
+
+</div>
+
+<h1><a href="#" onclick="toggle_visibility('activities');">Activities</a></h1>
+	<div id="activities" style="display:none;">
+	<h2>Sport Fishing: 4 hours</h2>
+		<i>encounter of any kind (25%)<br/>
+		friendly (90%), hostile (10%)<br/>
+		mundane (90%), mythical (10%)</i><br/>
+		<h3>Friendly Mundane</h3>
+			<ul>
+				<li>Dolphins (30%)</li>
+				<li>Fin Whale (30%)</li>
+				<li>Fishing Boat (10%)</li>
+				<li>Sea Gulls (10%)</li>
+				<li>Curious Thresher Shark (5%)</li>
+				<li>Merchant Boat (5%)</li>
+				<li>Navy Boat (5%)</li>
+				<li>Friendly Pirates (5%)</li>
+			</ul>
+		<h3>Friendly Mythical</h3>
+			<ul>
+				<li>Holy Albatross (randomly levels up one of your stats)</li>
+				<li>Merfolk (how aware and interactive this encounter is depends on your street cred with them)</li>
+			</ul>
+		<h3>Hostile Mundane</h3>
+			<ul>
+				<li>Hostile Pirates</li>
+				<li>Hostile Navy (if alignment is low enough)</li>
+				<li>Oceanic White Tip Sharks</li>
+				<li>Blue Sharks</li>
+				<li>Mako Shark</li>
+			</ul>
+		<h3>Hostile Mythical</h3>
+			<ul>
+				<li>Common Sea Monster, i.e. cetus</li>
+				<li>Sea Serpent</li>
+			</ul>
+	<h2>Diving: 1 hour</h2>
+	<h2>Hunting: 4 hours</h2>
+		<p>Possible catches: pheasants, rabbits, deer, bear, boar</p>
+		<i>encounter of any kind (50%)<br/>
+		friendly (90%), hostile (10%)<br/>
+		mundane (90%), mythical (10%)</i><br/>
+		<h3>Friendly Mundane</h3>
+			<ul>
+				<li>Fox</li>
+				<li>Hunter</li>
+			</ul>
+		<h3>Hostile Mundane</h3>
+			<ul>
+				<li>Bandits</li>
+				<li>Wolves</li>
+			</ul>
+		<h3>Friendly Mythical</h3>
+			<ul>
+				<li>Nymphs</li>
+				<li>Dryad</li>
+				<li>Centaurs</li>
+				<li>Satyrs</li>
+				<li>Strix</li>
+			</ul>
+		<h3>Hostile Mythical</h3>
+			<ul>
+				<li>Kelpie</li>
+				<li>Faire Folk</li>
+				<li>Hag</li>
+			</ul>
+	<h2>Travelling to and from Sorrento: 10 hours</h2>
+		<h3>Friendly Mundane</h3>
+		<h3>Hostile Mundane</h3>
+			<ul>
+				<li>Bandits</li>
+				<li>Sicilian/Corsican/Tyrrhenian pirates</li>
+				<li>Neapolitan soldiers/Sorrentine guards/Amalfi constables</li>
+			</ul>
+		<h3>Friendly Mythical</h3>
+			<ul>
+				<li>Hippogriff</li>
+				<li>Phoenix</li>
+			</ul>
+		<h3>Hostile Mythical</h3>
+			<ul>
+				<li>Harpies</li>
+				<li>Cockatrice</li>
+				<li>Basilisk</li>
+				<li>Griffin</li>
+				<li>Wyvern</li>
+				<li>Manticore</li>
+				<li>Roc</li>
+			</ul>
+	<h2>Travelling to and from Amalfi: 4 hours</h2>
+		<h3>Friendly Mundane</h3>
+		<h3>Hostile Mundane</h3>
+			<ul>
+				<li>Bandits</li>
+				<li>Sicilian/Corsican/Tyrrhenian pirates</li>
+				<li>Neapolitan soldiers/Sorrentine guards/Amalfi constables</li>
+			</ul>
+		<h3>Friendly Mythical</h3>
+			<ul>
+				<li>Hippogriff</li>
+				<li>Phoenix</li>
+			</ul>
+		<h3>Hostile Mythical</h3>
+			<ul>
+				<li>Harpies</li>
+				<li>Cockatrice</li>
+				<li>Basilisk</li>
+				<li>Griffin</li>
+				<li>Wyvern</li>
+				<li>Manticore</li>
+				<li>Roc</li>
+			</ul>
+	<h2>Fishing off the beach: 1 hour – just scenic stuff</h2>
+	<h2>Beachcombing: 1 hour – just scenic stuff</h2>
+	<h2>Cooking: 1 hour – just scenic stuff</h2>
+	<h2>Bathing: 1 hour – just scenic stuff</h2>
+	<h2>Reading: 1 hour – just scenic stuff</h2>
+	</div>
+
+<h1><a href="#" onclick="toggle_visibility('perks');">Perks</a></h1>
+<div id="perks" style="display:none;">
+<b>Ordained Chaplain<br/>
+<i>Prerequisites:</b> Saltiness 4, Alignment 115</i><br/>
+You've been ordained by the church to minister to your crew and stamp out the festering evil in the dark corners of the region.<br/>
+<b><i>Reward:</b> You gain +5 on attack rolls against monsters.</i><br/>
+<br/>
+<b>Disciple of Davy Jones<br/>
+<i>Prerequisites:</b> Saltiness 4, Alignment -115</i><br/>
+You've been sending a conga line of innocent men to the locker. Satan is pretty much sending you a Christmas card at this point.<br/>
+<b><i>Reward:</b> You gain +5 attack rolls against humans.</i><br/>
+<br/>
+<b>Professional Angler<br/>
+<i>Prerequisites:</b> Saltiness 4, Strength 4</i><br/>
+Slamming steel into steel, tying a knot hard enough to break bone, wrestling sea creatures twice your size into a boat with little to no leverage. You can only be a sailor for so long before your body becomes of thing of corded steel. You are shockingly strong.<br/>
+<b><i>Reward:</b> You have advantage on all strength checks.</i><br/>
+<br/>
+<b>Free Diver<br/>
+<i>Prerequisites:</b> Saltiness 4, Constitution 4</i><br/>
+Holding your breath for several minutes at a time, up and down, getting exercise and rewarding your body with fruits de mer, your body is built to hold up against extenuating conditions.<br/>
+<b><i>Reward:</b> You have advantage on all constitution checks.</i><br/>
+<br/>
+<b>Shark Wrangler<br/>
+<i>Prerequisites:</b> Saltiness 4, Dexterity 4</i><br/>
+You've tangled with so many baddies and beasties over the course of your career, that you seem to know right where the next blow will come from before they even cock their arm back. Getting the upper hand on you is so hard it's funny.<br/>
+<b><i>Reward:</b> You have advantage on all dexterity checks.</i><br/>
+<br/>
+<b>Marine Biologist<br/>
+<i>Prerequisites:</b> Saltiness 4, Wisdom 4</i><br/>
+How do sharks hunt in murky water? Why does drinking seawater dehydrate you? Where do shells come from? How do cuttlefish change color? You hoard knowledge, driven by a voracious need to understand the world around you.<br/>
+<b><i>Reward:</b> You have advantage on all intelligence checks.</i><br/>
+<br/>
+<b>Former Castaway<br/>
+<i>Prerequisites:</b> Saltiness 4, Intelligence 4</i><br/>
+The great nautical nightmare that all sailors dread came...and went. You tested your mettle against the marine wilderness and came out on top, and you're a hell of a lot savvier for it.<br/>
+<b><i>Reward:</b> You have advantage on all wisdom checks.</i><br/>
+<br/>
+<b>The Old Man<br/>
+<i>Prerequisites:</b> Saltiness 4, Charisma 4</i><br/>
+You're one chipped up old bastard, and you earned every one of those chips. Not many are eager to argue with your humorless, icy glare, and your crew prizes your approval.<br/>
+<b><i>Reward:</b> You have advantage on all charisma checks.</i><br/>
+<br/>
+<b>Bruiser<br/>
+<i>Prerequisites:</b> Saltiness 3, Strength 3, Constitution 3</i><br/>
+Years of eating well and working hard have resulted in a hulking frame that tends to make people do a doubletake and think twice before causing you trouble.<br/>
+<b><i>Reward:</b> You gain an additional 2 hit points per level of constitution.</i><br/>
+<br/>
+<b>Dreadnought<br/>
+<i>Prerequisites:</b> Saltiness 3, Strength 3, Dexterity 3</i><br/>
+You've been practicing the noble art of killing people for so long that your weapon has become an extension of your body, unnaturally deft and strangely hard to deflect.<br/>
+<b><i>Reward:</b> You can reroll a fumble once.</i><br/>
+<br/>
+<b>Duellist<br/>
+<i>Prerequisites:</b> Saltiness 3, Strength 3, Wisdom 3</i><br/>
+It's not so much hitting them hard, or hitting them fast, as hitting them right. When you're squaring with your enemy, you don't lash out. You study the way they move, the way their armor is constructed, and apply your years of experience to utterly sunder them.<br/>
+<b><i>Reward:</b> Every time a human enemy takes damage from you, their armor class falls by 1.</i><br/>
+<br/>
+<b>Sea Wolf<br/>
+<i>Prerequisites:</b> Saltiness 3, Strength 3, Intelligence 3</i><br/>
+Years of fighting have taught you just where and how to hit people to take them apart, incapacitate them, and cause gratuitous pain.<br/>
+<b><i>Reward:</b> You are twice as likely to score a critical hit.</i><br/>
+<br/>
+<b>Man o' War<br/>
+<i>Prerequisites:</b> Saltiness 3, Strength 3, Charisma 3</i><br/>
+You have lived by the sword. Taking up your sword and harkening others to take up theirs makes you a splendid leader. When your crew watches you wade into a sea of swords without batting an eye, ready to kill, it fills them with valor.<br/>
+<b><i>Reward:</b> Your allies gain +1 maximum damage in combat.</i><br/>
+<br/>
+<b>Juggernaut<br/>
+<i>Prerequisites:</b> Saltiness 3, Constitution 3, Dexterity 3</i><br/>
+Your calloused, weather-beaten, world-weary body is pretty humorless and doesn't yield easily.<br/>
+<b><i>Reward:</b> You are resistant to critical hits.</i><br/>
+<br/>
+<b>Firebrand<br/>
+<i>Prerequisites:</b> Saltiness 3, Constitution 3, Wisdom 3</i><br/>
+Pain makes most people panic. Not you. If anything, it makes you angry, strong, more focused. <br/>
+<b><i>Reward:</b> Every time you take damage from a human enemy, their armor class falls by 1.</i><br/>
+<br/>
+<b>Bluejacket<br/>
+<i>Prerequisites:</b> Saltiness 3, Constitution 3, Intelligence 3</i><br/>
+You're a doctor, not a pirate...wait, what?<br/>
+<b><i>Reward:</b> You gain +1 to your medicine ability</i><br/>
+<br/>
+<b>Galley Darling<br/>
+<i>Prerequisites:</b> Saltiness 3, Constitution 3, Charisma 3</i><br/>
+You know how to get every bit of flavor and nutrition into your cooking. Your mates jockey each other to get at the amazing food you make for them.<br/>
+<b><i>Reward:</b> You gain +1 constitution from food you cook.</i><br/>
+<br/>
+<b>Deadshot Whaler: <br/>
+<i>Prerequisites:</b> Saltiness 3, Dexterity 3, Wisdom 3</i><br/>
+When you draw your arm back to fire at your prey, primitive instinct is funneled through a keen mind. You hunt like your life depends on it.<br/>
+<b><i>Reward:</b> You gain +5 to hit with projectile weapons like bows and harpoons.</i><br/>
+<br/>
+<b>Dervish<br/>
+<i>Prerequisites:</b> Saltiness 3, Dexterity 3, Intelligence 3</i><br/>
+Even in the middle of a pitched battle you keep a cool head, constantly aware of where you are in space and where all the bad guys are in relation to you. This has you fighting at an intimidating speed.<br/>
+<b><i>Reward:</b> You gain a 1d3 chance to multiattack each round.</i><br/>
+<br/>
+<b>Jolly Roger<br/>
+<i>Prerequisites:</b> Saltiness 3, Dexterity 3, Charisma 3</i><br/>
+You're an infuriating bastard. Always dancing around your opponent's blade, cheerfully toying with them. Their attempts to kill you merely amuse you, which enrages them. <br/>
+<b><i>Reward:</b> When a human enemy misses, your armor class increases by +1.</i><br/>
+<br/>
+<b>Oceanographer<br/>
+<i>Prerequisites:</b> Saltiness 3, Wisdom 3, Intelligence 3</i><br/>
+You know these waters. Actually, you know most waters. Come to think of it, you just know water.<br/>
+<b><i>Reward:</b> Nautical endeavors take 1 less hour to complete</i><br/>
+<br/>
+<b>Round Robin<br/>
+<i>Prerequisites:</b> Saltiness 3, Wisdom 3, Charisma 3</i><br/>
+Whereas most captains are people that the crew fear and avoid, your appearance on deck makes everyone onboard happy. Every member of your crew feels like your co-conspirator and friend.<br/>
+<b><i>Reward:</b> [HAVEN'T DECIDED YET]</i><br/>
+<br/>
+<b>Tactician<br/>
+<i>Prerequisites:</b> Saltiness 3, Intelligence 3, Charisma 3</i><br/>
+Through extensive trial and error, you know exactly how to arrange your posse to ensure the other guys become pincushions.<br/>
+<b><i>Reward:</b> For every ally you have in combat, your enemy suffers –1 to armor class</i><br/>
+<br/>
+<b>Scourge of the Underworld<br/>
+<i>Prerequisites:</b> Complete “The Acceptor of Many”</i><br/>
+Your harrowing experience in the Underworld has made your life force unnaturally resilient. The King of the Dead will have to really apply himself to get you back over his threshhold.<br/>
+<b><i>Reward:</b> Whenever you get reduced to zero, you have a 90% chance of regaining one hit point.</i><br/>
+<br/>
+<b>Paragon of Triton<br/>
+<i>Prerequisites:</b> Complete “The Mother Who Gave Birth”</i><br/>
+You love the Mediterranean and the Mediterranean loves you right back.<br/>
+<b><i>Reward:</b> Diving cures the bloodied status and 1d3 hitpoints daily. Also, the merfolk will come to help you with your multifarious maritime endeavors.</i><br/>
+<br/>
+<b>Paragon of Pan<br/>
+<i>Prerequisites:</b> Complete “The Eldritch Watcher”</i><br/>
+You have the intense, blazing eyes of a wild animal, the inhuman senses of a predator.<br/>
+<b><i>Reward:</b> You can't be surprised in combat.</i><br/>
+<br/>
+<b>Thrall of Phobetor<br/>
+<i>Prerequisites:</b> Complete “The Waking Nightmare”</i><br/>
+Your experiences in the nightmare realm have trained to lucid dream.<br/>
+<b><i>Reward:</b> Every night, you have a dream that gets you +1 to a random skill</i>
+</div>
+
+<h1><a href="#" onclick="toggle_visibility('saltiness_and_merfolk');">Saltiness and Merfolk</a></h1>
+<div id="saltiness_and_merfolk" style="display:none;">
+at level one: you start seeing traces<br/>
+at level two: you start seeing signs<br/>
+at level three: they start letting you see them<br/>
+at level four: they start interacting with you<br/>
+at level five: they become friendly and familiar<br/>
+<br/>
+Saltiness<br/>
+	<ul>
+		<li>wrestling a fish into your boat: 1</li>
+		<li>find an artifact of the merfolk: 1</li>
+		<li>find a pearl: 1</li>
+		<li>scoring a critical hit on a shark: 1</li>
+		<li>killing a shark: 1</li>
+		<li>digging teeth out of your wounds after shark attack: 1</li>
+		<li>taming a dolphin: 5</li>
+		<li>slaying a sea monster: 5</li>
+	</ul>
+</div>
+
+<h1><a href="#" onclick="toggle_visibility('leveling_skills');">Leveling Skills</a></h1>
+<div id="leveling_skills" style="display:none;">
+<h2>Stat Meanings</h2>
+Strength = natural athleticism, bodily power<br/>
+Constitution = health, stamina, vital force<br/>
+Dexterity = physical agility, reflexes, balance, poise<br/>
+Intelligence = mental acuity, information recall, analytical skill<br/>
+Wisdom = awareness, intuition, insight<br/>
+Charisma = confidence, eloquence, leadership<br/>
+<br/>
+<h2>How to level</h2>
+strength: fighting a fish into your boat and scoring a hit with your sword<br/>
+wisdom: noticing an enemy trying to sneak up on you, finding things whilst foraging, diving, and beachcombing<br/>
+charisma: getting a good deal, getting laid, charming someone, intimidating someone<br/>
+intelligence: reading books and applying intellectual disciplines<br/>
+constitution: eating good healthy food<br/>
+dexterity: dodging, parrying, and scoring a hit with your dagger or bow<br/>
+</div>
+
+<h1><a href="#" onclick="toggle_visibility('romance');">Romance</a></h1>
+	<div id="romance" style="display:none;">
+	<h2>Cordelia</h2>
+		You watch them swim off into the distance. Their language sounded like a form of Greek. Learning Greek is a huge undertaking, but if you were to do so, you could communicate with them much more effectively.<br/>
+		<br/>
+		<span style="color:#0198E1;">“Oooh,”</span> she sighes appreciatively. <span style="color:#0198E1;">“Smells nice. What is it?”</span><br/>
+		“Oooh,” she sighes appreciatively. “Μυρίζει ωραία . Τι είναι αυτό?”<br/>
+		<br/>
+		She smiles at you. <span style="color:#0198E1;">“Come here.”</span><br/>
+		She beckons you over. “Έλα εδώ.” <br/>
+		<br/>
+		You wake up to find her going through your larder.<br/>
+		If you have a vineyard, you should be able to give her wine.<br/>
+		“I love you. But I will never stop missing Pipa.”<br/>
+		<br/>
+		Cordelia beams as she watches you watch her.<br/>
+		<br/>
+	<h2>Seraphina</h2>
+		Their amusement with you gets the better of them, smiles starting to peek through bitten lips. You banter back and forth for a few minutes before they vanish back into their river. Their language sounded like a form of Latin. Learning Latin is a huge undertaking, but if you were to do so, you could communicate with them much more effectively.<br/>
+		<br/>
+		They start to fidget and exchange increasingly wide-eyed glances, so you half-raise a hand and leave them. Their language sounded like a form of Latin. Learning Latin is a huge undertaking, but if you were to do so, you could communicate with them much more effectively.<br/>
+		<br/>
+		<span style="color:#E3170D;">“Try the berries,”</span> she says, beaming as she fishes a handful of blackberries out of the leaf bowl. <span style="color:#E3170D;">“They're good.”</span><br/>
+		“Experiri bacas,” she says, beaming as she fishes a handful of blackberries out of the leaf bowl. “Haerent bonum.”<br/>
+		<br/>
+		you can only get the faction girlfriend if your saltiness is 4 or higher<br/>
+		you can only get the faction quest if your saltiness is 5 or higher<br/>
+		you can only get the faction lover if you completed the faction quest<br/>
+		how will language come into play?<br/>
+	</div>
+	
+<h1><a href="#" onclick="toggle_visibility('alignment');">Alignment</a></h1>
+	<div id="alignment" style="display:none;">
+	Demonic (-235–), Monstrous (-234 – -115), Evil (-114 – -55), Cruel (-54 – -25), Naughty (-24 – -10), Neutral (-9 – 9), Nice (10 – 24), Kind (25 – 54), Good (55 – 114), Saintly (115 – 234), Angelic (235+)<br/>
+	<br/>
+	<h2>Meaningless Gestures</h2>
+	Some things are so insignificant that they only effect a tiny change in your alignment, and even then only if the act in question goes against the grain of your current alignment score.<br/>
+	For example, praying, giving food to cats, giving one florin to a beggar:<br/>
+	if (alignment < -whatever){<br/>
+		alignment = alignment + 1<br/>
+	}<br/>
+	Counter example, visiting a brothel;<br/>
+	if (alignment > whatever){<br/>
+		alignment = alignment – 1<br/>
+	}<br/>
+	<h2>Standard Expressions</h2>
+		alignment = alignment + 1<br/>
+		alignment = alignment – 1<br/>
+	<h2>Meaningful Acts</h2>
+		alignment = alignment + 5<br/>
+		alignment = alignment – 5<br/>
+	<h2>Huge Acts</h2>
+	Some things are so big that they will change your alignment dramatically; if it goes against the grain of your current alignment score, it will change your alignment by a full level.<br/>
+	For example, taking advantage of a drunk woman, killing innocent merchants to get at their stock:<br/>
+	if (alignment > 50){<br/>
+		[reduces your alignment score by a whole level]<br/>
+	}<br/>
+	else {<br/>
+		alignment = alignment – 50<br/>
+	}<br/>
+	Counter example, coming to the aid of merchants in danger:<br/>
+	if (alignment < -50){<br/>
+		[increases your alignment score by a whole level]<br/>
+	}<br/>
+	else {<br/>
+		alignment = alignment + 50<br/>
+	}<br/>
+	</div>
+
+<h1><a href="#" onclick="toggle_visibility('playlist');">Playlist</a></h1>
+	<div id="playlist" style="display:none;">
+	Pirates of the Caribbean<br/>
+	The Little Mermaid<br/>
+	The Kooks – Seaside<br/>
+	The Jezabels – Deep Wide Ocean<br/>
+	Radiohead – Weird Fishes<br/>
+	Enya – Orinoco Flow<br/>
+	VVBrown – Shark in the Water<br/>
+	Assassin's Creed Black Flag<br/>
+	The Presets – Girl and the Sea<br/>
+	Great Big Sea – Mermaid Song, Yankee Sailor, Safe Upon the Shore<br/>
+	Bob Schneider – Big Blue Sea<br/>
+	Jolly Sailor Bold<br/>
+	The Dirty Heads – The Cabin by the Sea<br/>
+	Jack Johnson – Only the Ocean<br/>
+	Frank Sinatra – Somewhere Beyond the Sea/Bobby Darin/Stevie Wonder<br/>
+	Under the Boardwalk – The Drifters<br/>
+	Surf City – Jan and Dean<br/>
+	Sittin on the Dock of the Bay – Otis Redding<br/>
+	Swim – Madonna<br/>
+	An American Dream – Dirt Band<br/>
+	Wipeout – Surfaris <br/>
+	Calypso – John Denver<br/>
+	Walk on the Ocean – Toad the Wet Sprocket<br/>
+	When the Ship Comes In – Bob Dylan<br/>
+	Ride the Wild Surf – Jan and Dean<br/>
+	Rockaway Beach – The Ramones<br/>
+	Sea of Love – Phil Phillips<br/>
+	Remember Walking In The Sand – Aerosmith <br/>
+	Shark Attack – The Wailing Souls<br/>
+	Drowning in the Sea of Love – Joe Simon<br/>
+	Come Sail Away – Styx <br/>
+	Son of a Son of a Sailor – Jimmy Buffet<br/>
+	Lights – Journey <br/>
+	Castles in the Sand – Stevie Wonder<br/>
+	<hr/>
+	The Little Mermaid<br/>
+	Muppet Treasure Island<br/>
+	Finding Nemo<br/>
+	Pirates of the Caribbean<br/>
+	Troy<br/>
+	My Big Fat Greek Wedding<br/>
+	<hr/>
+	Assassin's Creed II<br/>
+	Black Flag<br/>
+	</div>
+
+<!--
+	Should holding your breath for max time increase saltiness?
+	Should befriending a sea turtle and/or octopus increase saltiness?
+	It's too easy to earn wisdom and constitution on a dive
+	
+	In your search of the shallows, you come across an interesting arrangement of stones. These disk-shaped stones are arranged in a circle, with larger, more distinctly shaped stones in seemingly random places within the circle. Is this a measuring or counting system? Maybe a game of some kind? Whatever it's meant to be, it's not a naturally occurring formation, so who put it here?
+	
+	You head for a deeper area of the shallows and spot something interesting on the blue bottom. Taking a deep breath at the surface, you commit yourself all the way down. It's a fish carcass, butchered, as in the way a human would. Curious. There aren't people nearby aside from you. You're about to reach for it when you note a blacktip has been drawn in by the scent, so you leave it. Best not to get in between a dog and his bone.
+	
+	You strap the sword around your waist, cinching it extra tight; you want to know exactly where to put your hand if the day takes an interesting turn.
+	You undo your sword belt and put it on the ground.
+	You take the dagger with you. Always good to have a smaller blade handy.
+	You spend a couple of minutes pulling yourself into the beautiful silk outfit, and a few more seconds squaring the mantle so that it doesn't hang loose off either shoulder.
+	You take off the Florentine silk and crushed velvet, carefully fold it, and lay it on the ground.
+	
+	123
+	124
+	125
+	126
+	134
+	135
+	136
+	145
+	146
+	156
+	234
+	235
+	236
+	245
+	246
+	256
+	345
+	346
+	356
+	456
+-->
+
+</body>
+</html>

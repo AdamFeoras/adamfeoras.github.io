@@ -1,0 +1,140 @@
+char_list = NewStringList()
+list add (char_list, "strength")
+list add (char_list, "constitution")
+list add (char_list, "dexterity")
+list add (char_list, "intelligence")
+list add (char_list, "wisdom")
+list add (char_list, "charisma")
+ShowMenu ("Welcome to the Amalfi coast. Domenico is a former merchant who has stepped out of retirement following the death of his wife and is dabbling in illicit maritime activities. The late fifteenth century Amalfi Coast is beautiful, but capricious. Tell me, which of these is the most important?", char_list, false) {
+  if (result = "strength") {
+    player.strength = player.strength + 45
+    player.high_char = "strength"
+  }
+  else if (result = "constitution") {
+    player.constitution = player.constitution + 45
+    player.high_char = "constitution"
+  }
+  else if (result = "dexterity") {
+    player.dexterity = player.dexterity + 45
+    player.high_char = "dexterity"
+  }
+  else if (result = "intelligence") {
+    player.intelligence = player.intelligence + 45
+    player.high_char = "intelligence"
+  }
+  else if (result = "wisdom") {
+    player.wisdom = player.wisdom + 45
+    player.high_char = "wisdom"
+  }
+  else {
+    player.charisma = player.charisma + 45
+    player.high_char = "charisma"
+  }
+}
+wait {
+  list remove (char_list, player.high_char)
+  ShowMenu ("And the second most important?", char_list, false) {
+    if (result = "strength") {
+      player.strength = player.strength + 15
+      player.mod_char = "strength"
+    }
+    else if (result = "constitution") {
+      player.constitution = player.constitution + 15
+      player.mod_char = "constitution"
+    }
+    else if (result = "dexterity") {
+      player.dexterity = player.dexterity + 15
+      player.mod_char = "dexterity"
+    }
+    else if (result = "intelligence") {
+      player.intelligence = player.intelligence + 15
+      player.mod_char = "intelligence"
+    }
+    else if (result = "wisdom") {
+      player.wisdom = player.wisdom + 15
+      player.mod_char = "wisdom"
+    }
+    else {
+      player.charisma = player.charisma + 15
+      player.mod_char = "charisma"
+    }
+ }
+ wait{     list remove (char_list, player.mod_char)
+    ShowMenu ("How about the least? Which matters less than all the others?", char_list, false) {
+      if (result = "strength") {
+        player.strength = player.strength - 10
+      }
+      else if (result = "constitution") {
+        player.constitution = player.constitution - 10
+      }
+      else if (result = "dexterity") {
+        player.dexterity = player.dexterity - 10
+      }
+      else if (result = "intelligence") {
+        player.intelligence = player.intelligence - 10
+      }
+      else if (result = "wisdom") {
+        player.wisdom = player.wisdom - 10
+        player.mod_char = "wisdom"
+      }
+      else {
+        player.charisma = player.charisma - 10
+      }
+	  }
+  wait{        cache.spices = DiceRoll("2d10")+10
+        cache.sugar = DiceRoll("5d10")+50
+        if (RandomChance(33)) {
+          cache.wine = DiceRoll("1d10")+10
+        }
+        if (RandomChance(33)) {
+          cache.tobacco = DiceRoll("1d10")+15
+        }
+        if (RandomChance(33)) {
+          cache.oil = DiceRoll("1d10")+5
+        }
+        if (RandomChance(33)) {
+          cache.honey = DiceRoll("1d8")+5
+        }
+        if (RandomChance(33)) {
+          cache.dye = DiceRoll("1d5")+5
+        }
+        if (RandomChance(20)) {
+          cache.silk = DiceRoll("2d10")+10
+        }
+        if (RandomChance(20)) {
+          cache.coffee = DiceRoll("2d10")+10
+        }
+        if (RandomChance(20)) {
+          cache.cocoa = DiceRoll("2d10")+5
+        }
+        player.florins = DiceRoll("3d5")+30
+        if (RandomChance(33)) {
+          cove.cats = true
+        }
+        else {
+          cove.cats = false
+        }
+		}
+		}}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 

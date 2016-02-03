@@ -1,0 +1,62 @@
+// La Sacra Bibbia - 5 florins
+	// You can indefinitely level up intelligence and wisdom using this	
+	// The catch is that you can only do it once a day and both stats require a skill check
+	// If your alignment is very low, it +1s your alignment
+// Historia de Duobus Amantibus - 10 florins
+	// You can glean a total of 10 intelligence points from this book
+// Legenda Aurea - 10 florins
+	// You can glean a total of 10 intelligence points from this book
+// Decameron  - 10 florins
+	// You can glean a total of 10 intelligence points from this book
+// Divina Commedia - 10 florins
+	// You can glean a total of 10 intelligence points from this book
+// Aesopus Moralisatus - 10 florins
+	// You can glean a total of 10 intelligence points from this book
+// Peregrinatio in Terram Sanctam - 10 florins
+	// You can glean a total of 10 intelligence points from this book
+// Il Milione - 10 florins
+	// You can glean a total of 10 intelligence points from this book
+// Opera Platonis - 20 florins
+	// You can glean a total of 20 intelligence points from this book
+// Il Maestro della Caccia - 50 florins
+	// You can glean a total of 10 intelligence points from this book
+	// When you pass all intelligence 15 checks, you will experience higher success whilst hunting
+// Herbarium Apuleii Platonici - 50 florins
+	// You can glean a total of 10 intelligence points from this book
+	// When you pass all intelligence 15 checks, you will experience higher success whilst foraging
+// Malleus Maleficarum - 100 florins
+	// You can glean a total of 10 intelligence points from this book
+	// Each reading decreases your alignment by your reading level
+	// When you pass all intelligence 10 checks, you will initiate an episode
+// Parlando Greco - 100 florins
+	// You can glean a total of 20 intelligence points from this book
+	// When you pass all intelligence 20 checks, you will be able to speak and understand Greek
+// Il Linguaggio Romano - 100 florins
+	// You can glean a total of 20 intelligence points from this book
+	// When you pass all intelligence 20 checks, you will be able to speak and understand Latin
+// Rosa Medicinæ - 200 florins
+	// You can glean a total of 20 intelligence points from this book
+	// When you pass all intelligence 20 checks, you will be able to apply first aid once every day
+
+// Della Pittura - about painting
+// De sphaera mundi - about astronomy
+// Logica Magna - about logic
+// Ditie de Jehanne D'Arc - joan of arc
+// Amator - about being a renaissance man
+
+
+
+// De Re Militari - about military
+// De Re Aedificatoria - about architecture
+// Meditationes Vitae Christi - life of christ
+// De Regimine Principum - rulership manual
+// De potestate et sapientia Dei - hermetic wisdom
+// De hominis dignitate - speech about the liberal arts
+// De vita libri tres - nature magic meets religion
+// Liber Chronicarum - nuremberg chronicle
+
+// The Canterbury Tales - 20 florins ////
+// A Lyttell Geste of Robyn Hode - 10 florins ////
+// Le Morte d'Arthur - 10 florins ////
+// Siege of Thebes ////
+// Boke of Seynt Albans ////

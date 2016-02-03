@@ -1,0 +1,152 @@
+msg ("Still need to add death listeners to fumbles, display loot and HP at end of fight, add skill/salt leveling, shark hit dialogue, move out of the shallows, and scarring dynamic")
+shark.armor_class = 8
+shark.hit_points = 8 + DiceRoll("1d4")
+player.armor_class = 10 + player.dexterity
+turn_max = DiceRoll("1d6")
+for (1, 1, turn_max, 1) {
+  player.twenty = DiceRoll("1d20")
+  player.attack_roll = player.twenty + player.dagger_quality + player.dexterity
+  player.damage_roll = DiceRoll("1d3") + player.dagger_quality + player.dexterity
+  shark.twenty = DiceRoll("1d20")
+  shark.attack_roll = shark.twenty
+  shark.damage_roll = DiceRoll("1d4")
+  if ((player.hit_points>0) and (shark.hit_points>0)) {
+    if ((player.twenty <> 0) and (player.attack_roll > shark.armor_class-1)) {
+      if (player.twenty = 20) {
+        SetTimeout (5*player.turn_num) {
+          msg ("You bring your dagger down into the shark's head right as it turns; the opposing force buries the blade deep. The shark tries to wrench away, almost taking your dagger with it, buffeting you with its tail and thrashing in agony as a plume of brilliant red blood blossoms out of its head.")
+        }
+      }
+      else {
+        dialogue = DiceRoll("1d4")
+        if (dialogue = 1) {
+          SetTimeout (5*player.turn_num) {
+            msg ("You repeatedly stab the shark in the flank as it arcs away to come at you from another angle.")
+          }
+        }
+        else if (dialogue = 2) {
+          SetTimeout (5*player.turn_num) {
+            msg ("The shark loses its leverage and swims over you. You bury your dagger in its pale belly as it goes.")
+          }
+        }
+        else if (dialogue = 3) {
+          SetTimeout (5*player.turn_num) {
+            msg ("The shark exposes the side of its head, and you reward this mistake by slashing it down the length of its gills.")
+          }
+        }
+        else {
+          SetTimeout (5*player.turn_num) {
+            msg ("You work your dagger through the thick hide of the shark's snout as it angrily tries to get leverage on your arm.")
+          }
+        }
+      }
+      if (player.twenty = 20) {
+        shark.hit_points = shark.hit_points - 6 - player.dexterity - player.dagger_quality
+      }
+      else {
+        shark.hit_points = shark.hit_points - player.damage_roll
+      }
+      player.turn_num = player.turn_num + 1
+      if (shark.hit_points < 1) {
+        SetTimeout (5*player.turn_num) {
+          msg ("Baring your teeth, now more angry than frightened, you withdraw your blade and stab down again as the shark's movements become sluggish. You slash indiscriminately, abandoning tactics, venting your rage, and your assailant jerks twice, then drifts to the bottom, trailing a billowing red cloud behind it. You surface and scream in pain and triumph.")
+        }
+      }
+    }
+    else {
+      if (player.twenty = 1) {
+        SetTimeout (5*player.turn_num) {
+          msg ("You lash out with your dagger, but miss, badly, and the shark bites down for a second before the blade in its mouth makes it release your hand, which you immediately pull into your chest.")
+        }
+        player.hit_points = player.hit_points - 1
+      }
+      else {
+        dialogue = DiceRoll("1d2")
+        if (dialogue = 1) {
+          SetTimeout (5*player.turn_num) {
+            msg ("You stab out at the attacking shark, but your dagger glances off of its rough hide.")
+          }
+        }
+        else {
+          msg ("The shark charges and you slash out with your dagger, but it turns at the last moment and you hit nothing but sea water.")
+        }
+      }
+      player.turn_num = player.turn_num + 1
+    }
+    if (shark.hit_points>0) {
+      if ((shark.twenty <> 1) and (shark.attack_roll > player.armor_class-1)) {
+        if (shark.twenty = 20) {
+          SetTimeout (5*player.turn_num) {
+            msg ("You growl a stream of bubbles as the shark gets a vice grip on your inner thigh and shakes you back and forth like a dog, filling the water with so much blood you can barely see your assailant. When it lets you go, you note your leg has gone ice-cold.")
+          }
+        }
+        else {
+          dialogue = DiceRoll("1d4")
+          if (dialogue = 4) {
+            SetTimeout (5*player.turn_num) {
+              msg ("The shark twists through and knocks aside your outstretched arms, savaging your arm for a horrible second before releasing you in an attempt to get a better grip.")
+            }
+          }
+          else if (dialogue = 3) {
+            SetTimeout (5*player.turn_num) {
+              msg ("The shark twists through and knocks aside your outstretched arms, savaging your arm for a horrible second before releasing you in an attempt to get a better grip.")
+            }
+          }
+          else if (dialogue = 2) {
+            SetTimeout (5*player.turn_num) {
+              msg ("The shark twists through and knocks aside your outstretched arms, savaging your arm for a horrible second before releasing you in an attempt to get a better grip.")
+            }
+          }
+          else {
+            SetTimeout (5*player.turn_num) {
+              msg ("The shark twists through and knocks aside your outstretched arms, savaging your arm for a horrible second before releasing you in an attempt to get a better grip.")
+            }
+          }
+        }
+        if (shark.twenty = 20) {
+          player.hit_points = player.hit_points - 8
+        }
+        else {
+          player.hit_points = player.hit_points - shark.damage_roll
+        }
+        player.bloodied = true
+        player.turn_num = player.turn_num + 1
+        if (player.hit_points <1) {
+          SetTimeout (5*player.turn_num) {
+            msg ("Trauma and loss of blood makes your head swim. Your vision darkens and the last thing you feel is being shaken and sheared by the predator you failed to overcome.")
+            finish
+          }
+        }
+      }
+      else {
+        if (shark.twenty = 1) {
+          shark.hit_points = shark.hit_points - 1
+          SetTimeout (5*player.turn_num) {
+            msg ("The shark charges in blind anger and its angle goes wild. You stab it in the eye as it makes its pass, getting an emphatic shake from the shark as it lines itself up for another go.")
+          }
+        }
+        else {
+          dialogue = DiceRoll("1d2")
+          if (dialogue = 1) {
+            SetTimeout (5*player.turn_num) {
+              msg ("The shark tries to get a purchase on your body, but you manage to twist away from it's gnashing teeth.")
+            }
+          }
+          else {
+            SetTimeout (5*player.turn_num) {
+              msg ("The shark makes a pass at your leg, but its angle is off and you shove it away from you.")
+            }
+          }
+        }
+        player.turn_num = player.turn_num + 1
+      }
+    }
+  }
+}
+if ((player.hit_points > 0) and (shark.hit_points > 0)) {
+  SetTimeout (5*player.turn_num) {
+    msg ("The water is a boil of bubbles and blood, both you and the shark are in a frenzy, both trying to kill the other. With a flick of its tail, the shark turns and hurries away in search of a more compliant meal.")
+  }
+}
+shark.hit_points = 8 + DiceRoll("1d4")
+player.turn_num = 2

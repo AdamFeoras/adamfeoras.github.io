@@ -1,0 +1,121 @@
+if ((larder.fish = 0) and (larder.lobsters = 0) and (larder.crabs = 0) and (larder.mussels = 0) and (larder.oysters = 0)){
+	msg ("Your larder is empty. Food is a prerequisite of cooking.")
+}
+else if (player.fed = true){
+	msg ("You're still full from your last hearty meal.")
+}
+else{
+	menulist = NewStringList()
+	bouillabaisse_list = 0
+	if (larder.lobsters > 0){
+		bouillabaisse_list = bouillabaisse_list + 1
+	}
+	if (larder.crabs > 0){
+		bouillabaisse_list = bouillabaisse_list + 1
+	}
+	if (larder.mussels > 0){
+		bouillabaisse_list = bouillabaisse_list + 1
+	}
+	if (larder.oysters > 0){
+		bouillabaisse_list = bouillabaisse_list + 1
+	}
+	if ((larder.fish > 0) and (bouillabaisse_list > 1)){
+		list add (menulist, "Bouillabaisse")
+	}
+	if (larder.fish > 0){
+		list add (menulist, "Grilled Fish")
+	}
+	if (larder.lobsters > 0){
+		list add (menulist, "Boiled Lobster")
+	}
+	if (larder.crabs > 0){
+		list add (menulist, "Boiled Crab")
+	}
+	if (larder.mussels > 0){
+		list add (menulist, "Steamed Mussels")
+	}
+	if (larder.oysters > 0){
+		list add (menulist, "Baked Oysters")
+	}
+	ShowMenu ("With the food you have on hand, you can make the following:", menulist, true) {
+		if (result = "Bouillabaisse") {
+			msg ("You make and eat bouillabaisse.")
+			ing_spent = 0
+			player.fed = true
+			player.hit_points = player.hit_points + 2
+			player.constitution = player.constitution + 1
+			if (player.hit_points > player.hit_point_max){
+				player.hit_points = player.hit_point_max
+			}
+			larder.fish = larder.fish - 1
+			if (larder.mussels > 1){
+				larder.mussels = larder.mussels - 1
+				ing_spent = ing_spent + 1
+			}
+			if (larder.crabs > 1){
+				larder.crabs = larder.crabs - 1
+				ing_spent = ing_spent + 1
+			}
+			if ((larder.lobsters > 1) and (ing_spent < 2)){
+				larder.lobsters = larder.lobsters - 1
+				ing_spent = ing_spent + 1
+			}
+			if ((larder.oysters > 1) and (ing_spent < 2)){
+				larder.oysters = larder.oysters - 1
+				ing_spent = ing_spent + 1
+			}
+		}
+		if (result = "Grilled Fish") {
+			msg ("You make and eat grilled fish.")
+			player.fed = true
+			player.hit_points = player.hit_points + 1
+			player.constitution = player.constitution + 1
+			if (player.hit_points > player.hit_point_max){
+				player.hit_points = player.hit_point_max
+			}
+			larder.fish = larder.fish - 1
+		}
+		if (result = "Boiled Lobster") {
+			msg ("You put on a pot of water to boil. When it's going good, you pull the lobster out of the chilly larder and unceremoniously drop him into the boiling water; this dispels his sluggishness immediately, getting one good, indignant jerk out of him. A few minutes later, you pull him out, now bright red, and set him on a plate. Lighting the candle at the table, you have your seat. A few cracks here and there, and you tuck into the delectable white flesh.")
+			msg ("You shake the gutsy goodness off of your hands halfway through your meal. Most people consider lobster to be a nasty bottomfeeder, but you've always had a weakness for it, although you always wind up making a mess of yourself.")
+			player.fed = true
+			player.hit_points = player.hit_points + 1
+			player.constitution = player.constitution + 1
+			if (player.hit_points > player.hit_point_max){
+				player.hit_points = player.hit_point_max
+			}
+			larder.lobsters = larder.lobsters - 1
+		}
+		if (result = "Boiled Crab") {
+			msg ("You make and eat boiled crab.")
+			player.fed = true
+			player.hit_points = player.hit_points + 1
+			player.constitution = player.constitution + 1
+			if (player.hit_points > player.hit_point_max){
+				player.hit_points = player.hit_point_max
+			}
+			larder.crabs = larder.crabs - 1
+		}
+		if (result = "Steamed Mussels") {
+			msg ("You make and eat steamed mussels.")
+			player.fed = true
+			player.hit_points = player.hit_points + 1
+			player.constitution = player.constitution + 1
+			if (player.hit_points > player.hit_point_max){
+				player.hit_points = player.hit_point_max
+			}
+			larder.mussels = larder.mussels - 1
+		}
+		if (result = "Baked Oysters") {
+			msg ("You make and eat baked oysters.")
+			player.fed = true
+			player.hit_points = player.hit_points + 1
+			player.constitution = player.constitution + 1
+			if (player.hit_points > player.hit_point_max){
+				player.hit_points = player.hit_point_max
+			}
+			larder.oysters = larder.oysters - 1
+		}
+	}
+}
+

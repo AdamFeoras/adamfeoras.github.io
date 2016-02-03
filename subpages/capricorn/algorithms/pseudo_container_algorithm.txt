@@ -1,0 +1,205 @@
+// set to command "check"
+
+if ((treasure_chest.doubloons = 0) and (treasure_chest.jewels = 0) and (treasure_chest.ingots = 0) and (treasure_chest.artifacts = 0) and (treasure_chest.idols = 0)) {
+  msg ("The treasure chest is empty. Poor, disappointed pirate!")
+}
+else {
+  inv_count = 0
+  if (treasure_chest.doubloons > 0) {
+    inv_count = inv_count + 1
+  }
+  if (treasure_chest.jewels > 0) {
+    inv_count = inv_count + 1
+  }
+  if (treasure_chest.ingots > 0) {
+    inv_count = inv_count + 1
+  }
+  if (treasure_chest.artifacts > 0) {
+    inv_count = inv_count + 1
+  }
+  if (treasure_chest.idols > 0) {
+    inv_count = inv_count + 1
+  }
+  OutputTextNoBr ("Inside the chest you see ")
+  if (treasure_chest.doubloons > 0) {
+    if (treasure_chest.doubloons = 1) {
+      OutputTextNoBr ("1 doubloon")
+      if ((treasure_chest.jewels = 0) and (treasure_chest.ingots = 0) and (treasure_chest.artifacts = 0) and (treasure_chest.idols = 0)) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      OutputTextNoBr (treasure_chest.doubloons + " doubloons")
+      if ((treasure_chest.jewels = 0) and (treasure_chest.ingots = 0) and (treasure_chest.artifacts = 0) and (treasure_chest.idols = 0)) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (treasure_chest.jewels > 0) {
+    if (treasure_chest.jewels = 1) {
+      if ((treasure_chest.doubloons > 0) and ((treasure_chest.ingots = 0) and (treasure_chest.artifacts = 0) and (treasure_chest.idols = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 jewel")
+      if ((treasure_chest.ingots = 0) and (treasure_chest.artifacts = 0) and (treasure_chest.idols = 0)) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if ((treasure_chest.doubloons > 0) and ((treasure_chest.ingots = 0) and (treasure_chest.artifacts = 0) and (treasure_chest.idols = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (treasure_chest.jewels + " jewels")
+      if ((treasure_chest.ingots = 0) and (treasure_chest.artifacts = 0) and (treasure_chest.idols = 0)) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (treasure_chest.ingots > 0) {
+    if (treasure_chest.ingots = 1) {
+      if (((treasure_chest.doubloons > 0) or (treasure_chest.jewels > 0)) and ((treasure_chest.artifacts = 0) and (treasure_chest.idols = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 ingot")
+      if ((treasure_chest.artifacts = 0) and (treasure_chest.idols = 0)) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if (((treasure_chest.doubloons > 0) or (treasure_chest.jewels > 0)) and ((treasure_chest.artifacts = 0) and (treasure_chest.idols = 0))) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (treasure_chest.ingots + " ingots")
+      if ((treasure_chest.artifacts = 0) and (treasure_chest.idols = 0)) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (treasure_chest.artifacts > 0) {
+    if (treasure_chest.artifacts = 1) {
+      if (((treasure_chest.doubloons > 0) or (treasure_chest.jewels > 0) or (treasure_chest.ingots > 0)) and (treasure_chest.idols = 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 artifact")
+      if (treasure_chest.idols = 0) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+    else {
+      if (((treasure_chest.doubloons > 0) or (treasure_chest.jewels > 0) or (treasure_chest.ingots > 0)) and (treasure_chest.idols = 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (treasure_chest.artifacts + " artifacts")
+      if (treasure_chest.idols = 0) {
+        OutputTextNoBr (".")
+      }
+      else {
+        if (inv_count <> 2) {
+          OutputTextNoBr (", ")
+        }
+      }
+    }
+  }
+  if (treasure_chest.idols > 0) {
+    if (treasure_chest.idols = 1) {
+      if ((treasure_chest.doubloons > 0) or (treasure_chest.jewels > 0) or (treasure_chest.ingots > 0) or (treasure_chest.artifacts > 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr ("1 idol.")
+    }
+    else {
+      if ((treasure_chest.doubloons > 0) or (treasure_chest.jewels > 0) or (treasure_chest.ingots > 0) or (treasure_chest.artifacts > 0)) {
+        OutputTextNoBr (" and ")
+      }
+      OutputTextNoBr (treasure_chest.idols + " idols.")
+    }
+  }
+}
+
+
+// set to command "reroll"
+doubloons_dice = DiceRoll("1d5")
+jewels_dice = DiceRoll("1d5")
+ingots_dice = DiceRoll("1d5")
+artifacts_dice = DiceRoll("1d5")
+idols_dice = DiceRoll("1d5")
+if (doubloons_dice = 5){
+	treasure_chest.doubloons = DiceRoll("1d5") + 1
+}
+else if (doubloons_dice = 4){
+	treasure_chest.doubloons = 1
+}
+else{
+	treasure_chest.doubloons = 0
+}
+if (jewels_dice = 5){
+	treasure_chest.jewels = DiceRoll("1d5") + 1
+}
+else if (jewels_dice = 4){
+	treasure_chest.jewels = 1
+}
+else{
+	treasure_chest.jewels = 0
+}
+if (ingots_dice = 5){
+	treasure_chest.ingots = DiceRoll("1d5") + 1
+}
+else if (ingots_dice = 4){
+	treasure_chest.ingots = 1
+}
+else{
+	treasure_chest.ingots = 0
+}
+if (artifacts_dice = 5){
+	treasure_chest.artifacts = DiceRoll("1d5") + 1
+}
+else if (artifacts_dice = 4){
+	treasure_chest.artifacts = 1
+}
+else{
+	treasure_chest.artifacts = 0
+}
+if (idols_dice = 5){
+	treasure_chest.idols = DiceRoll("1d5") + 1
+}
+else if (idols_dice = 4){
+	treasure_chest.idols = 1
+}
+else{
+	treasure_chest.idols = 0
+}

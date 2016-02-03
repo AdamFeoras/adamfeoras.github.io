@@ -1,0 +1,45 @@
+if (player.parent.beach=false) {
+  msg ("This isn't a beach.")
+}
+else if (player.time_of_day > 20) {
+  msg ("It's getting too dark to be looking for shells and driftwood. Go home.")
+}
+else {
+  ambience_var = DiceRoll("1d3")
+  if (ambience_var = 1) {
+    msg ("A flock of seagulls wheels overhead, crying out to each other.")
+  }
+  else if (ambience_var = 2) {
+    msg ("A group of sandpipers scurries back and forth in time with the gentle waves.")
+  }
+  else {
+    msg ("A fiddler crab scabbers frantically away from your feet.")
+  }
+  player.time_of_day = player.time_of_day + 1
+  msg ("During the hour walking up and down the sand, you find the following: ")
+  max = DiceRoll("1d4")
+  for (1, 1, max, 1) {
+    result = DiceRoll("1d200")
+    if (result<101) {
+      msg ("a pretty shell")
+    }
+    else if (result<141) {
+      msg ("some organic floatsam")
+    }
+    else if (result<173) {
+      msg ("some manmade floatsam")
+    }
+    else if (result<193) {
+      msg ("some wooden floatsam")
+    }
+    else if (result<197) {
+      msg ("some true rarities")
+    }
+    else if (result<199) {
+      msg ("a bottle of something")
+    }
+    else {
+      msg ("an artifact of the merfolk")
+    }
+  }
+}
