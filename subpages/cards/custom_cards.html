@@ -37,6 +37,7 @@
 	<body>
 		<h2><a href="#" onclick="toggle_visibility('bosses');">Bosses</a></h2>
 		<ul id="bosses" style="display:none;">
+			<!--
 			<li>Warrior</li>
 			<li>Warrior</li>
 			<li>Thief</li>
@@ -50,6 +51,7 @@
 			<li>Warrior/Cleric</li>
 			<li>Thief/Mage</li>
 			<li>Thief/Cleric</li>
+			-->
 			<li><a href="#" onclick="toggle_visibility('tTM');">The Tall Man</a></li>
 			<ul id="tTM" style="display:none;">
 				<li>Title: </li>
@@ -165,67 +167,59 @@
 			</ul>
 			<h3><a href="#" onclick="toggle_visibility('EH');">Epic Heroes</a></h3>
 			<ul id="EH" style="display:none;">
-				<li><a href="#" onclick="toggle_visibility('MtRM');">Mark the Rage Monster</a></li>
-				<ul id="MtRM" style="display:none;">
-					<li>Type: Special, lured to the boss with the least wounds</li>
-					<li>HP: 18</li>
-					<li>Ability: Takes -1 damage from normal trap rooms, destroys any advanced trap room he survives.</li>
-					<li>Lore: You won't like him when he's angry. Which is unfortunate, because he's pretty much always angry.</li>
-				</ul>
 				<li>Special</li>
 				<li>Special</li>
-				<li><a href="#" onclick="toggle_visibility('MtDS');">Matt the Dragon Slayer</a></li>
-				<ul id="MtDS" style="display:none;">
-					<li>Type: Warrior</li>
-					<li>HP: 15</li>
-					<li>Ability: Takes -1 damage from normal monster rooms, destroys any advanced monster room he survives.</li>
-					<li>Lore: Matt is of the plain quiet folk, and has no use for adventures. Nasty, disturbing, and uncomfortable things. Unless there's a damsel involved. Then all bets are off.</li>
-				</ul>
-				<li><a href="#" onclick="toggle_visibility('C');">Christine the Problem Solver</a></li>
-				<ul id="C" style="display:none;">
-					<li>Type: Thief</li>
-					<li>HP: 15</li>
-					<li>Ability: </li>
-					<li>Lore: Christine has a very particular set of skills, skills she has acquired over a very long career, skills that make her a nightmare for monsters like you.</li>
-				</ul>
-				<li><a href="#" onclick="toggle_visibility('KtSW');">Kelly the Sea Witch</a></li>
-				<ul id="KtSW" style="display:none;">
-					<li>Type: Mage</li>
-					<li>HP: 15</li>
-					<li>Ability: Takes no damage from aquatic rooms, takes -1 damage from rooms with mage treasure.</li>
-					<li>Lore: She is the ruler of all the ocean. Well, parts of it. The waves obey her every whim. Usually. The sea and all its spoils bow to her power. Sometimes.</li>
-				</ul>
-				<li><a href="#" onclick="toggle_visibility('MtDH');">Mary the Demon Hunter</a></li>
-				<ul id="MtDH" style="display:none;">
-					<li>Type: Cleric</li>
-					<li>HP: 15</li>
-					<li>Ability: Destroys every room with cleric treasure that she survives.</li>
-					<li>Lore: She is unfailingly kind, merciful, generous, and forgiving. Except to bad guys. Bad guys are in trouble.</li>
-				</ul>
-				<li>Tyler - Warrior/Thief</li>
-				<li>Warrior/Mage</li>
-				<li>Angela - Warrior/Cleric</li>
-				<li>Colin - Thief/Mage</li>
-				<li>Ryan - Thief/Cleric</li>
-				<li>Matthew - Mage/Cleric</li>
-			</ul>
-			<h3><a href="#" onclick="toggle_visibility('DH');">Dark Heroes</a></h3>
-			<ul id="DH" style="display:none;">
+				<li>Special</li>
 				<li>Warrior</li>
 				<li>Thief</li>
 				<li>Mage</li>
 				<li>Cleric</li>
-				<li>Warrior/Thief (Pirate/Assassin)</li>
+				<li>Warrior/Thief</li>
 				<li>Warrior/Mage</li>
 				<li>Warrior/Cleric</li>
 				<li>Thief/Mage</li>
 				<li>Thief/Cleric</li>
 				<li>Mage/Cleric</li>
+				<li>Matt, Mark, Mary, Kelly, Christine, Angela, Tyler, Matthew, Ryan, Colin</li>
+				<li>Lore: She is unfailingly kind, merciful, generous, and forgiving. Except to bad guys. Bad guys are in trouble.</li>
+				<li>Lore: She is the ruler of all the ocean. Well, parts of it. The waves obey her every whim. Usually. The sea and all its spoils bow to her power. Sometimes.</li>
+				<li>Lore: Christine has a very particular set of skills, skills she has acquired over a very long career, skills that make her a nightmare for monsters like you.</li>
+				<li>Lore: Matt is of the plain quiet folk, and has no use for adventures. Nasty, disturbing, and uncomfortable things. Unless there's a damsel involved. Then all bets are off.</li>
+				<li>Lore: You won't like him when he's angry. Which is unfortunate, because he's pretty much always angry.</li>
 			</ul>
+			<h3><a href="#" onclick="toggle_visibility('DH');">Dark Heroes</a></h3>
+			<ul id="DH" style="display:none;">
+				<li>Warrior (Barbarian)</li>
+				<li>Thief (Hitman)</li>
+				<li>Mage (Witch)</li>
+				<li>Cleric (Vampire)</li>
+				<li>Warrior/Thief (Pirate/Assassin)</li>
+				<li>Warrior/Mage</li>
+				<li>Warrior/Cleric (Templar)</li>
+				<li>Thief/Mage</li>
+				<li>Thief/Cleric (Medico del Peste)</li>
+				<li>Mage/Cleric</li>
+			</ul>
+		</ul>
+		<h2><a href="#" onclick="toggle_visibility('items');">Items</a></h2>
+		<ul id="items" style="display:none;">
+			<li>Takes -1 damage from normal trap rooms, destroys any advanced trap room he survives.</li>
+			<li>Takes -1 damage from normal monster rooms, destroys any advanced monster room he survives.</li>
+			<li>Takes -1 damage from rooms with warrior treasure.</li>
+			<li>Takes -1 damage from rooms with thief treasure.</li>
+			<li>Takes -1 damage from rooms with mage treasure.</li>
+			<li>Takes -1 damage from rooms with cleric treasure.</li>
+			<li>Destroys every room with warrior treasure that she survives.</li>
+			<li>Destroys every room with thief treasure that she survives.</li>
+			<li>Destroys every room with mage treasure that she survives.</li>
+			<li>Destroys every room with cleric treasure that she survives.</li>
 		</ul>
 	</body>
 
 <!--  
+Ordinary Hero, Ordinary Hybrid Hero, Ordinary Dark Hero
+Epic Hero, Epic Hybrid Hero, Epic Dark Hero
+
 scylla
 seymour/pirahna plants
 spiders
