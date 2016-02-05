@@ -10,13 +10,17 @@
 		<link rel="icon" type="image/jpg" href="onics.ico"/>
 		<script type="text/javascript">
 		<!--
-			function toggle_visibility(id) {
-				var e = document.getElementById(id);
-				if(e.style.display == 'block')
-					e.style.display = 'none';
-				else
-					e.style.display = 'block';
-			}
+		function clearBox(elementID)
+		{
+			document.getElementById(elementID).innerHTML = "";
+		}
+		function toggle_visibility(id) {
+			var e = document.getElementById(id);
+			if(e.style.display == 'block')
+				e.style.display = 'none';
+			else
+				e.style.display = 'block';
+		}
 		//-->
 		</script>
 	    <style type="text/css">
@@ -34,6 +38,8 @@
 	    </style>
 	</head>
 	<body>
+		<div style="border: solid darkgray 3px; width:90%;">
+		</div>
 	</body>
 </html>
 
@@ -46,4 +52,10 @@
 	probably Stephanie
 	maybe Ray
 	maybe an intern or two
+	
+Landing/About/Services/Contact
+name
+number
+email
+description of project
 -->
