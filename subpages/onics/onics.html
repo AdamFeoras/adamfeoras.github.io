@@ -40,13 +40,10 @@
 			}
 		</script>
 		<script type="text/javascript">
-			var intro = "<span style='color:#666666;'>Hello World!</span>"
-			var about = "<span style='color:#666666;'>Hello World!</span>"
-			var services = "<span style='color:#666666;'>Hello World!</span>"
-			// Note that this site is currently returning a '405 Not Allowed' on form submission; I'm not sure if this is GitHub or my ISP.
-<!-- 			var contact = "<form name='htmlform' method='post' action='html_form_send.php'><table width='50%'></tr><tr> <td valign='top'>  <label for='name'>Name *</label> </td> <td valign='top'>  <input  type='text' name='name' maxlength='50' size='30'> </td></tr><tr> <td valign='top'>  <label for='email'>Email Address *</label> </td> <td valign='top'>  <input  type='text' name='email' maxlength='80' size='30'> </td></tr><tr> <td valign='top'>  <label for='number'>Telephone Number</label> </td> <td valign='top'>  <input  type='text' name='number' maxlength='30' size='30'> </td></tr><tr> <td valign='top'>  <label for='description'>Description of the Commission *</label> </td> <td valign='top'>  <textarea  name='description' maxlength='1000' cols='25' rows='6'></textarea> </td></tr><tr> <td colspan='2' style='text-align:center'>  <input type='submit' value='Submit'> </td></tr></table></form>"
- -->			
-			var contact = ""
+			var intro = "<p style='color:#666666;text-align:justify;'><h2>white hat hacker</h2><b>noun,</b> <i>Informal</i><br/>1. an ethical computer hacker, or a computer security expert, who specializes in penetration testing and in other testing methodologies to ensure the security of an organization's information systems.</p><p style='color:#666666;text-align:justify;'>Welcome to Onics Labs. We're here to help you by scuttling your security, striking your sites, and savaging your servers. This is because we're white hat hackers, and we're good at what we do. If you want to know where the weaknesses in your security are, we <i>will</i> find them, and we will work with you to build that security system into an unforgiving, ironclad monstrosity that even we can't get through.</p>"
+			var about = "<p style='color:#666666;text-align:justify;'>Onics Labs is a next generation, white hat security firm. We were founded in 2016 by (and remain) a small group of IT nerds, led by security expert Nich Ramsey. We're based in Santa Cruz, California and are proud to serve the San Francisco and Monterrey areas.</p>"
+			var services = "<p style='color:#666666;text-align:justify;'>Onics will test your firm's security in a way that is unique to our company. We employ our fleet to launch a coordinated attack that is not as restricted by space or singularity as traditional attacks. This allows to emulate the techniques and abilities of only the most sincere efforts of the most skilled hackers. You know your system is as tight as a piano string if we can't get into it, and if it's not there, our diagnostician will tighten it until it is.</p><p>Please refer to the contact page for a free consultation.</p>"
+			var contact = "<p style='color:#666666;text-align:justify;'>We're glad you're interested in working with us. We're interested in working with you too. You can contact us by email at <b>onicrypt@gmail.com</b>, or by phone at <b>(408) 663-1845</b>, and you may expect a reply within 24 hours.</p>"
 			function clearBox(elementID)
 			{
 				document.getElementById(elementID).innerHTML = "";
@@ -70,6 +67,9 @@
 			a:hover {color:#DCC8FF;}
 			#main_div {margin-left:10%; margin-right:10%; padding:5%;}
 			input[type="text"], textarea {color:#666666;background:black;}
+			::selection {background:#9B30FF;color:white;}
+			::-moz-selection {background:#9B30FF;color:white;}
+
 	    </style>
 	</head>
 	<body>
