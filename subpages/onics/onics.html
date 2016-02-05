@@ -35,19 +35,20 @@
 			background-size: cover;}
 			a {color:#9664E6; text-decoration:none;}
 			a:hover {color:#DCC8FF;}
+			#main_div {margin-left:10%; margin-right:10%; padding:5%;}
 	    </style>
 	</head>
 	<body>
-		<div style="width:80%; height:80%; padding:5%;">
+		<div id="main_div">
 			<p>I am the very model of a modern major general; I've information animal, vegetable and mineral; I know the kings of England and I quote the fights historical; from Marathon to Waterloo in order categorical.....................</p>
 		</div>
-		<div style="width:90%; height:20%; margin-top:5%; margin-bottom:5%;">
+		<div style="position:absolute; bottom:5%; width:90%;" align="bottom">
 			<!-- onmouseover/onmouseout events for buttons may be added in the future -->
 			<!-- going to have onclick events to clear and write to main div -->
-			<img src="intro_button.png" style="width:20%; margin-right:8%;"/>
-			<img src="about_button.png" style="width:20%; margin-right:8%;"/>
-			<img src="services_button.png" style="width:20%; margin-right:8%;"/>
-			<img src="contact_button.png" style="width:20%;"/>
+			<input type="image" src="intro_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div')"/>
+			<input type="image" src="about_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div')"/>
+			<input type="image" src="services_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div')"/>
+			<input type="image" src="contact_button.png" style="width:20%;" onclick="clearBox('main_div')"/>
 		</div>
 	</body>
 </html>
