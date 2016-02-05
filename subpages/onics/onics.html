@@ -42,7 +42,7 @@
 		<script type="text/javascript">
 			var intro = "<p style='color:#666666;text-align:justify;'><h2>white hat hacker</h2><b>noun,</b> <i>Informal</i><br/>1. an ethical computer hacker, or a computer security expert, who specializes in penetration testing and in other testing methodologies to ensure the security of an organization's information systems.</p><p style='color:#666666;text-align:justify;'>Welcome to Onics Labs. We're here to help you by scuttling your security, striking your sites, and savaging your servers. This is because we're white hat hackers, and we're good at what we do. If you want to know where the weaknesses in your security are, we <i>will</i> find them, and we will work with you to build that security system into an unforgiving, ironclad monstrosity that even we can't get through.</p>"
 			var about = "<p style='color:#666666;text-align:justify;'>Onics Labs is a next generation, white hat security firm. We were founded in 2016 by (and remain) a small group of IT nerds, led by security expert Nich Ramsey. We're based in Santa Cruz, California and are proud to serve the San Francisco and Monterrey areas.</p>"
-			var services = "<p style='color:#666666;text-align:justify;'>Onics will test your firm's security in a way that is unique to our company. We employ our fleet to launch a coordinated attack that is not as restricted by space or singularity as traditional attacks. This allows to emulate the techniques and abilities of only the most sincere efforts of the most skilled hackers. You know your system is as tight as a piano string if we can't get into it, and if it's not there, our diagnostician will tighten it until it is.</p><p>Please refer to the contact page for a free consultation.</p>"
+			var services = "<p style='color:#666666;text-align:justify;'>Onics will test your firm's security in a way that is unique to our company. We employ our fleet to launch a coordinated attack that is not as restricted by space or singularity as traditional attacks. This allows us to emulate the techniques and abilities of only the most sincere efforts of the most skilled hackers. You know your system is as tight as a piano string if we can't get into it, and if it's not there, our diagnostician will tighten it until it is.</p><p>Please refer to the contact page for a free consultation.</p>"
 			var contact = "<p style='color:#666666;text-align:justify;'>We're glad you're interested in working with us. We're interested in working with you too. You can contact us by email at <b>onicrypt@gmail.com</b>, or by phone at <b>(408) 663-1845</b>, and you may expect a reply within 24 hours.</p>"
 			function clearBox(elementID)
 			{
@@ -77,11 +77,11 @@
 		</div>
 		<div style="position:absolute; bottom:5%; width:90%;" align="bottom">
 			<!-- onmouseover/onmouseout events for buttons may be added in the future -->
-			<input type="image" src="intro_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(intro)"/>
-			<input type="image" src="about_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(about)"/>
-			<input type="image" src="services_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(services)"/>
+			<input type="image" src="intro_button_bw.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(intro)" onmouseover="this.src='intro_button_color.png'" onmouseout="this.src='intro_button_bw.png'"/>
+			<input type="image" src="about_button_bw.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(about)" onmouseover="this.src='about_button_color.png'" onmouseout="this.src='about_button_bw.png'"/>
+			<input type="image" src="services_button_bw.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(services)" onmouseover="this.src='services_button_color.png'" onmouseout="this.src='services_button_bw.png'"/>
 			<!-- Note that this site is currently returning a '405 Not Allowed' on form submission; I'm not sure if this is GitHub or my ISP. -->
-			<input type="image" src="contact_button.png" style="width:20%;" onclick="clearBox('main_div'); writeToDiv(contact)"/>
+			<input type="image" src="contact_button_bw.png" style="width:20%;" onclick="clearBox('main_div'); writeToDiv(contact)" onmouseover="this.src='contact_button_color.png'" onmouseout="this.src='contact_button_bw.png'"/>
 		</div>
 	</body>
 </html>
