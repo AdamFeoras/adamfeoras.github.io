@@ -16,9 +16,14 @@
 				audioElement.setAttribute('src', path);
 				audioElement.play();
 			}
-			function myFunction()
+			function resetBackground()
 			{
-				document.body.style.backgroundImage = "url('rising_sun.png')";
+				document.body.style.backgroundImage = "url('onics.png')";
+			}
+			function flashBackground()
+			{
+				document.body.style.backgroundImage = "url('onics_red.png')";
+				setTimeout(resetBackground, 830);
 			}
 			if(window.addEventListener)
 			{
@@ -28,10 +33,9 @@
 				kkeys.push(e.keyCode);
 				if(kkeys.toString().indexOf(konami)>=0)
 					{
+						kkeys = [];
 						PlaySound('hadouken.wav');
-						myFunction();
-						//alert('ALL YOUR BASE ARE BELONG TO US');
-						//window.location="http://mattboddy.github.io/subpages/cards/custom_cards.html";
+						flashBackground();
 					}
 				},true);
 			}
