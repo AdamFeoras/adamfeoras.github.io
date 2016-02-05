@@ -9,19 +9,18 @@
 	    <title>Onics Labs</title>
 		<link rel="icon" type="image/jpg" href="onics.ico"/>
 		<script type="text/javascript">
-		<!--
+		var intro = "<span style='color:#666666;'>Hello World!</span>"
+		var about = "<span style='color:#666666;'>Hello World!</span>"
+		var services = "<span style='color:#666666;'>Hello World!</span>"
+		var contact = "<span style='color:#666666;'>Hello World!</span>"
 		function clearBox(elementID)
 		{
 			document.getElementById(elementID).innerHTML = "";
 		}
-		function toggle_visibility(id) {
-			var e = document.getElementById(id);
-			if(e.style.display == 'block')
-				e.style.display = 'none';
-			else
-				e.style.display = 'block';
+		function writeToDiv(new_content)
+		{
+			document.getElementById('main_div').innerHTML += '' + new_content + '';
 		}
-		//-->
 		</script>
 	    <style type="text/css">
 			body {color:#666666; margin:5%; 
@@ -40,15 +39,14 @@
 	</head>
 	<body>
 		<div id="main_div">
-			<p>I am the very model of a modern major general; I've information animal, vegetable and mineral; I know the kings of England and I quote the fights historical; from Marathon to Waterloo in order categorical.....................</p>
+			<p>[THIS IS THE AREA WHERE TEXT APPEARS AS THE USER NAVIGATES THE WEBSITE. IN THE FINAL VERSION THIS SPACE WILL INITIALIZE AS BLANK.]</p>
 		</div>
 		<div style="position:absolute; bottom:5%; width:90%;" align="bottom">
 			<!-- onmouseover/onmouseout events for buttons may be added in the future -->
-			<!-- going to have onclick events to clear and write to main div -->
-			<input type="image" src="intro_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div')"/>
-			<input type="image" src="about_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div')"/>
-			<input type="image" src="services_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div')"/>
-			<input type="image" src="contact_button.png" style="width:20%;" onclick="clearBox('main_div')"/>
+			<input type="image" src="intro_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(intro)"/>
+			<input type="image" src="about_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(about)"/>
+			<input type="image" src="services_button.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(services)"/>
+			<input type="image" src="contact_button.png" style="width:20%;" onclick="clearBox('main_div'); writeToDiv(contact)"/>
 		</div>
 	</body>
 </html>
