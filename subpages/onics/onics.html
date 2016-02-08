@@ -68,7 +68,7 @@
 			a {color:#9664E6; text-decoration:none;}
 			a:hover {color:#DCC8FF;}
 			#main_div {margin-left:10%; margin-right:10%; padding:5%;
-			max-height:20%; overflow:scroll; overflow-x:hidden;}
+			max-height:1%; overflow:scroll; overflow-x:hidden;}
 			input[type="text"], textarea {color:#666666;background:black;}
 			::selection {background:#9B30FF;color:white;}
 			::-moz-selection {background:#9B30FF;color:white;}
@@ -76,7 +76,6 @@
 	    </style>
 	</head>
 	<body>
-	<div id="body_div">
 		<div id="main_div" style="max-height: 35%;">
 		</div>
 		<div style="position:absolute; bottom:5%; width:90%;" align="bottom">
@@ -86,6 +85,5 @@
 			<input type="image" src="services_button_bw.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(services)" onmouseover="this.src='services_button_color.png'" onmouseout="this.src='services_button_bw.png'"/>
 			<input type="image" src="contact_button_bw.png" style="width:20%;" onclick="clearBox('main_div'); writeToDiv(contact)" onmouseover="this.src='contact_button_color.png'" onmouseout="this.src='contact_button_bw.png'"/>
 		</div>
-	</div>
 	</body>
 </html>
