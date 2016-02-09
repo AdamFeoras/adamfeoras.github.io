@@ -54,7 +54,7 @@
 			}
 		</script>
 	    <style type="text/css">
-			body {color:white; margin:5%; 
+			html, body {color:white; margin:5%; 
 			background-image: url("onics.png"); 
 			background-repeat: no-repeat;
 			background-position: center; 
@@ -65,7 +65,9 @@
 			background-size: cover;
 			font-family:cambria; 
 			font-weight:bold;
-			font-size:20pt;}
+			font-size:20pt; 
+			overflow-y:hidden; 
+			height:100%;}
 			a {color:#9664E6; text-decoration:none;}
 			a:hover {color:#DCC8FF;}
 			#main_div {margin-left:10%; margin-right:10%; padding:5%;
@@ -73,8 +75,11 @@
 			input[type="text"], textarea {color:#666666;background:black;}
 			::selection {background:#9B30FF;color:white;}
 			::-moz-selection {background:#9B30FF;color:white;}
-
 	    </style>
+			<!--
+			scrollbar-face-color: white; scrollbar-shadow-color: black; scrollbar-highlight-color: red; 
+			scrollbar-3dlight-color: blue; scrollbar-darkshadow-color: yellow; scrollbar-track-color: green; scrollbar-arrow-color: purple;
+			-->
 	</head>
 	<body>
 		<div id="main_div" style="max-height: 35%;">
