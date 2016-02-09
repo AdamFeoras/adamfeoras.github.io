@@ -71,7 +71,7 @@
 			a {color:#9664E6; text-decoration:none;}
 			a:hover {color:#DCC8FF;}
 			#main_div {margin-left:10%; margin-right:10%; padding:5%;
-			max-height:20%; overflow:auto; overflow-x:hidden;}
+			max-height:20%; overflow:auto; }
 			input[type="text"], textarea {color:#666666;background:black;}
 			::selection {background:#9B30FF;color:white;}
 			::-moz-selection {background:#9B30FF;color:white;}
@@ -84,7 +84,7 @@
 	<body>
 		<div id="main_div" style="max-height: 35%;">
 		</div>
-		<div style="position:absolute; bottom:5%; width:90%;" align="bottom">
+		<div style="position:absolute; bottom:5%; width:81%; margin:0 auto;" align="bottom">
 			<!-- onmouseover/onmouseout events for buttons may be added in the future -->
 			<input type="image" src="intro_button_bw.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(intro)" onmouseover="this.src='intro_button_color.png'" onmouseout="this.src='intro_button_bw.png'"/>
 			<input type="image" src="about_button_bw.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(about)" onmouseover="this.src='about_button_color.png'" onmouseout="this.src='about_button_bw.png'"/>
