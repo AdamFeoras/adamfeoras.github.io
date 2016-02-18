@@ -76,16 +76,12 @@
 			::selection {background:#9B30FF;color:white;}
 			::-moz-selection {background:#9B30FF;color:white;}
 	    </style>
-			<!--
-			scrollbar-face-color: white; scrollbar-shadow-color: black; scrollbar-highlight-color: red; 
-			scrollbar-3dlight-color: blue; scrollbar-darkshadow-color: yellow; scrollbar-track-color: green; scrollbar-arrow-color: purple;
-			-->
 	</head>
 	<body>
 		<div id="main_div" style="max-height: 35%;">
 		</div>
+		<!-- having an issue getting the buttons to show right -->
 		<div style="position:absolute; bottom:5%; width:81%; margin:0 auto;" align="bottom">
-			<!-- onmouseover/onmouseout events for buttons may be added in the future -->
 			<input type="image" src="intro_button_bw.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(intro)" onmouseover="this.src='intro_button_color.png'" onmouseout="this.src='intro_button_bw.png'"/>
 			<input type="image" src="about_button_bw.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(about)" onmouseover="this.src='about_button_color.png'" onmouseout="this.src='about_button_bw.png'"/>
 			<input type="image" src="services_button_bw.png" style="width:20%; margin-right:6%;" onclick="clearBox('main_div'); writeToDiv(services)" onmouseover="this.src='services_button_color.png'" onmouseout="this.src='services_button_bw.png'"/>
