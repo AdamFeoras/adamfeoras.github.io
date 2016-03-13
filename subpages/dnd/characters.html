@@ -3,61 +3,88 @@
 		<title>Character Bank</title>
 		<link rel="shortcut icon" href="dnd.ico" type="image/x-icon" />
 		<style>
-			body {background-color:#162252; color:#7AA9DD; font-family:cambria; margin:15%; margin-top:5%; 
+			body {background-color:#162252; color:#7AA9DD; font-family:cambria; margin:15%; margin-top:5%; text-align:justify; 
 			background-repeat: no-repeat; background-position: center; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 			div {clear:both;}
+			hr {color:#7AA9DD;}
 			.note {font-style:italic;}
 			.portrait {border:solid 3px #7AA9DD; width:10%; padding:3px; float:left; margin-right:2%; margin-bottom:1%;}
 		</style>
+		<script>
+			function myFunction()
+			{
+				var myWindow = window.open("", "Ogrillons", "width=300, height=500");
+				myWindow.document.write("<body style='background-color:#162252; color:#7AA9DD;'><span style='font-size:16pt;'>Ogrillon Traits</span><p><span style='font-style:italic;font-weight:bold;'>Ability Score Increase.</span> Your Strength score increases by 2 and your Constitution score increases by 1.</p><p><span style='font-style:italic;font-weight:bold;'>Age.</span> Ogrillons inherit their fathers' unfortunate lifespan, reaching full maturity around 15 and expiring around their mid 60's.</p><p><span style='font-style:italic;font-weight:bold;'>Alignment.</span> Ogrillons are predisposed toward chaos.</p><p><span style='font-style:italic;font-weight:bold;'>Size.</span> The average ogrillon stands 8 feet tall and weighs in at 450 pounds, making your size Large.</p><p><span style='font-style:italic;font-weight:bold;'>Speed.</span> Your base walking speed is 30 feet.</p><p><span style='font-style:italic;font-weight:bold;'>Darkvision.</span> Within 60 feet, you can see in dim light like it were bright light, and in the pitch black like it were dim light, though you can't discern colors in the dark, only shades of gray.</p><p><span style='font-style:italic;font-weight:bold;'>Languages.</span> You can speak, read, and write Common and Giant.</p><p><span style='font-style:italic;font-weight:bold;'>Inhuman Might.</span> If you roll a 1 on a strength-based attack roll, strength check, or saving throw, you can reroll the die and must take the second roll.</p><p><span style='font-style:italic;font-weight:bold;'>Bruiser.</span> Your maximum HP increases by 1 for every level.</p><p><span style='font-style:italic;font-weight:bold;'>Monstrous.</span> You have advantage on Intimidation checks.</p><p><span style='font-style:italic;font-weight:bold;'>Terrifying Assault. </span> You may use this trait to turn any one attack that hits into a critical hit. You may use this trait once per long rest.</p></body>");
+			}
+		</script>
 	</head>
 	<body>
 		<center><img src="logo.png" style="width:45%; margin-bottom:5%;"/></center>
 			<div>
-				<img src="portraits/aiden.png" class="portrait"/>
-				<h3>Aiden neKhan, Aasimar Cleric of Bahamut</h3>
-			</div>
-			<div>
 				<img src="portraits/dane.png" class="portrait"/>
-				<h3>Dane Balcon, Tiefling Fighter</h3>
-				<p>Like most tieflings, Dane has lived a lonely life of passive persecution.</p>
-				<p>Recently, his wards, the Siannodel family, were killed in a raid. They were good to him and treated him like a close friend of the family and their death has sent him into a tailspin. It's not that he blames himself so much as that he's lost; they were his anchor in life, the source of his sense of purpose, the only people in the world who loved him.</p>
-				<p>The Siannodels instilled in Dane a sense of loyalty that serves as his moral compass. In a world that's thoughtlessly hostile to you, your friends come before almost all other considerations.</p>
+				<h3>Dane Balcon</h3>
+				<p>Like most tieflings, Dane has lived a lonely life of passive persecution. He's not at all malicious, but navigating a world hostile to the huge, curving horns of an antelope doesn't make one particularly compassionate, either.</p>
+				<p>Recently, his wards, the high elven Siannodel family, were killed in a raid on their caravan. They treated him like a close friend of the family and their death has sent him into a tailspin. It's not that he blames himself so much as that he's lost; they were his anchor in life, the source of his sense of purpose, the only people in the world who loved him. He's not sure where to go, what to think, or what to want in life, just a sorrowful leaf on the wind.</p>
+				<p>The Siannodels instilled in Dane a sense of loyalty that serves as his moral compass. In a world that's unfriendly to you, your friends come before almost all other considerations.</p>
+				<p class="note">Suggested Classes: Fighter, Sorceror (Abyssal), Monk</p>
+				<p class="note">Notes: I would recommend a neutral alignment for Dane with a capacity to make the leap to good if he spends an extended period of time with a party: if he develops a sense of loyalty for his friends, he will likely come to value their ideals and naturally adopt them. I'm not sure if one would define him as lawful or chaotic; on the one hand, he's pretty independent, but he's almost pathologically guided by loyalty to his friends. Being a tiefling, I could definitely see him taking a level in sorceror, although I'm not sure 5e supports the abyssal bloodline yet. His trinket should be something from the Siannodels. If an opportunity to take another language arises, it might make sense for him to speak Elvish.</p>
 			</div>
 			<div>
 				<img src="portraits/felix.png" class="portrait"/>
-				<h3>Felix Leopold, Half-Elf Rogue</h3>
-			</div>
-			<div>
-				<img src="portraits/henrik.png" class="portrait"/>
-				<h3>Henrik of Caer Corwell, Genasi Monk</h3>
+				<h3>Felix Leopold</h3>
+				<p>Felix was born to a human widow who had a whirlwind one-nighter with a mysterious elven nobleman. She was the owner of a run-down road tavern called The Bleeding Cat, and while his mother didn't actively dislike him, to say that she was very fond of him would be untrue, and she was always busy, so he was more or less in charge of his own upbringing.</p>
+				<p>And education. He found himself systematically learning from his mother's patrons, many of whom were charmed by this child's comfort with his edgy surroundings. History of a country here, background of a religion there, and so on. During this time he cultivated an innocent yet charismatic persona that made people inclined to confide in him. In his mid-teens, Felix had a fling with Westra, an Illuskan dhampir country lady. She was not a nice person, mostly used him for blood and other physical needs, but she gave him a crash course in illusion magic.</p>
+				<p>Felix has a weakness for smoking. He's been known to light up in situations where stealth or formality was called for. He's not picky regarding the leaf in question. On the one hand, he's very streetsmart and good at sensing ulterior motives and cultivating trust. On the other hand, he's often too comfortable getting into trouble and has trouble reigning in his impulses.</p>
+				<p class="note">Suggested Classes: Rogue, Wizard, Bard, Sorceror (Fey)</p>
+				<p class="note">Notes: I wouldn't make him lawful or evil, but I don't have a strong opinion alignment-wise beyond that.</p>
+				<p class="note">Possible Hooks: Felix's father Davven is an eladrin emissary. Davven was consulting an oracle regarding his legitimate son, Felix's younger brother; when he asked after his son, the oracle asked, "Which one?" Now Davven is actively looking for him. He wants to take him to the Feywild and teach him the ways of their people.</p>
 			</div>
 			<div>
 				<img src="portraits/markham.png" class="portrait"/>
-				<h3>Markham Chasseur, Human Warlock of Oberon</h3>
+				<h3>Markham Chasseur</h3>
+				<p></p>
+				<p class="note">Suggested Classes: Warlock (Archfey), Cleric (Oberon), Ranger, Druid</p>
+				<p class="note">Notes: </p>
 			</div>
 			<div>
 				<img src="portraits/moxtmunthrek.png" class="portrait"/>
-				<h3>Moxtmunthrek, Human Druid</h3>
+				<h3>Moxtmunthrek</h3>
+				<p></p>
+				<p class="note">Suggested Classes: Druid, Rogue</p>
+				<p class="note">Notes: </p>
 			</div>
 			<div>
 				<img src="portraits/mucksnipe.png" class="portrait"/>
-				<h3>Mucksnipe, Ogrillon Barbarian</h3>
-			</div>
-			<div>
-				<img src="portraits/nidhon.png" class="portrait"/>
-				<h3>N&iacute;dhon Nimmista, Elf Ranger</h3>
+				<h3>Mucksnipe</h3>
+				<p>Mucksnipe was born to a mousy farmer's daughter. His father was the voracious marauder Whitehog, a ravenous ogre who terrorized the neighborhood for most of a year before vanishing. He ate loads of people and raped Mucksnipe's mother, who died giving birth to him in a fountain of blood.</p>
+				<p>His uncle slapped him with the name after deciding not to bash his head against a rock. Dispassionately, he knows that Mucksnipe's a nice boy, but there's nothing dispassionate about how he thinks of Mucksnipe. From a young age, he made sure the half-ogre knew who his father was, what Mucksnipe's father did to his mother, what Mucksnipe did to his mother, and how close his uncle came to ridding the world of him for it. A lifetime of being subjected to this story filled the simple-minded Mucksnipe with shame, to the point where he couldn't bear to look at people and was prone to fits of self-loathing rage.</p>
+				<p>He got a second job in his midteens playing bouncer at The Copper Crab, the tavern on the halfling side of town. Bree Tealeaf, a halfling priestess of Sheela took him under her wing after, eventually sheltering him from his abusive family. Her husband Roscoe was a hunter, and in their modest manor, they succeeded in partially rehabilitating his shame into determination to protect people.</p>
+				<p>Click <a style="font-weight:bold;" onclick="myFunction()">HERE</a> for the 5e ogrillon race homebrew.</p>
+				<p class="note">Suggested Classes: Barbarian, Ranger, Fighter</p>
+				<p class="note">Notes: I would go chaotic for this character, probably chaotic good. Being an uneducated half-ogre, Mucksnipe is not a rocket scientist, so intelligence should be his lowest stat. If he goes the route of the ranger, he should take ogres as his favored enemy. Either way, I have a mental image of his foster mother's influence in his choice of weapon, the scythe.</p>
 			</div>
 			<div>
 				<img src="portraits/ronan.png" class="portrait"/>
-				<h3>Ronan Brandywine, Human Wizard</h3>
+				<h3>Ronan Brandywine</h3>
+				<p>X was a red dragon who meant to raise a battalion of half-dragon children, and to this end he abducted female royals and noblewomen, raped them, and then ransomed them for mountains of gold after they gave birth. He lost interest in this plan and sold his children into slavery. An Orog warchief saw potential in X, a young male. He taught him the ways of magic, the boy surpassed his master, joined up with the cult of Tiamat, had a baby through magical means, bailed on the mother who raised him in the cult and abandoned him when he was five or so.</p>
+				<p>Ronan has a devil-may-care attitude and a zest for life, but if truth were to be told, he's deeply insecure, wounded by the multiple rejections of his forebears. He has a world-class chip on his shoulder and has a bone to pick with his parents, his grandfather, chromatic dragons in general, the cult of Tiamat, and the queen of dragons herself.</p>
+				<p>He has some peculiar draconic traits. Like most red dragons, he has a thing for human and elven maidens, though this manifests itself in a heightened sex drive instead of dietary appetite. But the most distinctive draconic trait is his desire to acquire treasure. He  talks a lot about acquiring an estate; this is partially for status, but mostly because he wants a place to hoard finery, trophies, and gold.</p>
+				<p class="note">Suggested Classes: Wizard, Sorceror (Draconic)</p>
+				<p class="note">Notes: Definitely a chaotic type; probably not evil, but not by much. His vices are partially an outlet for his emotional injuries, so the only way I could see him becoming good is if he tackled the inferiority complex that rejection instilled in him. Though he is more or less human, bright red hair and irises would be a nice allusion to his biological grandfather. His extra language would be Draconic. If I were to roll amazing stats on this character, I would ask the DM to consider trading in a brick's worth of them to apply the half-dragon template to Ronan.</p>
 			</div>
 			<div>
 				<img src="portraits/sighbiorn.png" class="portrait"/>
-				<h3>Sighbiorn Silverscale, Human Sorceror of the Draconic Bloodline</h3>
+				<h3>Sighbiorn Silverscale</h3>
+				<p>Krahjoor-vahlok was a silver dragon who was condemned to live life as a human by Bahamut as an act of contrition for malicious hubris. He settled into the X region, married a kind woman, and raised a family. He owns a successful vineyard just up the road from Bahamut's temple. Most of his children and grandchildren work the vineyard and serve at the temple, and a number of them manifest the characteristics of draconic sorcery, one of them being Krahjoor-vahlok's grandson, Sighbiorn.</p>
+				<p class="note">Suggested Classes: Sorceror (Draconic), Paladin (Bahamut), Cleric (Bahamut)</p>
+				<p class="note">Notes: This character was very nearly a woman named Sibel, which would also work. Definitely lawful good and a friendly, cheerful type. A cool trinket would be something that recalls his heritage: one of his grandfather's old scales, a bottle of wine, maybe an old symbol of Bahamut, something. I was thinking of giving him a physical trait that alluded to his bloodline, like luminescent silver irises. His extra language would be Draconic.</p>
 			</div>
 			<div>
 				<img src="portraits/skari.png" class="portrait"/>
-				<h3>Sk&aacute;ri, Half-Orc Paladin of the Raven Queen</i></h3>
+				<h3>Sk&aacute;ri</i></h3>
+				<p></p>
+				<p class="note">Suggested Classes: Paladin (The Raven Queen), Cleric (The Raven Queen), Barbarian, Fighter</p>
+				<p class="note">Notes: </p>
 			</div>
 	</body>
 </html>
@@ -92,4 +119,18 @@ Bernie (Experimental Humanoid Canine)
 Sibel Silverscale
 Rhiannon Brandywine
 N&iacute;dhil Nimmista
+
+			<div>
+				<img src="portraits/aiden.png" class="portrait"/>
+				<h3>Aiden neKhan, Aasimar Cleric of Bahamut</h3>
+			</div>
+			<div>
+				<img src="portraits/henrik.png" class="portrait"/>
+				<h3>Henrik of Caer Corwell, Genasi Monk</h3>
+			</div>
+			<div>
+				<img src="portraits/nidhon.png" class="portrait"/>
+				<h3>N&iacute;dhon Nimmista, Elf Ranger</h3>
+			</div>
+
 -->
