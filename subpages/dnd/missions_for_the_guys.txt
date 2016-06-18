@@ -1,0 +1,542 @@
+ORLUMBOR
+	Locals - Sheriff Dunwoody, Chloe, Ohm, Tailbones (Sentient Felid Abberation)
+
+FOGHURST
+	Ruled by a lord mayor who answers to a local noble. Its primary source of income is fishing, along with farming corn and wheat. They raise loads of pigs too.
+	The bar and inn are built on a bridge over the river.
+	There's a haunted tunnel that goes under the river that the locals don't know about.
+	The green quarter gets its name for its lampposts with green glass. There was a mistake in the shipment from Baldur's Gate; one of the crates from the glass blower had green glass instead of colorless. The mayor was going to send it back, but the locals liked it so much they wound up keeping it.
+	The veil between Faerun and the Feywild is especially thin in this area.
+	Henry and Teresa Remington make +1 swords exclusively; they don't really have a storefront, but they do have showroom.
+	Any houses or properties for sale?
+	The Slaughtered Lamb, dive bar on the south side of town with a giant owl in a cage
+
+PINEROSE
+	A trading post for trappers, hunters, and rural artisans.
+	The overall territory was contested, but the post itself was treated as neutral ground and an unaffiliated resource, so the nearby gnolls never caused trouble.
+
+CALAROST
+	Mostly wood elves, but the ruling caste is eladrin. Most of the de facto royalty are avariel.
+
+KOAPUUWAI (brave heart)
+
+HUIA'HAMALE (wave hammer)
+
+BEAGANFEARG
+
+BLACKBOUGH
+
+CALENGLASS POND
+Lesser wild magic zone.
+
+THUNDER HOLLOW
+
+DAPPLEWOOD
+	Wizarding guild hall gone and vanished
+
+
+
+NPCS
+BARBARIANS: Dagnyr (Totem Warrior), Kinrak (Berserker/Champion)
+BARDS: 
+CLERICS: Markham Chasseur (Archfey/Nature Cleric), Jandrew Southgate ()
+DRUIDS: Moxtmunthrek* (Coastal/Ancient Paladin), XXXXX (Moon)
+FIGHTERS: Julia Delacroix* (Wizard/Battlemaster), Kinrak (Berserker/Champion), Lachlann Donnelly (Hunter/Monster Hunter), Sir Dane Balcon (Assassin/Eldritch Knight)
+MONKS: Henrik of Caer Corwell (Four Elements), XXXXX (Shadow)
+PALADINS: Sighbiorn Silverscale* (White Paladin/Silver Draconic Sorcerer), Moxtmunthrek* (Coastal/Ancient Paladin), Skari (Dark Paladin)
+PSIONS: Kayne ()
+RANGERS: Mucksnipe (Beastmaster), Lachlann Donnelly (Hunter/Monster Hunter)
+ROGUES: Felix Leopold* (Arcane Trickster), Cpt Jonathan Kinaitis (Swashbuckler), Sir Dane Balcon (Assassin/Eldritch Knight), Rhiannon Brandywine* (Red Draconic Sorceror/Thief)
+SORCERERS: Rhiannon Brandywine* (Red Draconic Sorceror/Thief), Sighbiorn Silverscale* (White Paladin/Silver Draconic Sorcerer), 
+WARLOCKS: Markham Chasseur (Archfey/Nature Cleric), XXXXX (Fiend), XXXXX (Great Old One)
+WIZARDS: Julia Delacroix* (Wizard/Battlemaster), XXXXX (SCHOOL)
+* represents a faction
+** multiple classes
+! Dagnyr is a gnoll, Kayne is an illithid, Mucksnipe is an ogrillon, Lachlann is a white werewolf, Felix is half eladrin, Julia is a dhampir, Kinrak is a minotaur, Henrik is a genasi
+Bailey Whitethroat, Denali Bluehoney, Aiden neKhan (Aasimar), Bernie (Experimental Humanoid Canine), Dr Marcus Faulkner, Professor Whatever
+
+Barbarian (Berserker, Totem Warrior, Battlerager) - Bard (Lore, Valor, Sword, Satire) - Cleric (Knowledge, Life, Light, Nature, Tempest, Trickery, War, Death) - Druid (Land, Moon) - Fighter (Champion, Battlemaster, Eldritch Knight, Purple Dragon Knight, Cavalier, Scout, Monster Hunter) - Monk (Open Palm, Shadow, Four Elements, Long Death, Sun Soul) - Paladin (Devotion, Ancients, Vengeance, Crown, Oathbreaker) - Psion (Awakened, Immortal) - Ranger (Hunter, Beastmaster, Deep Stalker) - Rogue (Thief, Assassin, Arcane Trickster, Swashbuckler, Mastermind, Inquisitive) - Sorceror (Dragon, Wild, Favoured Soul, Storm, Shadow) - Warlock (Fiend, Archfey, Great Old One, Undying, Undying Light) - Wizard (Schools of Magic, Artificer, Bladesinger) - Runescribe
+Indigans - add the indigan race, sharp-toothed, blue haired, add the blueveined, a blue-eyed, blue-blooded race of spellcasters
+Drisleach - add the briarborn, brambleborn, add a neutral race that looks scary as hell, add the tattooed race, add that ruddy skinned vampiric race I made for star trek, add a tzimisce race, red eyes, jagged toothed ruin-dwellers with tribal tattoos on faces
+Rêver-lapins - add a sandman-like race with control over sleep and dreams, add a rabbit-like race with a fine downy coat and an ear-like hood
+Sangkiri - add an obeah race in there, add a race with many eyes, sickly, tall magic-users with jewels in foreheads and hands
+Triaxians - white fur and epicanthal eyelids in cold weather, resistant to extreme weather
+Humans, Halflings, Dwarves, Elves, Dragonborn, Half-Elves, Gnomes, Half-Orcs, Tieflings, Aasimar, Dhampir/Muatana-al, Genasi, Fetchlings (Kayal), [Fey influence], Dopplegangers/Alarians, Half-Ogres, Changelings, Indigans, Rêver-lapins, Drisleach, Sangkiri
+
+The Twin Lakes Boys
+Art (Male Tiefling, Warlock of the Great Old One) [Walter] - 
+Brex (Male Dwarf, Cleric of the Life Domain) [Kyle] - 
+Yodi (Male Gnome, Monk of the Open Palm School) [Michael] - 
+Theren (Male Wood Elf, Rogue of the Assassin Path) [Jonathan] - 
+Rhogar (Male White Dragonborn, Paladin of the Dark Persuasion) [Thomas] - 
+///
+Hobson (Male Halfling, Barbarian) [Uriah] - 
+Oberon the Boneless (Male Eladrin, Bard) [George] - 
+Kelric Haleson (Male Half Elf, Warlock of the Fiend) [Evan] - 
+Qwinn Amastacia (Female Wood Elf, Rogue of the Thief Path) [Suzy] - 
+XXXXX () [Josh] - 
+
+FAMOUS
+Elminster, Drizzt, Bruenor, Minsc, Laeral, Abdul, Onthar, Leosin
+
+
+
+
+
+
+MISSION TYPES
+Draconic Missions
+	The characters go on a mission for one of the five factions to thwart the Cult of the Dragon. Success in these scenarios may earn the characters the upper hand in pivotal situations in the main campaign.
+		Whedabra, black dragon ("darkness")
+			The darkness-addict who never speaks or surfaces, only terrorizes intruders with glimpses
+			Lairs in ruins where abberant deities corrupt his mind
+			Creates bestial half-dragon children
+			REWARD: Leader assassination possible here
+		Arytiss, red dragon ("warrior")
+			Acclaimed historian and biologist
+			Brutally effective mercenary
+			Cultivates contacts and incites conflict from shadows
+			REWARD: Green orb of dragonkind can be attained here
+		Irthosith, blue dragon ("secret lord")
+			Irritated by silence
+			Angered by and fascinated with death
+			Took over the local salt mine in secret
+			REWARD: One of the dragon masks can be attained here
+		Diarcannis, green dragon ("of magic")
+			Enjoys playing mind games with illusory magic
+			Dwells in a treetop city
+			Extremely defensive of his wood
+			REWARD: Copper dragon delegate begins "friendly"
+Hometown Missions
+	The characters go on a mission for their hometown or close contacts. Success in these scenarios may earn the central character some bonuses and treasure especially helpful to him.
+		Art
+		Brex
+		Yodi
+		[Jonathan's Character]
+		[Koa's Character]
+		[Thomas's Character]
+Generic Missions
+	The characters go on a mission at the behest of people who need help. Success in these scenarios may earn the characters loot and treasure. 
+	
+SITES
+
+DUNGEONS
+	The Azure Veil
+	Lover's Cavern
+	Yeathan's Temple
+	Ship Graveyard
+	The Derelict Winery
+	School for Boys
+	Forest of Thorns
+	Very old cemetery, catacombs, mausoleum, mass grave
+		Charnel pit
+		Disaster at the Necropolis
+		Changing pit
+
+VILLAINS
+	Finding a storm-god's cult sacrificing children under a farmhouse
+	
+	Wendigo
+		The village of empty children
+	Hacklehook Tribe of Gnolls
+	Drarluuk Tribe of Goblins
+	Tanar'ri Tribe of Lizardfolk
+		Worship Sess'Innek
+	Eelfolk
+	Whitehog
+	Candan Kasap
+	Sasha Lechkov
+	Ventriloquist/Puppeteer/Tzimisce
+	Reanimator - treats catacombs as barracks
+	The Taxidermist - animalistic flesh golems
+	Mohrg
+	The Puritan - fighting for sorcerer supremacy
+	
+	Aodhan the Hungry
+		Werewolf Barbarian
+		Worshipper of Karaan
+	Feraku the Green
+		Half troll, half green dragon Druid 
+		Cannibalistic, casts awaken on animals
+		The Troll Tribe who believes enlightenment is gained through pain, fear, horror, and wretchedness
+	Lord Volmer
+		Hobgoblin Fighter
+		Possessed by a devil who wants to test the characters before he parleys with them
+	Grinrack
+		Illithid Psion
+		Worshipper of Yeathan, monstrous sea god
+	The Illusionist
+		Doppleganger Wizard
+		Takes different forms over time
+		Battle of Gully Reach
+
+	Night Terror
+		Relieves nightmares, but collects them as minions in what is called the Ideal Library
+		Wants to frame the dream rabbits, one of whom is wed to the king, prompting war
+		
+MYSTERIES
+
+Barbarian - Druid - Fighter - Psion - Wizard
+Bard - Cleric - Monk - Paladin - Ranger - Rogue - Sorcerer - Warlock - 
+Bugbear - Doppleganger - Drider - Drow - Gith - Gnoll - Goblin - Harpy - Hobgoblin - Kobold - Lizardfolk - Lycanthrope - Medusa - Merrow - Mind Flayer - Minotaur - Nothic - Orc - Sahuagin - Slaad - Troglodyte - Yuan-ti
+Green Hag - Cyclops - Ettin - Fomorian - Hill Giant - Ogre - Oni - Troll
+Demon - Devil - Hellhound - Nightmare - Succubus - Cambion - Imp - Night Hag
+Skeleton - Zombie - Shadow - Festrog - Ghoul - Specter - Ghast - Will-o-wisp - Mummy - Wight - Banshee - Ghost - Revenant - Wraith - Vampire - Lich
+Pixie - Sprite - Satyr - Dryad - Eladrin - Unicorn - Pegasus - Hippogriff - Faerie Dragon - Centaur - Treant - Nymph* - Sirine* - Pooka*
+Sea Hag - 
+Giant Crab - Giant Rat - Poisonous Snake - Axe Beak - Constrictor Snake - Giant Centipede - Giant Frog - Giant Lizard - Giant Owl - Giant Poisonous Snake - Giant Wolf Spider - Panther - Swarm of Ravens - Wolf - Black Bear - Crocodile - Giant Wasp - Reef Shark - Dire Wolf - Giant Octopus - Giant Spider - Giant Toad - Giant Boar - Giant Constrictor Snake - Hunter Shark - Plesiosaurus - Swarm of Poisonous Snakes - Giant Scorpion - Giant Crocodile - Giant Shark
+Slaad - Nothic - Grell - Chuul - Mind Flayer - Cloaker - Aboleth
+Water Weird - Water Elemental - Marid
+Darkmantle - Worg - Ankheg - Carrion Crawler - Grick - Peryton - Owlbear - Phase Spider - Medusa - Grick Alpha - Hydra - Behir - Kraken
+Blight - Awakened Tree - Shambling Mound
+Leshen - Spriggan - Grottore
+
+Bard reminiscent of the Purple Man
+Ranger obsessed with the wild hunt
+Sorceror returns to her home town for vengeance
+Wizard delves into aberrant grimoire
+
+Giant Shell
+Observatory
+The Puncture
+Haunted Wood
+Haunted Manor
+Jabberwocky, Bandersnatch
+The Phantasmal Killer Book - sudden death syndrome
+The Possessed Golem, a la Yaridovich
+The ghostly tribe of nomads
+Trying to give life to a guitar player in a painting
+The Patient One, the Aberrant God
+Ennestre, the Possessed Dragon
+The Dracolich
+Violet Rain, severs connection to gods
+Plague of Nettles
+Blood Rain
+The Demon Child, Unholy Scion, Avatar of Cas, Samuel Amad
+Tree full of corpses
+Something bites in the dark
+Bloodrock, abyssal blackgrass, charnel bog
+
+Techniques: Drive home malevolence, Emotional story hooks, Humbling the players, Change of pace
+Techniques: Betrayal, Claustrophobia, Confusion, Desperation, Eeriness, Helplessness, Internal struggle, Isolation, Revulsion, Self-loathing, Shock, Spiraling Despair, Violence, Weight of Suspicion
+Splitting the party, Don't show everything, Threaten loved ones
+
+EVIL SITES
+MINOR: a gruesome murder, proclamaation of an evil edict, sacrifice to evil god or fiend, animation of many undead, mistreatment of captives, casting a long-lasting evil spell
+Creatures: nightmares
+Locations: bad feeling, evil/undead gain bless
+Objects: n/a 
+MODERATE: building evil temple, multiple sacrifices to god-fiend, summoning multiple fiends, committing mass murder or storing trophies, possession of innocents, long-term presence of powerful undead or evil outsider
+Creatures: nightmares, neuroses, madness
+Locations: unnatural chill, absence of plant life, unnerving sounds, cold wind 
+Objects: darken or lighten, warp, unnaturally cold, possessed by outsiders
+MAJOR: building portal to lower planes, summoning especially powerful fiends, committing countless sacrifices, evil god walked here
+Creatures: hair turns white, flesh turns pale and/or cold, eyes turn black or red, smell bad, neutral/unaligned become evil, possessed
+Locations: evil weather, natural healing impossible, can't cast good spells
+Objects: faint green glow, smells bad, strange images appear on surface, weakened, carries an infection
+EXTRAORDINARY: act of genocide, birth of evil god, murder of good god/hero
+Creatures: faint green glow, sickened, -2 penalty to one ability score, touch causes pain, animals avoid, evil brand as bonus feat, mutated physically, acidic blood, breaks out in boils
+Locations: unhallow spell, befoul spell, despoil spell, landscape changes or warps, weather patterns change forever
+Objects: touch causes pain, becomes evil artifact
+
+Torches flicker and die with no breeze, wolves howl, 
+Awaken to chewing noises, blood on bedroll, all background noises cease, 
+Frost, ripples, clouds, etc form scary images, 
+Shadows vanish for a day, mirrors crack same way every time, animals are hostile, spiders fall in love, reflection out of sync, 
+Premonition of horrible doom for the village they're in, distant crying progresses from baby to elder, priest suddenly can't say god's name, hears her own voice scream, something wet squirms in armor, can't light a fire, hear young girl laughing, Screams, calls for help, or moans of ecstasy come from beneath the ground of a cemetery, old life item shows up, extra horse saddled with theirs, dreams about friends dying by his own hands, whispering voice that mocks and incites paranoia, horse turns carnivorous, finds footprint leading but none leading out, canteens full of blood, scuttling something, rats fleeing for no obvious reason, hallucinations in mirror, muffled sobbing, accelerated aging, non-magic darkness that can't be penetrated by light spells, single window boarded up, missing room, extra room, cellar door is barred and locked from the inside, portrait that implicitly shows you in the future might show you dead, an attacker in mirror kills her reflection, all animals in town start to shake howl and hide, dusky valley, waking amongst the dead, they enter a cheery inn to find it long-decayed, no children around
+Unknown, Unthinkable, Unforgivable, Unexpected
+
+Storm (hurricane, tornado, tsunami), flood, plague/disease, planar warp
+Rise of a new era, disaster, depletion, prediction/omen/prophecy, myth/legend 
+Criminal enterprise, monster(s), planar threat, splinter faction, savage tribe, traitorous ally
+Guild, magical society, new dynasty, ideal, realm
+Animal, habitable land, mineral, monster, bloodline, crop
+New resource, discovered land
+Half gritty realism-half action movie, fairly serious but flexible, bold action or caution, DM only writes half of the story, vaguely southern gothic, some moral ambiguity
+Fortification, hesit, salvage, infiltration, ghostbusting
+Revenge, raid, cursed, zealotry, corruption, destruction, domination, plunder, cult, conquest
+Parley, rite of passage, reclaimer, pursuit, missing person/item, magic threat, investigation
+Stop raids, contract, reconnaisance, escort, rescue, map, resources
+Skilled adventurer, unskilled adventurer, enthusiastic commoner, soldier, priest, sage, revenge seeker, raving lunatic, celestial, fey, disguised monster, secret villain, retired adventurer, local ruler, military official, temple official, respected elder, old friend, former teacher, parent/family member, desperate commoner, embattled merchant
+Sinkhole, wandering, chase/pursuit, map/dead body, teleportation, hearsay, volunteers, help, ordered, dreams, haunting
+Battle, death trap, cataclysm, thwart plan, rites, betrayal, planar assault, collapse, hard choice, leverage
+Big event, spree, corruption, one-time, serial, step-by-step 
+Justice, exoneration, protection, rebellion, negotiation, redemption
+Making foes cooperate, impossible demand, victory or honor, honor only one of two allies
+Racing against opposing party, can't kill bad guy, time limit, responsible for NPC, bad info, prophecy involved, choose between goals, success helps bad guy, cooperate with enemy, magical compulsion
+Anniversary of reign/event/birthday, arena event/performance, arrival of caravan/ship/circus/NPC, athletic event/tournament, birth, festival: civic, fertility, harvest, midsummer, midwinter, astronomical event: comet, equinox, solstice, full moon, lunar eclipse, new moon, planetary alignment, solar eclipse, commemoration of tragedy, remembrance of soldiers lost, consecration of temple, holy day, investiture, coronation, knighting, monarch's ball, royal address or proclamation, council meeting, execution/pardoning/trial, funeral, graduation of cadets/wizards, migration of monsters, new year, planar conjunction, procession of ghosts, royal audience, signing of treaty, uprising, wedding
+Create urgency, establish atmosphere, drain resources, provide assistance, add interest, reinforce themes
+Getting off-track, resting, long journey, too much attention
+Surprise the party, enemy has cover, can't see, environmental damage, physically extenuated, environmental complications, change of elevation, forced to move, defensive positions, different monsters cooperating
+Ivy-covered elven statue, magic grove, elven music, wild game/beasts, monsters, fey, elves
+Jewelry, formal clothes, scarred, chipped up, eye color, tattoo/birthmark, bald, braids, hair color, tick, distinctive feature, beautiful/ugly
+High ability/low ability
+Musical, polyglot, lucky, animal person, good with kids, great at a game, artistic, good drinker, tradesman
+Sings/whistles/hums, rhymes, voices, slurs/lisps/stuttes, yells/whispers, eloquent, vulgar, joker, chews/fidgets/paces/taps/bites
+Argumentative, arrogant, blustering, rude, curious, friendly, honest, hot-tempered irritable, ponderous, quiet, suspicious
+Forbidden love, decadent pleasures, arrogance, envious, greedy, prone to rage, powerful enemy, specific phobia, shameful history, secret crime, forbidden lore, foolhardy
+Creators, cults
+Life goal, protective of family, protective of colleagues, loyal to patron/employet, romantic interest, drawn to place, protective of keepsake, protective of valuable, out for revenge
+Villain schemes and techniques (DMG 94)
+City building, catacombs/sewers, under a farmhouse, graveyard, ruined castle/city/temple, forest, gorge, swamp, promontory, island, underwater, treetops, geyser/waterfall, structure sunk in swamp, bottom of sinkhole, floating, magical catastrophe, Feywild, island underground
+Death trap, lair, maze, mine, planar gate, strongold, temple/shrine, tomb, vault
+Abandoned, conquered, raided, discovery killed, internal conflict, magical catastrophe, natrual disaster, cursed, planar creatures
+Darkness, air quality, webs, brown slime, green slime, yellow mold
+Barrow, statues in cliffs, enscribed obelisk, wall, fountain, standing stones, totem
+Wild magic zone, talking boulder, spirit in tree, foggy battlefield, portal, wishing well, wrecked ship, ghost ship, petrified/awakened trees
+Extreme heat, strong wind, heavy precipitation, desecrated ground, quicksand, razorvine
+Barnacled wreck, regular wreck, giant oysters, Sunken ruin (haunted, inhabited, deserted), monolith, statue, cave, ghost ship, whirlpool, pirates, floatsam, jetsam, NPC, treasure, merfolk, merrow, sahuagin
+Murky water - 10 ft visibility
+
+
+
+Brass Dragons
+	Obsessive linguist
+	Compulsive riddler
+	Casual pyromaniac while conversing
+	Donates tons of money to atone for mistake
+Bronze Dragons
+	Loves to talk with animals
+	Fancies himself a paladin and rushes into danger
+	Acts as a spy
+	Polymorphs to protect sailors from pirates
+	Collects natural treasures
+	Lives as a shipwright
+	Adores and protects a fishing village
+	Hates those who pervert magic with evil uses
+Copper Dragons
+	Comical lyricist
+	Lives in cliffs with gnomes
+	Increasingly deadly pranks on tyrant king
+	Has an elemental plane portal in lair
+	Lives with a band of wood elves
+	Swore a blood oath against fiends
+	All puns and no straight answers
+	Fighting flights of young red dragons
+	Presides over a sylvan domain
+Gold Dragons
+	Human king's foster child / ward
+	Lost her parents to Tiamat
+	Maintains an urban estate and pays for evil's head
+	Converses with celestials and visits universities
+	Hoards books instead of traditional wealth
+Silver Dragons
+	Flirtatious diplomat
+	Maintains an inn called The Silver Goblet
+	
+	
+Boons of Blackbough
+	Feat: Lucid Dreamer
+		Every long rest, the active player rolls a d12 and a d8, and takes the total in experience.
+	Cantrip: Dancing Lights
+	
+	
+The Bowl of Eldritch Fruits
+	ANIMAL CATEGORY
+	AQUATIC CATEGORY
+	MAGIC CATEGORY
+	PSYCHIC CATEGORY
+
+	And so on.
+	resistance to criticals, magic resistance (advantage on saving throws against spells and other magical effects), dark vision/true sight, weird insight, rotting gaze, telepathic shroud, spell reflection, amphibious, sense magic, limited telepathy, mind blast, innate spellcasting (psionics), enslave, psychic drain
+	light sensitivity
+	1
+		Pro: You gain the Improved Critical feature.
+		Con: You are now exclusively carnivorous.
+	2
+		Pro: You have advantage on Perception and Investigation.
+		Con: You have disadvantage on social checks except for Intimidate.
+		
+		
+Elsker
+	+2 Spear
+	Always know depth and quickest way to surface
+	Hold breath for an hour
+Lieutenant Hagan's Ring
+	+4 against spell-like abilities of the fey, +1 to hit against fey
+	This cold iron ring has gold filigree that comes to together to form an eye at the top of the band.
+Queen Marietta's Handmirror
+	Once per day, the player may ask the GM any question and get a yes or no answer
+Burning flagellum
+	Soak it in water and swing it at enemies for fire damage
+Bottomless caltrop bag
+	Bag never runs out
+	
+Lloth's Great City: Drow/Arachnians/Dridders/Ettercaps
+Merfolk, Naeads, Sirines, Cecaelia, Selkie, Maenads
+Terrorists take hostages
+Obliviously arming one's future enemies
+Homeless Veterans take down a crooked sheriff
+Trained the barbarian rebel leader in your army
+Leader goes and loses impossibly sensitive information
+General screws up and goes into hiding
+Spy who masquerades as a bartender
+Betrothed with cold feet faces an army
+Albinism is heralded as a kind of magic 
+Finding a pit full of severed hands
+
+Elven Treasures
+ash longbow with ivory and silver, elves dancing around a tree
++1 light armor complete with hood and gloves, lined with rabbit fur and motif, frost resistance, advantage on stealth checks
+rabbit fur talisman
+pink-ish gold ring set with a stone of rose quartz
+elven rose wine
+
+Dwarven Treasures
+cedar cask of dwarven pipe tobacco
+
+Fairy Treasures
+pouch with stone-like seeds that smell like fresh fruit (creates thick, verdant patches of berries)
+a sleeping cap that gives you good dreams 
+a ring that helps your temporal attunement whilst in the Feywild
+vial of perfume that acts as an aphrodisiac so strong it's basically a drug
+honeysuckle wineskin
+fairy mask
+a pair of illusory statues; one mimicing the viewer, the other mimicking the one the viewer most desires
+white jade pendant of a unicorn
+statuette of entwined nymphs
+sword with faerie fire
+a carved wooden mantle of ash, with demons on one side, angels on the other, with a fairy forest moon 
+strangely colored apples that cure wounds
+
+Dragon Treasures
+silver dragonscale purse with silver highlights
+book written by a dragon historian
+dragon's skeleton and rusted armor
+a leather bag full of dragon scales
+a brass dragon egg, hollowed out and painted into seascape
+black dragonhide-banded mail and gauntlets, trimmed with gold, polished
+teakwood staff with dragon's head
+painted carving of a blue dragon
+a shield embossed with a dragon's head
+plans to assault castle (in draconic)
+"beware of wyvern" sign 
+
+Fire Treasures
+sword of flowing design with red stones inlaid
+pouch with strange light grey rocks that smell like sulfur (creates thick, acrid volcanic smoke)
+ring of fire resistance
+blade oils
+platinum coins with demons and flames
+bronze ring that looks like a bull's head
+demon's vale wine
+an ivory robe with scarlet trimming that can burst into illusory flames
+
+Water Treasures
+coral locket
+decanter of endless water
+turtle-shell shield
+large pearl in a marble display shaped like oyster
+five pink pearls wrapped in linen
+mother of pearl hand mirror
+whalebone carving of the story of creation
+studded sharkskin leather armor
+a shield with sharks teeth and embossed with a water demon's face
+Tidebreaker - a quarterstaff with glimmering wave patterns, cold damage, houses a wter elemental, wielder can move breathe and fight underwater, can create geysers with it
+sword with a naga's soul in it
+Crusty Jim - a fine harpoon with a golden figurehead on its handle that gets a bonus against large aquatic beasts
+palm wood with shells and sunstones
+a granite fountain with fish of colored glass meant to make the water rainbowed
+
+Air Treasures
+a fluted spear that whistles when thrown
+cloak of griffin feathers set on black velvet
+bowsprit
+raptor
+bird in cage
+
+Earth Treasures
+potted treant
+silver-plated heavy mace, shaped like a ram's head
+
+Naga Treasures
+poisoning scabbard
+a sword with a gold and snakeskin hilt set with citrine
+
+Gothic Treasures
+a silver flask with a holy-runed stopper; wraith inside
+an iron maiden with silver blades
+
+Righteous Treasures
+broadsword with a stylized sun, rubies, and bone
+pendant, holy symbol of sun god that can create light
+a bracelet of medallions, each set with symbol of a good god
+flasks of holy water
+an oak cane that shows your pet deity's holy symbol
+
+Utility
+bag of holding
+spool of infinite rope
+gem of no food/drink
+a ring-pouch
+mortar and pestle
+
+Housewares
+a huge cookbook by a royal chef for all kinds of wild game
+
+Decorative
+
+Clothes
+fine cloth cloak
+
+a sword with minor historical significance is cool, carved wooden staff, birdbath (air/water/houseware), silver bells, perfumed candles, inlaid bone windchimes with moonstones, polished stone puzzle box, ceramic dice with bag, pewter miniature of a ship, small bag of incense, sending stones, green moss agate crystal skull, painted glass bauble, bear fur gauntlets, carved wooden miniature, blank leather bound book, robe, mirror, idol, amber, electrum flute, gruumsh's token, carved ivory drinking horn, rosewood goblet, painting, sash, gown, urn, carpet, flask, chessboard, deed to land, deed to mine infested with spiders, full of rotting equipment, carved orb that acts as a key, books on magical theory, battering ram, iron-bound oak with carved bear's head, blue onyx eyes, ring shaped like grape vines, mounted trophies, hourglass, formal dresses with petite woman, red marble orb, large turquoise bowl edged in silver, axes made from a monster's jawbone, wax-sealed clay pots, prism that projects a map, jar of poison, nice set of tarot/playing cards, hippogriff egg, tea set, demon skin, jade ring carved like a demon's face, black elven silk shirt, missing person trapped in artifact, riding saddle, nice tabard, manacles, gold bricks with the symbol of an evil god, a mimic disguises itself as a throne, has something else, a "rosetta stone", blue shard dagger with a hilt wrapped in white snake skin, spellbook, alchemist's notebook, preserved specimen in embalming fluid, herd of animals, warhammer carved like gnolls in battle, bear pelt made into cloak, gilded wooden box, chalice, locket, mask, pitcher, demon scale armor (whatever that is), scarf, candlesticks, battered shield with a griffon motif that has a love letter inscribed, chain of teeth, a gilded/bronzed goblin skull, a petrified wood, petrified bone greatclub with an obsidian head, crystal vase, maple bookstand carved to look like foxes, thick copper necklace with an aquamarine, pelts, a hooded child's cape, brightly colored, sunrod, whistle, book of poetry, rod of office with a key at the end, nice brushes and paints, painted eggs, bolts of fine cloth, a fine carved leg, casks of fine oil, elaborate wall sconces, beautiful saddle, a broad dagger with a hilt that can be unscrewed, a set of statuettes, a bag of saffron, a battle pennant, a bandolier holding flasks, statuette of a cockatrice, sheet with ancient writing telling about legendary item, a bronzed orc skull with an axe embedded in it, bison-hide tome about the orcish language and customs, pinewood totem pole, barbarian, a canopic jar, elephant tusks, an unusual leather cape, dyed blue and with a silver clasp of malformed faces, cat skeletons with fine collars, twin raven bookends, masquerade mask, bloodstained altar, tapestry, fox fur coat, idol, rosewood vase filled with antlers/horns
+pitons, hammer, rope, grappling hook, crampons, leather gloves, leather harness
+[something that shouldn't be there]
+a weapon that becomes more powerful the more outmatched you are
+bandolier/belt/cape/cloak/hood/robe/shawl/tabard/veil
+prayer beads/bracelet/anklet/body jewelry/headdress
+bottle stopper/bottle/illuminated manuscript/oil/music box/ship in a bottle
+alcohol/aphrodisiac/drugs/sexual implements/torture implements
+carpet/flatware/pots/lamps/pillows/blankets/mirrors
+oils/honeys/sugars
+perfume/incense/frankincense/myrrh/wax
+bone/claw/fang/feather/fur/hide/hoof/horn/scale/shell/skull/tusk/sprines
+Blessings, Charms, Letters of Recommendation, Medals, Parcels of Land, Special Favors, Special Rights, Strongholds, Titles, Training, Epic Boons
+Rosehart armor
+spices, oils, teas, ales, wines, textiles, ores, lumber
+bust, painting, statue, tapestry, artwork, clothing, furnishing, jewelry, instruments, toys, games, utensils
+capes, cloaks, eyepatches, gloves, helms, masks, tabards
+armoire, barrel, bench, bookcase, brazier, candelabra, candlestick, chair, chandelier, chest, couch, curtain, desk, display case, footstool, hourglass, lamp, mirror (hand), mirror (wall), pillow, rug, sack, sheets, table, urn
+amulet, anklet, armband, bracer, belt, bracelet, brooch, circlet, crown, earrings, hair comb, hat pin, locket, necklace, pendant, periapt, phylactery, pin, ring, scepter, tiara
+alphorn, bagpipes, banjolele, bell hanging, bones, chimes wind, clavichord, crumhorn, drum, drums bongo, drums kettle, dulcimer, fiddle, flute, gong, handbell, harmonica, harbo, harp aeolian, harpsichord, hautbois, horn natural, horn shell, lap-harp, lur, lute, lyre, mandolin, organ pipe, pipes pan, psaltery, recorder-flute, shaum, stones wind, tabor, trumpet herald's, water-pipe, whistle-pipe, zither
+bone, coral, crystal, glass, ivory, horn, adamantine, brass, bronze, copper, gold, iron, lead, mithral, platinum, silver, steel, mother of pearl, granite, limestone, marble, obsidian, onyx, sandstone, slate, soapstone, ash, chestbut, darkwood, hickory, mahogany, maple, oak, teak, alder, balsa, cedar, fir, pine, yew, 
+cotton, linen, samite, satin, silk, velvet, wool
+feathers, exotic feathers, bear fur, beaver fur, ermine/mink fur, fox fur, rabbit fur, seal hide, cat hide, wolf fur, alligator hide, bison hide, deer hide, shark skin, snake skin, 
+Battle, Boats, Castle, Children, Cityscape, Clouds, Dancing, Dragons, Flames, Flowers, Horse riders, Hunting, Knights, Love, Monsters, Mountains, Musicians, Pastoral, Religious icons, Soldiers, Spellcasters, Sports, Trees, Water, Weapons
+Carving, Engraving, Etching, Gems, Inlay, Mosaics, Plating
+books, dyes, incense, ink, lamp oil, paper, perfume, soap
+alchemist's fire, robe with embroidered animal, music box, tapestry, statuette of a wolf, bowl and pitcher, hairbrush, china, gown, carpet, hourglass, gold-capped carved mammoth tusk depicting fur-clad orcs hunting mammoths, tea set, bookend, jewelry box, blown glass, beer stein, water pipe, tobacco pipe, thurible, jewelry, scepter, lens, vase, pennant, battle standard, dragonhide half mask studded with white and black pearls, blankets, quilts, bedsheets, saddle, bridle, hookah, spectacles, blank books and journals, fan, pen, manacles
+Thunderfoot Socks
+Anymug
+Fur robes
+Ring against Demonic Possession
+High Priest's Ring - creatures resurrected by the wearer don't take negative levels
+Ring of the Juggernaut - wearer becomes immune to fear and pain
+Ring of the Sage - wearer gains +1 to mental attribute saving throws
+Ring of the Cynic - wearer becomes immune to illusions
+Universal Translator
+The Storybook where the story changes a little every time
+
+
+Lucid Dreamer - lots more flex on proficiencies
+Hyperborean - can change color of skin, hair, eyes
+
+House Rules
+Sorcerous Superiority
+	(Bloodlines: Elemental, Draconic, Abyssal, Celestial, Shadow, Fey, Aberrant, Undead)
+	(Bloodlines: Wild, Accursed [Hag], Arcane, Destined, Dreamspun, Impossible, Maestro, Martyred, Starsoul, Imperial)
+Demonic Individualism
+Protection from Good and Evil
+
+
+Sighbiorn Silverscale		
+Level 7
+	Increase hit points
+	Increase hit dice
+	Gain aura of devotion (immunity to charming)
+	Spellcasting increases to 4 1st levels, 3 2nd levels
+Level 8
+	Increase hit points
+	Increase hit dice
+	Take the shield master feat
+	Number of prepared spells increases to 6
