@@ -74,7 +74,7 @@ Hobson (Male Halfling, Barbarian) [Uriah] -
 Oberon the Boneless (Male Eladrin, Bard) [George] - 
 Kelric Haleson (Male Half Elf, Warlock of the Fiend) [Evan] - 
 Qwinn Amastacia (Female Wood Elf, Rogue of the Thief Path) [Suzy] - 
-XXXXX () [Josh] - 
+XXXXX (Male Elf, Wizard) [Josh] - 
 
 FAMOUS
 Elminster, Drizzt, Bruenor, Minsc, Laeral, Abdul, Onthar, Leosin
