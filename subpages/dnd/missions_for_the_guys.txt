@@ -173,8 +173,6 @@ VILLAINS
 	Night Terror
 		Relieves nightmares, but collects them as minions in what is called the Ideal Library
 		Wants to frame the dream rabbits, one of whom is wed to the king, prompting war
-		
-MYSTERIES
 
 Barbarian - Druid - Fighter - Psion - Wizard
 Bard - Cleric - Monk - Paladin - Ranger - Rogue - Sorcerer - Warlock - 
@@ -195,6 +193,10 @@ Bard reminiscent of the Purple Man
 Ranger obsessed with the wild hunt
 Sorceror returns to her home town for vengeance
 Wizard delves into aberrant grimoire
+
+
+
+SITES 
 
 Giant Shell
 Observatory
