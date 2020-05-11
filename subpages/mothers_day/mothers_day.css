@@ -1,0 +1,14 @@
+body {
+  background-color: #F6E702;
+  color: black;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: arial;
+  text-align: justify;
+  padding: 20 50;
+}
+#mary {
+	width:475px;
+	max-width:100%;
+	float:right;
+}
