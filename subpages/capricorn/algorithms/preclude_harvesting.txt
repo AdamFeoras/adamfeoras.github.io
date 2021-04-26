@@ -1,6 +1,0 @@
-//preclusion
-
-//make a player.harvesting boolean attribute, DONE
-//at the very beginning of the dive, set it to true
-//at the very beginning of the attack, set it to false
-//make the whole harvesting gig reliant on player.harvesting being true

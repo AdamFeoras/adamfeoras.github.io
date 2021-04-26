@@ -1,8 +1,0 @@
-// if the fight ends in a draw OR the player's victory, run this script
-
-if (player.bloodied = true){
-	teeth_num = DiceRoll("1d3")
-	collection.shark_teeth = collection.shark_teeth + teeth_num
-	player.saltiness = player.saltiness + 1
-	msg ("Resting on the beach, you dig " + teeth_num + " shark teeth out of your wounds.")
-}
