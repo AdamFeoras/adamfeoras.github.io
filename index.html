@@ -34,6 +34,7 @@
 				src: url("/freebies/bahnschrift.ttf") format("opentype");
 			}
 			body {background-color:black; color:dimgray; font-family:Bahnschrift, arial; 
+			font-weight:700; font-size:17px; 
 			text-align:justify; margin:5%; margin-left:10%;
 			background-repeat: no-repeat;
 			background-position: center; 
@@ -42,146 +43,101 @@
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;}
-			h3 {clear:left;}
-			h4 {padding-left:5%; padding-right:5%;}
+			h1 {text-align:center;}
+			h2 {text-align:center; margin-top:100px;}
+			h3 {clear:left; text-align:center; padding-left:5%; padding-right:5%;}
 			p {padding-left:5%; padding-right:5%;}
 			a {color:dimgray; text-decoration:none; font-weight:bold;}
-			a:hover {color:#FF0000;}
+			a:hover, .warning {color:#FF0000;}
+			.column {float:left; width:33.33%;}
+			.column_50 {margin:0 auto; width:50%; min-width:600px;}
+			img {-webkit-filter: grayscale(100%); filter: grayscale(100%); border:3px solid dimgray;}
+			.column img, .column_50 img {width:75%; max-width:200px; padding:3px; margin:0 auto; display:block;}
+			.row:nth-child(odd) .column img {float:left; margin-left:5%; margin-right:5%;}
+			.row:nth-child(even) .column img {float:right; margin-left:5%; margin-right:5%;}
+			.row:after {content:""; display:table; clear:both;}
+			@media only screen and (max-width: 1200px) {
+				.column, .column_50 {margin:0 auto; width:100%;}
+			}
 		</style>
 	</head>
 	
-	<script language="JAVASCRIPT">
-	document.write('<body background="' + base + '">')
-	</script>
+	<!-- need to set a breakpoint for the columns to go 100%, need to set a max-width on columns -->
 	
 	<script language="JAVASCRIPT">
-	if(window.addEventListener)
-	{
-		var kkeys=[],konami="38,38,40,40,37,39,37,39,66,65";
-		window.addEventListener("keydown",function(e)
-		{
-			kkeys.push(e.keyCode);
-			if(kkeys.toString().indexOf(konami)>=0)
-			{
-				kkeys = [];
-				alert('Merry Christmas!');
-				window.open("subpages/christmas_list/christmas_list.html");
-			}
-		},true);
-	}
+	document.write('<body background="' + base + '">')
 	</script>
 
 	<body>
 
 		<h1>Matthew Boddy</h1>
-		<h2>The Outdoorsy Nerd Goes To California</h2>
 		
-		<h3><a href="#" onclick="toggle_visibility('about_me');">About Me</a></h3>
-			<div id="about_me" style="display:none;">
-				<img src="pics/matt01bw.png" onmouseover="this.src='pics/matt01.png'" onmouseout="this.src='pics/matt01bw.png'" style="width:25%; float:right; clear:both; border:3px solid dimgray; padding:3px; margin-left:2%; margin-bottom:1%; margin-right:5%;"></img>
-				<p>Welcome, thank you for the visit. I've recently moved from the land of beer and pines to the land of wine and redwoods seeking employment and a forever home, and have christened that move with a new website.</p>
-				<p>I love the creative outlet that writing affords me. It's not <i>all</i> I do with my free time, but it's pretty close. I took a break from writing to update this About Me section. So if you want someone who's passionate and talented about wordsmithing, your search is over; way to go.</p>
+		<h2>About Me</h2>
+			<div class="column_50">
+				<p>Welcome, thank you for the visit. My name is Matt, and I'm a writer. When I was a freshman in high school I rewrote "The Cask of Amontillado" for a school assignment and things got out of hand.</p> <!--I've recently moved from the land of beer and pines to the land of wine and redwoods seeking employment and a forever home, and have christened that move with a new website.</p>-->
+				<p>I love the creative outlet that writing affords me. It's not all I do with my free time, but it's pretty close. I took a break from writing to update this About Me section, and when I'm done, I'll start writing again and won't stop until I go to bed tonight. So if you want a wordsmith who's passionate and talented, your search is over; way to go.</p>
 				<!--<p>I love the creative outlet that technical writing affords me, though it wasn't what I first set out to do. I got my master's in middle school education in 2010 and spent a couple of years student teaching and subbing. It was an interesting experience, seeing the classroom from the other side, but I decided to pursue a career in computers instead.</p>
 				<p>When I design a web page, I try to cultivate an aesthetic that is strong and unique, but doesn't overwhelm the user or impede functionality. I don't use a CMS; I prefer to do things by hand, that way I know every single line of markup and code and where it is. It takes longer but I'm always happy with the results.</p>
 				<p>Sometimes I work hard on coding all day as a project takes on a life of its own. Sometimes I drink wine and walk on the beach. Sometimes I pick my dog's poop off the ground. I'm versatile.</p>
 				<p>I want to become a technical writing rockstar. I look forward to an exciting future, though I've got plenty on my plate right now, improving my skill set. But eventually I'd like to settle down, build a house, and publish a book.</p>-->
 				<p>In addition to being a writer, I'm also a reader (obviously), a web developer, a hiker, a beachcomber, a cook, a gamer, an insomniac, and a cat person.</p>
-				<p>I always like to meet new people. I like to get commissions, too. I especially like job offers. So don't hesitate to contact me.</p>
-				<p><a href="freebies/matthew_boddy_resume.pdf" target="_blank">Click here to have a look at my CV and contact information.</a></p>
-			</div>
-		
-		<h3><a href="#" onclick="toggle_visibility('portfolio');">Portfolio</a></h3>
-			<div id="portfolio" style="display:none;">
-				<div style="clear:both;">
-					<img src="pics/spain01bw.png" onmouseover="this.src='pics/spain01.png'" onmouseout="this.src='pics/spain01bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
-					<h4>Spain</h4>
-					<p>I made a website for Portugal.com's Spain packages. This was a painstaking but very fun project that demanded extensive research, creative writing, and artistic formatting. I wore many hats (all of them, really) and provided ongoing support for months. Out of the large projects I've done, this is my favorite and I get a little nostalgic when I visit it.</p>
-					<p><a href="https://findingspain.com/" target="blank">Click here to have a look.</a></p>
-				</div>
-				<div style="clear:both;">
-					<img src="pics/keenai01bw.png" onmouseover="this.src='pics/keenai01.png'" onmouseout="this.src='pics/keenai01bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
-					<h4>Keenai</h4>
-					<p>Setting up this blog for Keenai was a fun and deceptively simple project. Working with them was a pleasure and I enjoyed building something so elegant.</p>
-					<p><a href="https://www.keenai.com/" target="blank">Click here to have a look.</a></p>
-				</div>
-				<div style="clear:both;">
-					<img src="pics/catalyst01bw.png" onmouseover="this.src='pics/catalyst01.png'" onmouseout="this.src='pics/catalyst01bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
-					<h4>CatalystCreativ</h4>
-					<p>This is how I learned to use SquareSpace - and FAST. This came across my desk and represents the highest work/time ratio I've ever gotten on a contract, but I was very pleased with the result and so was the client, and I think you'll be impressed too. Ah, the magic of a deadline.</p>
-					<p><a href="https://www.catalystcreativ.com/" target="blank">Click here to have a look.</a></p>
-				</div>
-			</div>
-		
-		<h3><a href="#" onclick="toggle_visibility('current_projects');">Current Projects</a></h3>
-			<div id="current_projects" style="display:none;">
-				<div style="clear:both;">
-					<img src="pics/capricorn01bw.png" onmouseover="this.src='pics/capricorn01.png'" onmouseout="this.src='pics/capricorn01bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
-					<h4>Capricorn</h4>
-					<p>I'm coding one of those old-school text-based adventure games that were all the rage when I was a kid. But THIS one is special; I'm including variables that make the experience wildly unpredictable. These variables will make the circumstances, available tools, antagonists, and potential outcomes different every time you play through the game.</p>
-					<p>Domenico is a former merchant who has stepped out of retirement following the death of his wife and is dabbling in illicit maritime activities. The late fifteenth century Amalfi Coast is beautiful, but capricious.</p>
-					<p>I'm still developing it, crunching code, adding a feature, crunching code, adding a feature. In the meantime I've posted a simplified sandbox version that you can play right in your browser. <a href="http://textadventures.co.uk/games/view/tqqz6mdockkyoy_oskxxeg/capricorn" target="blank">Click here to have a look.</a></p>
-				</div>
-				<div style="clear:both;">
-					<img src="pics/tavern_01bw.png" onmouseover="this.src='pics/tavern_01.png'" onmouseout="this.src='pics/tavern_01bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
-					<h4>The Tavern</h4>
-					<p>I picked up Dungeons & Dragons in early 2016, and it was a heck of a thing in so many ways. I think it's more fun for experienced players (and more convenient for grown adults) to play episodic adventures. This Planescape setting I've homebrewed is meant to provide a very flexible game that can be run by multiple dungeon masters.</p>
-					<p>I'm continuing to tweak it, add new ideas, new parameters, new prompts, new characters, but an experienced DM could take off with what's already here. Speaking of experience, the freedom of the Tavern is best enjoyed by veteran players who know what to do with it.</p>
-					<p>The Tavern is very rough draft right now, but <a href="freebies/the_tavern_very_rough_draft.pdf" target="blank">click here to have a look anyway.</a></p>
-				</div>
-				<!--
-				<div style="clear:both;">
-					<img src="pics/effenmont02bw.png" onmouseover="this.src='pics/effenmont02.png'" onmouseout="this.src='pics/effenmont02bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
-					<h4>Effenmont</h4>
-					<p>I'm doing a mock-up of a website for the Sims neighbourhood I'm building as though it were a travel destination. I significantly elaborated on the design from my senior project and threw in some photo edits as well, but the inner workings are very different. I'm going to add a searchable database for the purpose of demonstrating MySql some time in the near future.</p>
-					<p>I've been meaning to make a custom neighbourhood for years, and I'm coming at it like a professional. Those simmers that have gotten around to playing The Sims Medieval will recognize Effenmont as one of the nations you can send envoys to, trade with, and possibly lock horns with.</p>
-					<p>In the meantime, I'm making a website to market the neighbourhood, in so far as you can market something you're not technically selling. I will associate my PayPal account with it, though. <a href="subpages/effenmont/simshome.html" target="blank">Click here to have a look.</a></p>
-				</div>
-				-->
-				<!--<div style="clear:both;">
-					<img src="pics/youtube01bw.png" onmouseover="this.src='pics/youtube01.png'" onmouseout="this.src='pics/youtube01bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
-					<h4>YouTube Channel</h4>
-					<p>A buddy of mine has the idea to set up a YouTube channel. He wants to film thoughtful reaction videos and I have a few ideas myself. If we muster two thousand subscribers, give or take, we'll try to get put on local tv. Really good exposure, especially in northern California.</p>
-					<p>My dad also mentioned to me that you can monetize your YouTube account now. The other day I was looking at a guy who did a 70-part walkthrough of GTA5. One part had 2.1 million views. That's pretty inspiring.</p>
-					<p>I don't see myself contriving a video game series. I don't think. I have some ideas, though.</p>
-				</div>
-				<div style="clear:both;">
-					<img src="pics/cards01bw.png" onmouseover="this.src='pics/cards01.png'" onmouseout="this.src='pics/cards01bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
-					<h4>Boss Monster</h4>
-					<p>This is what happens when nerds make a classic party game with a retro theme. This is from Brotherwise Games, <span style="text-decoration:line-through;">but I got ahold of their card creator</span> and they just released a legitimate alternative to what I was using and now I'm working on making a custom deck. I'm considering approaching Brotherwise when I'm done and offering to sell the material to them. If they don't bite, I'll put them on the internet for free and enjoy using them myself.</p>
-					<p>I'm also using it to re-do a couple of their own cards that I want to tweak and a few of their cards that are now unavailable for retail.</p>
-				</div>-->
-			</div>
-			
-		<h3><a href="#" onclick="toggle_visibility('coding_freebies');">Coding Freebies</a></h3>
-			<div id="coding_freebies" style="display:none;">
-				<p>I'm pretty much willing to help with anything, so if you need help, just ask. You can reach me at boddym@yahoo.com; just mention in the subject line that you're looking for tech support, and not trying to sell me voodoo penis pills.</p>
-				<h4>Background Randomiser</h4>
-				<p>You might have noticed that the background is randomly determined every time you visit. <a href="freebies/background_randomizer.txt" download="freebies/background_randomizer.txt">Click here to download the javascript I used to accomplish this.</a></p>
-				<h4>Konami Code Easter Egg</h4>
-				<p>All self-respecting nerds know what the Konami Code is and a lot of them can probably name a website where its entry will make something special or funny happen. I was making a website for a security firm in early 2016, and on a whim cooked up this code and threw it in for kicks.</p>
-				<p><a href="freebies/konami_easter_egg.txt" download="freebies/konami_easter_egg.txt">Click here to download the javascript to make your own Konami easter egg</a>, but please don't use it unless you can think of something clever.</p>
+				<p>I always like to meet new people. I like to get commissions, too. I especially like job offers. So don't hesitate to contact me. <a href="freebies/matthew_boddy_resume.pdf" target="_blank">Click here to have a look at my CV and contact information.</a></p>
+				<p class="warning">Please note that I'm redoing my website right now. It shouldn't take more than a week or two as I consider what direction I want to take my career in, but please be aware this is not its final form. Check back shortly.</p>
 			</div>
 
-		
-		<h3><a href="#" onclick="toggle_visibility('favourite_recipes');">Favourite Recipes</a></h3>
-			<div id="favourite_recipes" style="display:none;">
-				<p>Cooking is one of my absolute very favourite things to do. I'll update this section with some simple recipes.</p>
-			<div style="clear:both;">
-				<img src="pics/ratatouille01bw.png" onmouseover="this.src='pics/ratatouille01.png'" onmouseout="this.src='pics/ratatouille01bw.png'" style="width:10%; float:left; border:3px solid dimgray; padding:3px; margin-left:5%; margin-right:2%; margin-bottom:1%;"></img>
-				<h4>Ratatouille</h4>
-				<p>I originally tried Ratatouille because the Pixar film got me curious. I wasn't disappointed. It's tasty, easy to make, good for you, and inexpensive to make a lot of. I like to make enough to feed the Weasley family, and then have one big bowl every day for several days.</p>
-				<p><a href="freebies/ratatouille_recipe.pdf" target="_blank">Click here to download my write-up of the recipe.</a></p>
+		<h2>Current Projects</h2>
+			<div class="row">
+				<div class="column_50">
+					<h3>My Book, <i>MoC</i></h3>
+					<p><i>MoC</i> is low fantasy set in my home of Santa Cruz. A combination of dark fantasy, magic realism, and horror. The mythos has been drawn largely from thoughts, fantasies, and ideas that I’ve had over the course of many years. My influences include Stephen King, Neil Gaiman, Lois Lowry, and especially J.K. Rowling, but this is not Harry Potter. This is what evangelicals <i>thought</i> Harry Potter was. This is Harry Potter if HBO wrote it. This is a fucking dark book. The Legion of Decency will not approve.</p>
+					<p>I'm doing little else aside from writing this book right now. The rough draft will be done in late 2021.</p>
+				</div>
 			</div>
-		<!--
-				<h4>Bouillabaise</h4>
-				<p>My recipe for bouillabaise is more concerned with how you cook and season the dish and less with what specifically goes in it, although I personally am very fond of monkfish; it's perch between whitefish and lobster is *perfect* for this dish.</p>
-				<h4>Crab Cakes</h4>
-				<p></p>
-				<h4>Fisherman's Pie</h4>
-				<p></p>
-		-->
+
+		<h2>Portfolio</h2>
+			<div class="row">
+				<div class="column">
+					<h3>Spain</h3>
+					<p>I made a website for Portugal.com's Spain packages. This was a painstaking but very fun project that demanded extensive research, creative writing, and artistic formatting. I wore many hats (all of them, really) and provided ongoing support for months. Out of the large projects I've done, this is my favorite and I get a little nostalgic when I visit it. <a href="https://findingspain.com/" target="blank">Click here to have a look.</a></p>
+				</div>
+				<div class="column">
+					<h3>Keenai</h3>
+					<p>Setting up this blog for Keenai was a fun and deceptively simple project. Working with them was a pleasure and I enjoyed building something so elegant. <a href="https://www.keenai.com/" target="blank">Click here to have a look.</a></p>
+				</div>
+				<div class="column">
+					<h3>CatalystCreativ</h3>
+					<p>This is how I learned to use SquareSpace - and FAST. This came across my desk and represents the highest work/time ratio I've ever gotten on a contract, but I was very pleased with the result and so was the client, and I think you'll be impressed too. Ah, the magic of a deadline. <a href="https://www.catalystcreativ.com/" target="blank">Click here to have a look.</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<h3>Ratatouille</h3>
+					<!-- <img src="tiles/ratatouille.png"/> -->
+					<p>I originally tried Ratatouille because the Pixar film got me curious. I wasn't disappointed. It's tasty, easy to make, good for you, and inexpensive to make a lot of. I like to make enough to feed the Weasley family, and then have one big bowl every day for several days. <a href="freebies/ratatouille_recipe.pdf" target="_blank">Click here to download my write-up of the recipe.</a></p>
+				</div>
+				<div class="column">
+					<h3>Capricorn</h3>
+					<p>I'm coding one of those old-school text-based adventure games that were all the rage when I was a kid. Domenico is a former merchant who has stepped out of retirement following the death of his wife and is dabbling in illicit maritime activities. The late fifteenth century Amalfi Coast is beautiful, but capricious. I've posted a simplified sandbox version that you can play right in your browser. <a href="http://textadventures.co.uk/games/view/tqqz6mdockkyoy_oskxxeg/capricorn" target="blank">Click here to have a look.</a></p>
+				</div>
+				<div class="column">
+					<h3>The Tavern</h3>
+					<p>I picked up Dungeons & Dragons in early 2016, and it was a heck of a thing in so many ways. I think it's more fun for experienced players (and more convenient for grown adults) to play episodic adventures. This Planescape setting I've homebrewed is meant to provide a very flexible game that can be run by multiple dungeon masters. The Tavern is very rough draft right now, but <a href="freebies/the_tavern_very_rough_draft.pdf" target="blank">click here to have a look anyway.</a></p>
+				</div>
 			</div>
 		
+		<h2>Coding Freebies</h2>
+			<div class="row">
+				<div class="column">
+					<h3>Background Randomiser</h3>
+					<p>You might have noticed that the background is randomly determined every time you visit. <a href="freebies/background_randomizer.txt" download="freebies/background_randomizer.txt">Click here to download the javascript I used to accomplish this.</a></p>
+				</div>
+				<div class="column">
+					<h3>Konami Code Easter Egg</h3>
+					<p>I was making a website for a security firm in early 2016, and on a whim cooked up this code and threw it in for kicks. <a href="freebies/konami_easter_egg.txt" download="freebies/konami_easter_egg.txt">Click here to download the javascript to make your own Konami easter egg</a>, but please don't use it unless you can think of something clever.</p>
+				</div>
+			</div>
+		
+		<!-- don't delete this blurb, this is where the random quote appears -->
 		<i><p id="demo" style="width:40%; margin-left:50%; padding-top:10%;"></p></i> 
 		
 		<script>
